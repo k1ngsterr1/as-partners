@@ -1,0 +1,11 @@
+.burger_button {
+  background: none;
+  outline: none;
+  border: none;
+  &__line {
+    width: clamp(25px, 11.681999999999999vw, 100px);
+    height: clamp(1px, 0.46728vw, 4px);
+    background: white;
+    @apply rounded-sm;
+  }
+}

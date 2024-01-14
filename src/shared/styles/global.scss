@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.cdnfonts.com/css/source-sans-pro");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  font-family: Montserrat;
+  font-size: clamp(25px, 11.681999999999999vw, 100px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  @apply text-custom-black;
+}
+
+.page {
+  width: 100%;
+}
+
+.main_bg {
+  background-image: url("../../../assets/main/main_background.webp");
+}
+
+.container {
+  width: 90%;
+  height: auto;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.source_sans_pro {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.paragraph {
+  font-family: Source Sans Pro;
+  font-size: clamp(9px, 4.20552vw, 36px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 141.412%;
+}
