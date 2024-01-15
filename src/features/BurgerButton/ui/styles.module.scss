@@ -1,11 +1,45 @@
-.burger_button {
-  background: none;
-  outline: none;
-  border: none;
+.custom_burger_button {
+  width: clamp(32px, 14.95296vw, 128px);
+  height: clamp(32px, 14.95296vw, 128px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s all;
+
+  &:hover .custom_burger_button__line {
+    @apply bg-custom-blue;
+  }
+
+  &:hover .custom_burger_button__line_middle {
+    width: 80%;
+    @apply bg-custom-blue;
+  }
+
+  &:hover .custom_burger_button__line_bottom {
+    @apply bg-custom-blue;
+  }
+
   &__line {
-    width: clamp(25px, 11.681999999999999vw, 100px);
-    height: clamp(1px, 0.46728vw, 4px);
-    background: white;
-    @apply rounded-sm;
+    width: 80%;
+    height: 3px;
+    transition: 0.3s all;
+
+    @apply bg-white;
+  }
+  &__line_middle {
+    width: 100%;
+    height: 3px;
+    transition: 0.3s all;
+
+    @apply bg-white;
+    @apply mt-3;
+  }
+  &__line_bottom {
+    width: 80%;
+    height: 3px;
+    transition: 0.3s all;
+
+    @apply bg-white;
+    @apply mt-3;
   }
 }

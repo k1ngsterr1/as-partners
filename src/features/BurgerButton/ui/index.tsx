@@ -1,12 +1,11 @@
-import React from "react";
 import styles from "./styles.module.scss";
 
 export const BurgerButton = () => {
   return (
-    <button className={styles.burger_button}>
-      <span className={styles.burger_button__line}></span>
-      <span className={styles.burger_button__line__middle}></span>
-      <span className={styles.burger_button__line}></span>
+    <button className={styles.custom_burger_button}>
+      <div className={styles.custom_burger_button__line}></div>
+      <div className={styles.custom_burger_button__line_middle}></div>
+      <div className={styles.custom_burger_button__line_bottom}></div>
     </button>
   );
 };
