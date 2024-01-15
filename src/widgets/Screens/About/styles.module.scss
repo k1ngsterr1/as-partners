@@ -1,0 +1,24 @@
+.circle {
+  background-image: url("../../../assets/main/elipse_small.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.heading {
+  font-size: 35px;
+  font-family: Montserrat;
+  text-align: center;
+  @apply text-white;
+  @apply mt-8;
+}
+
+.small_text {
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: clamp(10.5px, 4.90644vw, 42px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 141.412%;
+  @apply mt-3;
+}

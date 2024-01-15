@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   transition: 0.3s all;
+  @apply mt-20;
 
   &:hover .custom_burger_button__line {
     @apply bg-custom-blue;
