@@ -10,6 +10,12 @@ interface ButtonProps {
 
 export const Button: React.FC<ButtonProps> = ({ text, margin, size }) => {
   return (
-    <button className={`${styles.button} ${margin} ${size}`}>{text}</button>
+    <button className={`${styles.button}  ${margin} ${size}`}>{text}</button>
+  );
+};
+
+export const ButtonWhite: React.FC<ButtonProps> = ({ text, margin, size }) => {
+  return (
+    <button className={`${styles.white}  ${margin} ${size}`}>{text}</button>
   );
 };

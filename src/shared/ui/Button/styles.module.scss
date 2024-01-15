@@ -1,6 +1,6 @@
 .button {
-  width: clamp(133.5px, 62.381879999999995vw, 534px);
-  height: clamp(27.5px, 12.8502vw, 110px);
+  width: 280px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,6 +10,7 @@
   font-weight: 300;
   line-height: normal;
   background-image: url("../../../assets/main/button.svg");
+  background-size: cover;
   transition: 0.3s all;
   @apply text-custom-black;
 
@@ -17,4 +18,21 @@
     background-image: url("../../../assets/main/button_hover.svg");
     @apply text-custom-blue;
   }
+}
+
+.white {
+  width: 280px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+  font-size: clamp(9px, 4.20552vw, 36px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  background-image: url("../../../assets/main/button_white.svg") !important;
+  background-size: cover;
+  transition: 0.3s all;
+  @apply text-white #{!important};
 }

@@ -9,8 +9,8 @@ interface ProjectTabProps {
 
 export const ProjectTab: React.FC<ProjectTabProps> = ({ text, margin }) => {
   return (
-    <div className={`${styles.service_tab} ${margin}`}>
-      <span className={styles.service_tab__text}>{text}</span>
+    <div className={`${styles.project_tab} ${margin}`}>
+      <span className={styles.project_tab__text}>{text}</span>
     </div>
   );
 };

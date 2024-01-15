@@ -1,5 +1,5 @@
 import { ProjectTab } from "@entities/ProjectTab";
-import { Button } from "@shared/ui/Button";
+import { Button, ButtonWhite } from "@shared/ui/Button";
 import { Separator } from "@shared/ui/Separator";
 
 import styles from "./styles.module.scss";
@@ -9,8 +9,8 @@ export const ProjectsScreen = () => {
     <div className="w-full bg-custom-black">
       <section className="container">
         <div className={styles.button_row}>
-          <Button text="Архитектурные решения" margin="mt-0" />
-          <Button text="Дизайн Интерьера" margin="mt-0" />
+          <ButtonWhite text="Архитектурные решения" margin="mt-0" />
+          <ButtonWhite text="Дизайн Интерьера" margin="mt-0" />
         </div>
         <h4 className={styles.heading}>Проекты</h4>
         <Separator marginTop="mt-4" />
