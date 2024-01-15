@@ -1,0 +1,18 @@
+.service_tab {
+  width: 90%;
+  height: clamp(145px, 67.7556vw, 580px);
+  position: relative;
+  background-image: url("../../assets/services/service_tab_example.png");
+
+  &__text {
+    position: absolute;
+    bottom: clamp(16px, 7.47648vw, 64px);
+    left: clamp(16px, 7.47648vw, 64px);
+    color: #fff;
+    font-family: Noto Sans;
+    font-size: clamp(10px, 4.6728vw, 40px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 141.412%;
+  }
+}

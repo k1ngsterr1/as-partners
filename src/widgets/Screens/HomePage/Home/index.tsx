@@ -1,15 +1,16 @@
+import { Slide } from "react-awesome-reveal";
 import { Arrow } from "@shared/ui/Arrow";
 import { BurgerButton } from "@features/BurgerButton/ui";
 import { Separator } from "@shared/ui/Separator";
 
 import logo from "@assets/main/logo_white.svg";
+import about from "@assets/main/about_block_image.webp";
 
 import styles from "./styles.module.scss";
-import { Slide } from "react-awesome-reveal";
 
 export const HomeScreen = () => {
   return (
-    <div className="container">
+    <main className="container">
       <BurgerButton />
       <Slide delay={100} triggerOnce>
         <img src={logo} className={styles.logo} alt="logo" />
@@ -34,6 +35,6 @@ export const HomeScreen = () => {
       <Slide delay={300} direction="up">
         <Arrow />
       </Slide>
-    </div>
+    </main>
   );
 };

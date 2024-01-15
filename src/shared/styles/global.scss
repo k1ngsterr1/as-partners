@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap");
-@import url("https://fonts.cdnfonts.com/css/source-sans-pro");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -48,11 +48,11 @@ h6 {
 }
 
 .paragraph {
-  width: 80%;
-  font-family: "Source Sans Pro", sans-serif;
+  width: 85%;
+  font-family: "Noto Sans", sans-serif;
   font-size: clamp(9px, 4.20552vw, 36px);
   font-style: normal;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 145.412%;
   text-align: center;
   @apply text-white;
