@@ -1,2 +1,7 @@
 .heading {
+  font-size: clamp(17.5px, 8.177399999999999vw, 70px);
+  font-family: Montserrat;
+  text-align: center;
+  @apply text-custom-black;
+  @apply mt-8;
 }

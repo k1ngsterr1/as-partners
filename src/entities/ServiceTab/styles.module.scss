@@ -1,13 +1,13 @@
 .service_tab {
-  width: 90%;
+  width: 100%;
   height: clamp(145px, 67.7556vw, 580px);
   position: relative;
   background-image: url("../../assets/services/service_tab_example.png");
 
   &__text {
     position: absolute;
-    bottom: clamp(16px, 7.47648vw, 64px);
-    left: clamp(16px, 7.47648vw, 64px);
+    bottom: clamp(9px, 4.20552vw, 36px);
+    left: clamp(9px, 4.20552vw, 36px);
     color: #fff;
     font-family: Noto Sans;
     font-size: clamp(10px, 4.6728vw, 40px);
