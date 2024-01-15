@@ -57,3 +57,14 @@ h6 {
   text-align: center;
   @apply text-white;
 }
+
+.paragraph_black {
+  width: 85%;
+  font-family: "Noto Sans", sans-serif;
+  font-size: clamp(9px, 4.20552vw, 36px);
+  font-style: normal;
+  font-weight: 200;
+  line-height: 145.412%;
+  text-align: center;
+  @apply text-custom-black;
+}
