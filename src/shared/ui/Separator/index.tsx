@@ -1,5 +1,10 @@
 import React from "react";
 
-export const Separator = () => {
-  return <hr>index</hr>;
+import styles from "./styles.module.scss";
+interface SeparatorProps {
+  marginTop: string;
+}
+
+export const Separator: React.FC<SeparatorProps> = ({ marginTop }) => {
+  return <hr className={`${styles.separator} ${marginTop}`}></hr>;
 };

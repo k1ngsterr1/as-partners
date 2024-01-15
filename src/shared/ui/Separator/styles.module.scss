@@ -1,0 +1,7 @@
+.separator {
+  width: clamp(84px, 39.25152vw, 336px);
+  height: clamp(4px, 1.86912vw, 16px);
+  outline: none;
+  border: none;
+  @apply bg-custom-blue;
+}

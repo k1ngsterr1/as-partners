@@ -7,11 +7,9 @@
 
 h1 {
   font-family: Montserrat;
-  font-size: clamp(25px, 11.681999999999999vw, 100px);
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  @apply text-custom-black;
+  font-size: clamp(25px, 11.681999999999999vw, 100px) !important;
+  color: white !important;
+  text-align: center !important;
 }
 
 .page {
@@ -41,9 +39,12 @@ h1 {
 }
 
 .paragraph {
-  font-family: Source Sans Pro;
+  width: 80%;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: clamp(9px, 4.20552vw, 36px);
   font-style: normal;
   font-weight: 300;
   line-height: 141.412%;
+  text-align: center;
+  @apply text-white;
 }
