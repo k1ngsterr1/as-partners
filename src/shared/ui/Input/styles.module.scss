@@ -1,0 +1,21 @@
+.input {
+  width: 90%;
+  height: clamp(27.5px, 12.8502vw, 110px) px;
+  font-family: Montserrat;
+  font-size: clamp(9px, 4.20552vw, 36px) px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid;
+  transition: 0.3s all;
+  @apply pl-2;
+  @apply pb-2;
+  @apply border-custom-black;
+  @apply text-custom-black;
+  &:hover {
+    @apply border-custom-blue;
+    @apply text-custom-blue;
+  }
+}

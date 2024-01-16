@@ -39,6 +39,14 @@ h6 {
   margin: auto;
 }
 
+.container-no-height {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
 .montserrat {
   font-family: "Montserrat", sans-serif;
 }

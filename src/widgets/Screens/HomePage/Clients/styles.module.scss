@@ -5,3 +5,13 @@
   @apply text-custom-black;
   @apply mt-8;
 }
+
+.logo {
+  width: clamp(50px, 23.363999999999997vw, 200px);
+  height: clamp(50px, 23.363999999999997vw, 200px);
+}
+
+.freedom {
+  width: clamp(100px, 46.727999999999994vw, 400px);
+  height: clamp(100px, 46.727999999999994vw, 400px);
+}

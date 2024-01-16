@@ -3,6 +3,7 @@ import { AboutScreen } from "@widgets/Screens/HomePage/About";
 import { ServicesScreen } from "@widgets/Screens/HomePage/Services";
 import { ProjectsScreen } from "@widgets/Screens/HomePage/Projects";
 import { ClientsScreen } from "@widgets/Screens/HomePage/Clients";
+import { FormScreen } from "@widgets/Screens/Form";
 
 export const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ export const HomePage = () => {
       <ServicesScreen />
       <ProjectsScreen />
       <ClientsScreen />
+      <FormScreen />
     </div>
   );
 };

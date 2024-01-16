@@ -21,8 +21,8 @@
 }
 
 .white {
-  width: 280px;
-  height: 60px;
+  width: clamp(145px, 67.7556vw, 580px);
+  height: clamp(30px, 14.0184vw, 120px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,6 +33,7 @@
   line-height: normal;
   background-image: url("../../../assets/main/button_white.svg") !important;
   background-size: cover;
+  background-position: center center;
   transition: 0.3s all;
   @apply text-white #{!important};
 }
