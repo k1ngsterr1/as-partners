@@ -1,0 +1,54 @@
+.selector {
+  position: relative;
+  width: 90%;
+  height: clamp(27.5px, 12.8502vw, 110px) px;
+  font-family: Montserrat;
+  font-size: clamp(9px, 4.20552vw, 36px) px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-bottom: 2px solid;
+  transition: 0.3s all;
+  @apply pl-2;
+  @apply pb-2;
+  @apply border-custom-black;
+  @apply text-custom-black;
+  &:hover {
+    @apply border-custom-blue;
+    @apply text-custom-blue;
+  }
+
+  &__chevron {
+    position: absolute;
+    right: 0px;
+    @apply text-custom-black;
+  }
+}
+
+.list {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 2px solid;
+  border-top: none;
+  @apply rounded-b-md;
+  @apply border-gray-100;
+  @apply shadow-md;
+  @apply bg-white;
+
+  &__item {
+    width: 100%;
+    font-size: clamp(8.5px, 3.9718799999999996vw, 34px);
+    transition: 0.3s all;
+    @apply p-3;
+    @apply text-custom-black;
+    &:hover {
+      @apply text-white;
+      @apply bg-custom-blue;
+    }
+  }
+}

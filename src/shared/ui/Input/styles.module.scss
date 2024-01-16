@@ -8,14 +8,24 @@
   line-height: normal;
   border: none;
   outline: none;
+  cursor: pointer;
   border-bottom: 2px solid;
   transition: 0.3s all;
   @apply pl-2;
   @apply pb-2;
   @apply border-custom-black;
   @apply text-custom-black;
+  &:focus {
+    @apply border-custom-blue;
+    @apply text-custom-blue;
+  }
   &:hover {
     @apply border-custom-blue;
     @apply text-custom-blue;
+  }
+
+  &__placeholder {
+    @apply pl-2;
+    @apply pb-2;
   }
 }

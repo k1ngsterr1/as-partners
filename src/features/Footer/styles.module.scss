@@ -1,0 +1,70 @@
+.footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @apply bg-custom-black;
+  @apply mt-20;
+
+  &__logo {
+    @apply mt-8;
+  }
+
+  &__address {
+    font-family: Noto Sans;
+    font-size: clamp(10px, 4.6728vw, 40px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 141.412%;
+    @apply text-white;
+    @apply mt-6;
+  }
+
+  &__small_address {
+    width: 90%;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: clamp(8px, 3.73824vw, 32px);
+    font-style: normal;
+    text-align: center;
+    font-weight: 300;
+    line-height: normal;
+    @apply mt-4;
+  }
+
+  &__phone {
+    width: 90%;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: clamp(8px, 3.73824vw, 32px);
+    font-style: normal;
+    text-align: center;
+    font-weight: 300;
+    text-decoration: underline;
+    line-height: normal;
+    @apply mt-4;
+  }
+
+  &__container_icon {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__icon {
+      font-size: clamp(16px, 7.47648vw, 64px);
+      @apply text-white;
+      @apply mt-7;
+    }
+  }
+
+  &__info {
+    font-size: clamp(8px, 3.73824vw, 32px);
+    font-weight: 300;
+    font-family: Noto Sans;
+    @apply mt-7;
+    @apply mb-7;
+    @apply text-white;
+  }
+}
