@@ -3,6 +3,7 @@
   height: 100vh;
   position: fixed;
   top: 0;
+  transform: translateY(-2000%);
   z-index: 1000;
   @apply bg-custom-black;
 
@@ -32,6 +33,8 @@
         font-style: normal;
         font-weight: 600;
         line-height: 141.412%;
+        transform: translateY(2000%);
+        opacity: 0;
       }
     }
   }

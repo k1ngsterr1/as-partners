@@ -1,8 +1,10 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { BurgerButton } from "@features/BurgerButton/ui";
-import { UseSelector, useDispatch } from "react-redux";
-import { UseDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { useMenuAnimation } from "@shared/lib/hooks/animations/useMenuAnimation";
+import { closeMenu } from "@redux/menuSlice";
+import { RootState } from "@redux/store";
 
 import logo from "@assets/main/logo_white.svg";
 
@@ -10,30 +12,66 @@ import styles from "./styles.module.scss";
 
 export const Menu = () => {
   const dispatch = useDispatch();
+  const isMenuOpen = useSelector((state: RootState) => state.menu.isOpen);
+  const { menuRef, linkRefs } = useMenuAnimation();
+
+  const addToLinkRefs = (el: any) => {
+    if (el && !linkRefs.current.includes(el)) {
+      linkRefs.current.push(el);
+    }
+  };
+
+  function handleClose() {
+    dispatch(closeMenu());
+  }
 
   useEffect(() => {
-    document.body.style.overflow = "none";
-  });
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isMenuOpen]);
 
   return (
-    <aside className={styles.menu}>
+    <aside className={styles.menu} ref={menuRef}>
       <div className={styles.menu__content}>
         <img src={logo} className={styles.menu__content__logo} alt="logo" />
-        <BurgerButton />
+        <BurgerButton onClick={() => handleClose()} />
         <nav className={styles.menu__content__links}>
-          <Link className={`${styles.menu__content__links__link}`}>
+          <Link
+            className={`${styles.menu__content__links__link}`}
+            ref={addToLinkRefs}
+            to="/home"
+          >
             Главная
           </Link>
-          <Link className={`${styles.menu__content__links__link} mt-5`}>
+          <Link
+            className={`${styles.menu__content__links__link} mt-5`}
+            ref={addToLinkRefs}
+            to="/about"
+          >
             О Нас
           </Link>
-          <Link className={`${styles.menu__content__links__link} mt-5`}>
+          <Link
+            className={`${styles.menu__content__links__link} mt-5`}
+            ref={addToLinkRefs}
+            to="/services"
+          >
             Наши Услуги
           </Link>
-          <Link className={`${styles.menu__content__links__link} mt-5`}>
+          <Link
+            className={`${styles.menu__content__links__link} mt-5`}
+            ref={addToLinkRefs}
+            to="/portfolio"
+          >
             Наше Портфолио
           </Link>
-          <Link className={`${styles.menu__content__links__link} mt-5`}>
+          <Link
+            className={`${styles.menu__content__links__link} mt-5`}
+            ref={addToLinkRefs}
+            to="/contacts"
+          >
             Контакты
           </Link>
         </nav>

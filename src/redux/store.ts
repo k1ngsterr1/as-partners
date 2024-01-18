@@ -3,7 +3,7 @@ import menuSlice from "./menuSlice";
 
 export const store = configureStore({
   reducer: {
-    menuSlice,
+    menu: menuSlice,
   },
 });
 

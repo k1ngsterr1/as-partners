@@ -2,6 +2,8 @@ import { Slide } from "react-awesome-reveal";
 import { Arrow } from "@shared/ui/Arrow";
 import { BurgerButton } from "@features/BurgerButton/ui";
 import { Separator } from "@shared/ui/Separator";
+import { useDispatch } from "react-redux";
+import { openMenu } from "@redux/menuSlice";
 
 import logo from "@assets/main/logo_white.svg";
 import about from "@assets/main/about_block_image.webp";
@@ -9,9 +11,15 @@ import about from "@assets/main/about_block_image.webp";
 import styles from "./styles.module.scss";
 
 export const HomeScreen = () => {
+  const dispatch = useDispatch();
+
+  function OpenMenu() {
+    dispatch(openMenu());
+  }
+
   return (
     <main className="container">
-      <BurgerButton />
+      <BurgerButton onClick={() => OpenMenu()} />
       <Slide delay={100} triggerOnce>
         <img src={logo} className={styles.logo} alt="logo" />
       </Slide>
