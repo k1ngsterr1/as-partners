@@ -1,0 +1,38 @@
+.menu {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  @apply bg-custom-black;
+
+  &__content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__logo {
+      width: clamp(165px, 77.10119999999999vw, 660px);
+      @apply mt-20;
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @apply mt-6;
+
+      &__link {
+        color: #fff;
+        font-family: Noto Sans;
+        font-size: clamp(16px, 7.47648vw, 64px);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 141.412%;
+      }
+    }
+  }
+}

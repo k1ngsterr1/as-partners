@@ -5,11 +5,13 @@ import { ProjectsScreen } from "@widgets/Screens/HomePage/Projects";
 import { ClientsScreen } from "@widgets/Screens/HomePage/Clients";
 import { FormScreen } from "@widgets/Screens/Form";
 import { Footer } from "@features/Footer";
+import { Menu } from "@features/Menu";
 
 export const HomePage = () => {
   return (
     <>
       <div className="page main_bg">
+        <Menu />
         <HomeScreen />
         <AboutScreen />
         <ServicesScreen />
