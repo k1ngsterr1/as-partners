@@ -1,8 +1,26 @@
+.circle {
+  background-image: url("../../../../assets/main/elipse_small.svg") !important;
+  // background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .heading {
   width: 50%;
   font-size: clamp(17.5px, 8.177399999999999vw, 70px);
   font-family: Montserrat;
   text-align: center;
   @apply text-white;
+  @apply mt-8;
+}
+.paragraph_heading {
+  width: 70%;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: clamp(12.5px, 5.840999999999999vw, 50px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 141.412%;
+  text-align: center;
   @apply mt-8;
 }
