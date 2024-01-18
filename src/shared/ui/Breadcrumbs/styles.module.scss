@@ -1,0 +1,8 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  font-size: clamp(7.5px, 3.5046vw, 30px);
+  font-family: Noto Sans;
+  font-family: 200;
+  @apply text-custom-black;
+}

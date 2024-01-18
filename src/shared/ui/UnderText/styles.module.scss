@@ -1,0 +1,9 @@
+.under_text {
+  font-family: Noto Sans;
+  font-size: clamp(9px, 4.20552vw, 36px);
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+  line-height: 141.412%;
+  @apply text-custom-black;
+}
