@@ -5,6 +5,7 @@ import { RootState } from "@redux/store";
 import { toggleOffLoader } from "@redux/loaderSlice";
 import { Loader } from "@features/Loader/ui";
 import { Menu } from "@features/Menu";
+import { StatsScreen } from "@widgets/Screens/AboutPage/Stats";
 
 export const AboutPage = () => {
   const dispatch = useDispatch();
@@ -20,6 +21,7 @@ export const AboutPage = () => {
     <div className="page white-bg">
       <Loader />
       <AboutMainScreen />
+      <StatsScreen />
       <Menu />
     </div>
   );
