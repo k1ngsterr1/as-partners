@@ -8,16 +8,17 @@ import { Footer } from "@features/Footer";
 import { Menu } from "@features/Menu";
 import { useSelector } from "react-redux";
 import { RootState } from "@redux/store";
-import { useEffect } from "react";
+import { Loader } from "@features/Loader/ui";
 
 export const HomePage = () => {
-  const isMenuOpen = useSelector((state: RootState) => state.menu.isOpen);
+  const isLoading = useSelector((state: RootState) => state.loader.isLoading);
 
   return (
     <>
       <div className="page main_bg">
         <HomeScreen />
         <Menu />
+        <Loader />
         <AboutScreen />
         <ServicesScreen />
         <ProjectsScreen />

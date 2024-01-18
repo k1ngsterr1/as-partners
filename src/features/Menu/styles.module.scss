@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   transform: translateY(-2000%);
-  z-index: 1000;
+  z-index: 100;
   @apply bg-custom-black;
 
   &__content {
