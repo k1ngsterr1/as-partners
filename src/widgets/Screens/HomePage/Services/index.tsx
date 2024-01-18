@@ -20,7 +20,7 @@ export const ServicesScreen = () => {
         <ServiceTab text="Пример проекта" margin="mt-8" />
         <ServiceTab text="Пример проекта" margin="mt-8" />
         <ServiceTab text="Пример проекта" margin="mt-8" />
-        <Button text="Все услуги" margin="mt-8" />
+        <Button text="Все услуги" margin="mt-8 mb-8" />
       </section>
     </div>
   );

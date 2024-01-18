@@ -1,6 +1,6 @@
 .button {
-  width: 280px;
-  height: 60px;
+  width: 79%;
+  height: clamp(31px, 14.485679999999999vw, 124px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,9 +31,14 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  background-image: url("../../../assets/main/button_white.svg") !important;
+  background-image: url("../../../assets/main/button_white.svg");
   background-size: cover;
   background-position: center center;
   transition: 0.3s all;
-  @apply text-white #{!important};
+  @apply text-white;
+
+  &:hover {
+    background-image: url("../../../assets/main/button_hover.svg");
+    @apply text-custom-blue;
+  }
 }
