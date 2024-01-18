@@ -17,7 +17,15 @@
 
     &__logo {
       width: clamp(165px, 77.10119999999999vw, 660px);
+      transform: translateY(-400%);
       @apply mt-20;
+    }
+
+    &__plus {
+      width: clamp(40px, 18.6912vw, 160px);
+      transform: rotate(0deg);
+      @apply mt-10;
+      @apply mb-2;
     }
 
     &__links {
@@ -35,6 +43,10 @@
         line-height: 141.412%;
         transform: translateY(2000%);
         opacity: 0;
+        transition: 0.3s all;
+        &:hover {
+          @apply text-custom-blue;
+        }
       }
     }
   }

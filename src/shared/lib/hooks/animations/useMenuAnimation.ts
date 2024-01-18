@@ -6,10 +6,12 @@ import gsap from "gsap";
 export const useMenuAnimation = (): {
   menuRef: React.RefObject<HTMLDivElement>;
   logoRef: React.RefObject<HTMLImageElement>;
+  crossRef: React.RefObject<HTMLImageElement>;
   linkRefs: React.MutableRefObject<(HTMLAnchorElement | null)[]>;
 } => {
   const menuRef = useRef<HTMLDivElement>(null);
   const logoRef = useRef<HTMLImageElement>(null);
+  const crossRef = useRef<HTMLImageElement>(null);
   const linkRefs = useRef<(HTMLAnchorElement | null)[]>([]);
   const isOpen = useSelector((state: RootState) => state.menu.isOpen);
 
@@ -25,9 +27,13 @@ export const useMenuAnimation = (): {
             scale: 1,
             duration: 1,
             ease: "power3.out",
-          }).to(
-            linkRefs.current,
-            {
+          })
+            .to(crossRef.current, {
+              rotate: "0deg",
+              duration: 0.3,
+              ease: "power3.out",
+            })
+            .to(logoRef.current, {
               y: "0%",
               autoAlpha: 1,
               scale: 1,
@@ -35,9 +41,20 @@ export const useMenuAnimation = (): {
               stagger: 0.1,
               opacity: 1,
               ease: "power3.out",
-            },
-            "-=0.25"
-          );
+            })
+            .to(
+              linkRefs.current,
+              {
+                y: "0%",
+                autoAlpha: 1,
+                scale: 1,
+                duration: 0.5,
+                stagger: 0.1,
+                opacity: 1,
+                ease: "power3.out",
+              },
+              "-=0.25"
+            );
         } else {
           tl.to(linkRefs.current, {
             y: "2000%", // Move down
@@ -47,18 +64,32 @@ export const useMenuAnimation = (): {
             duration: 0.3,
             ease: "power3.in",
             clearProps: "all", // Clear GSAP properties after animation
-          }).to(
-            menuRef.current,
-            {
-              y: "-2000%", // Move up
-              autoAlpha: 0, // Fade out
+          })
+            .to(crossRef.current, {
+              rotate: "45deg",
+              duration: 0.3,
+              ease: "power3.out",
+            })
+            .to(logoRef.current, {
+              y: "-400%",
+              autoAlpha: 0,
               scale: 0.95,
-              duration: 0.5,
+              duration: 0.3,
               ease: "power3.in",
               clearProps: "all", // Clear GSAP properties after animation
-            },
-            "+=0.1"
-          );
+            })
+            .to(
+              menuRef.current,
+              {
+                y: "-2000%", // Move up
+                autoAlpha: 0, // Fade out
+                scale: 0.95,
+                duration: 0.5,
+                ease: "power3.in",
+                clearProps: "all", // Clear GSAP properties after animation
+              },
+              "+=0.1"
+            );
         }
       }
     } catch (error: any) {
@@ -66,5 +97,5 @@ export const useMenuAnimation = (): {
     }
   }, [isOpen, linkRefs]);
 
-  return { menuRef, linkRefs, logoRef };
+  return { menuRef, linkRefs, logoRef, crossRef };
 };
