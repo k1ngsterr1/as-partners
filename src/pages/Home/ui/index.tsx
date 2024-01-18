@@ -6,19 +6,28 @@ import { ClientsScreen } from "@widgets/Screens/HomePage/Clients";
 import { FormScreen } from "@widgets/Screens/Form";
 import { Footer } from "@features/Footer";
 import { Menu } from "@features/Menu";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@redux/store";
 import { Loader } from "@features/Loader/ui";
+import { toggleOffLoader, toggleOnLoader } from "@redux/loaderSlice";
+import { useEffect } from "react";
 
 export const HomePage = () => {
+  const dispatch = useDispatch();
   const isLoading = useSelector((state: RootState) => state.loader.isLoading);
+
+  useEffect(() => {
+    setTimeout(() => {
+      dispatch(toggleOffLoader());
+    }, 2000);
+  }, [isLoading]);
 
   return (
     <>
       <div className="page main_bg">
+        <Loader />
         <HomeScreen />
         <Menu />
-        <Loader />
         <AboutScreen />
         <ServicesScreen />
         <ProjectsScreen />

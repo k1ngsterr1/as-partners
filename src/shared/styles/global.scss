@@ -55,6 +55,18 @@ h6 {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+.black {
+  @apply text-custom-black #{!important};
+}
+
+.black_bg {
+  @apply bg-custom-black #{!important};
+}
+
+.white_bg {
+  @apply bg-white #{!important};
+}
+
 .paragraph {
   width: 85%;
   font-family: "Noto Sans", sans-serif;

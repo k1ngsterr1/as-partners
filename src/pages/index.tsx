@@ -1,4 +1,4 @@
-import { FC, Suspense, lazy, useEffect } from "react";
+import { FC, Suspense, lazy, useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -10,9 +10,11 @@ import { ROUTE_CONSTANTS } from "@shared/config/routes";
 
 import { Loader } from "@features/Loader/ui";
 import { useLocation } from "react-router-dom";
-import { HomePage } from "./Home/ui";
 import { useSelector } from "react-redux";
 import { RootState } from "@redux/store";
+import { HomePage } from "./Home/ui";
+import { AboutPage } from "./About/ui";
+// const LazyHomePage = lazy(() => import("./Home/ui/index"));
 
 export const MyRoutes = () => {
   const isLoading = useSelector((state: RootState) => state.loader.isLoading);
@@ -47,6 +49,7 @@ export const MyRoutes = () => {
             element={<Navigate replace to="/home" />}
           />
           <Route path={ROUTE_CONSTANTS.HOME} element={<HomePage />} />
+          <Route path={ROUTE_CONSTANTS.ABOUT} element={<AboutPage />}></Route>
         </Routes>
       </Suspense>
     </Router>
