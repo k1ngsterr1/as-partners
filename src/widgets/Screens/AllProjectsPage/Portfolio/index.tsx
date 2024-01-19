@@ -24,7 +24,7 @@ export const Portfolio = () => {
   console.log(itemsToDisplay, selectedOption);
 
   return (
-    <div className="w-full bg-white mb-5">
+    <div className="w-full bg-white mb-10">
       <section className="container">
         <Selector placeholder="Интерьер дома" options={options} />
         {itemsToDisplay.map((item, index) => (

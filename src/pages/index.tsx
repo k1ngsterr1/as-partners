@@ -15,6 +15,7 @@ import { RootState } from "@redux/store";
 import { HomePage } from "./Home/ui";
 import { AboutPage } from "./About/ui";
 import { AllProjectsPage } from "./Projects/ui";
+import { ServicesPage } from "./Services/ui";
 
 // const LazyHomePage = lazy(() => import("./Home/ui/index"));
 // const LazyProjects = lazy(() => import("./Projects/ui/index"));
@@ -57,6 +58,7 @@ export const MyRoutes = () => {
             path={ROUTE_CONSTANTS.PORTFOLIO}
             element={<AllProjectsPage />}
           />
+          <Route path={ROUTE_CONSTANTS.SERVICES} element={<ServicesPage />} />
         </Routes>
       </Suspense>
     </Router>
