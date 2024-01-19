@@ -13,10 +13,6 @@ export const FormScreen = () => {
     { value: "house_design", label: "Дизайн Дома" },
   ];
 
-  useEffect(() => {
-    console.log(options);
-  });
-
   return (
     <div className="w-full bg-white">
       <div className="container-no-height">

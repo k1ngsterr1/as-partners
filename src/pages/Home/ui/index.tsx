@@ -9,7 +9,7 @@ import { Menu } from "@features/Menu";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@redux/store";
 import { Loader } from "@features/Loader/ui";
-import { toggleOffLoader, toggleOnLoader } from "@redux/loaderSlice";
+import { toggleOffLoader } from "@redux/loaderSlice";
 import { useEffect } from "react";
 
 export const HomePage = () => {

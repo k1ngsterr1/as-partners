@@ -14,7 +14,10 @@ import { useSelector } from "react-redux";
 import { RootState } from "@redux/store";
 import { HomePage } from "./Home/ui";
 import { AboutPage } from "./About/ui";
+import { AllProjectsPage } from "./Projects/ui";
+
 // const LazyHomePage = lazy(() => import("./Home/ui/index"));
+// const LazyProjects = lazy(() => import("./Projects/ui/index"));
 
 export const MyRoutes = () => {
   const isLoading = useSelector((state: RootState) => state.loader.isLoading);
@@ -49,7 +52,11 @@ export const MyRoutes = () => {
             element={<Navigate replace to="/home" />}
           />
           <Route path={ROUTE_CONSTANTS.HOME} element={<HomePage />} />
-          <Route path={ROUTE_CONSTANTS.ABOUT} element={<AboutPage />}></Route>
+          <Route path={ROUTE_CONSTANTS.ABOUT} element={<AboutPage />} />
+          <Route
+            path={ROUTE_CONSTANTS.PORTFOLIO}
+            element={<AllProjectsPage />}
+          />
         </Routes>
       </Suspense>
     </Router>
