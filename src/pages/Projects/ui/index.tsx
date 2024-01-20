@@ -23,8 +23,8 @@ export const AllProjectsPage = () => {
     <div className="page white_bg">
       <Loader />
       <AllProjectsMain />
-      <Portfolio />
       <Menu />
+      <Portfolio />
       <FormScreen />
       <Footer />
     </div>

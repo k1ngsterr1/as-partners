@@ -17,8 +17,15 @@ import { AboutPage } from "./About/ui";
 import { AllProjectsPage } from "./Projects/ui";
 import { ServicesPage } from "./Services/ui";
 
-// const LazyHomePage = lazy(() => import("./Home/ui/index"));
-// const LazyProjects = lazy(() => import("./Projects/ui/index"));
+// Content
+import { serviceContent } from "@shared/lib/data/serviceContent";
+import { ServiceInnerPage } from "./ServiceInner/index";
+
+const LazyServiceInner = lazy(() =>
+  import("./ServiceInner/index").then((module) => ({
+    default: module.ServiceInnerPage,
+  }))
+);
 
 export const MyRoutes = () => {
   const isLoading = useSelector((state: RootState) => state.loader.isLoading);
@@ -59,6 +66,16 @@ export const MyRoutes = () => {
             element={<AllProjectsPage />}
           />
           <Route path={ROUTE_CONSTANTS.SERVICES} element={<ServicesPage />} />
+          {Object.entries(serviceContent).map(([serviceType, content]) => (
+            <Route
+              key={serviceType}
+              path={ROUTE_CONSTANTS.SERVICES_OBJECT.replace(
+                ":serviceType",
+                serviceType
+              )}
+              element={<LazyServiceInner {...content} />}
+            />
+          ))}
         </Routes>
       </Suspense>
     </Router>
