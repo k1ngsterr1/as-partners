@@ -1,12 +1,16 @@
 .button {
-  width: 368px;
-  height: 98px;
+  width: 19.2%;
+  height: clamp(49px, 5.10384vw, 196px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: 0.3s all;
   @apply text-white;
   @apply bg-custom-black;
+  &:hover {
+    @apply bg-custom-blue;
+  }
 
   &__text {
     font-family: "Noto Sans", sans-serif;
