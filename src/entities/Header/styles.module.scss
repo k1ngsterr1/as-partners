@@ -1,0 +1,18 @@
+@media screen and (max-width: 448px) {
+  .header {
+    display: none !important;
+  }
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid;
+  @apply border-custom-black;
+  @apply p-8;
+
+  &__logo {
+    width: clamp(152px, 15.832320000000001vw, 608px);
+    height: clamp(14.5px, 1.51032vw, 58px);
+  }
+}

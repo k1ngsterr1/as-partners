@@ -5,3 +5,10 @@
   border: none;
   @apply bg-custom-blue;
 }
+
+@media screen and (min-width: 1024px) {
+  .separator {
+    width: clamp(84px, 8.74944vw, 336px);
+    height: clamp(4px, 0.41664vw, 16px);
+  }
+}

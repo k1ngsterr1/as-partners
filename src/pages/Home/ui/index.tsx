@@ -10,6 +10,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@redux/store";
 import { Loader } from "@features/Loader/ui";
 import { toggleOffLoader } from "@redux/loaderSlice";
+import { Header } from "@entities/Header";
 import { useEffect } from "react";
 
 export const HomePage = () => {
@@ -26,6 +27,7 @@ export const HomePage = () => {
     <>
       <div className="page main_bg">
         <Loader />
+        <Header />
         <HomeScreen />
         <Menu />
         <AboutScreen />

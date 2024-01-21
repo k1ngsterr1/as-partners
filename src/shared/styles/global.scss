@@ -88,3 +88,35 @@ h6 {
   text-align: center;
   @apply text-custom-black;
 }
+
+.container-pc {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: clamp(35px, 3.6456vw, 140px) !important;
+    text-align: left !important;
+  }
+
+  .container {
+    display: none;
+  }
+
+  .container-pc {
+    width: 61.614583333333336%;
+    height: 100vh !important;
+    height: auto;
+    display: flex;
+    margin: auto;
+  }
+
+  .paragraph {
+    font-size: clamp(9px, 0.93744vw, 36px);
+    text-align: left !important;
+  }
+
+  .main_bg {
+    background-image: none;
+  }
+}
