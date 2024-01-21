@@ -12,3 +12,12 @@
   @apply text-white;
   @apply mt-8;
 }
+
+@media screen and (min-width: 1024px) {
+  .section_one {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
