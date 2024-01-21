@@ -56,9 +56,13 @@ export const AboutScreen = () => {
         <img src={about} className={styles.about_image} alt="about_image" />
       </section>
       <section className="container-pc">
-        <h2 className={styles.heading}>AS & Partners Architect</h2>
-        <Separator marginTop="mt-5" />
-        <UnderText label="Информация о нас" marginTop="mt-5" />
+        <div className={styles.section_one}>
+          {" "}
+          <h2 className={styles.heading}>AS & Partners Architect</h2>
+          <Separator marginTop="mt-5" />
+          <UnderText label="Информация о нас" marginTop="mt-5" />
+        </div>
+        <div className={styles.section_two}></div>
       </section>
     </div>
   );

@@ -43,13 +43,19 @@
 @media screen and (min-width: 1024px) {
   .circle {
     background-image: url("../../../../assets/main/elipse.svg") !important;
-    // background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
   }
 
-  .heading {
+  .section_one,
+  .section_two {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .heading {
     text-align: left;
     font-size: clamp(37.5px, 3.906vw, 150px);
   }
