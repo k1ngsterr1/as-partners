@@ -7,3 +7,13 @@
   line-height: 141.412%;
   @apply text-custom-black;
 }
+
+@media screen and (min-width: 1024px) {
+  .under_text {
+    font-size: clamp(13.5px, 1.40616vw, 54px);
+  }
+
+  .white {
+    color: white !important;
+  }
+}

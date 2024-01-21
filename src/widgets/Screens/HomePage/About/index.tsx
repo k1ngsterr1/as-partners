@@ -59,10 +59,31 @@ export const AboutScreen = () => {
         <div className={styles.section_one}>
           {" "}
           <h2 className={styles.heading}>AS & Partners Architect</h2>
-          <Separator marginTop="mt-5" />
-          <UnderText label="Информация о нас" marginTop="mt-5" />
+          <Separator marginTop="mt-5 ml-8" />
+          <UnderText
+            label="Информация о нас"
+            color="!text-white"
+            marginTop="mt-5 ml-8"
+          />
         </div>
-        <div className={styles.section_two}></div>
+        <div className={styles.section_two}>
+          <strong className={styles.text}>
+            Архитектурная студия AS Partners
+          </strong>
+          <p className="paragraph white ml-8 mt-5">
+            Добро пожаловать на сайт AS Partners Architect, вашего надежного
+            партнера в мире современной архитектуры и дизайна. Мы
+            специализируемся на создании инновационных, функциональных и
+            эстетически привлекательных архитектурных решений, которые отражают
+            последние тенденции в области урбанистики и дизайна интерьеров.
+          </p>
+          <p className="paragraph white ml-8 mt-5">
+            Добро пожаловать на сайт AS Partners Architect, вашего надежного
+            партнера в мире современной архитектуры и дизайна. Мы
+            специализируемся на создании инновационных.
+          </p>
+          <img src={about} className={styles.image} alt="image" />
+        </div>
       </section>
     </div>
   );

@@ -6,7 +6,6 @@
   width: 50%;
   display: flex;
   flex-direction: column;
-  flex-direction: column;
   justify-content: center;
 }
 
@@ -25,7 +24,7 @@
   height: 105%;
   position: fixed;
   top: 0;
-  @apply bg-custom-black;
+  background-color: #676767;
 }
 
 .line__right {
@@ -34,7 +33,7 @@
   position: fixed;
   right: 19.2%;
   top: 0;
-  @apply bg-custom-black;
+  background-color: #676767;
 }
 
 .line__center {
@@ -43,5 +42,5 @@
   position: fixed;
   top: 0;
   left: 50%;
-  @apply bg-custom-black;
+  background-color: #676767;
 }
