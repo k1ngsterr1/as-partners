@@ -5,6 +5,7 @@ import { Slide } from "react-awesome-reveal";
 import about from "@assets/main/about_block_image.webp";
 
 import styles from "./styles.module.scss";
+import { UnderText } from "@shared/ui/UnderText";
 
 export const AboutScreen = () => {
   return (
@@ -53,6 +54,11 @@ export const AboutScreen = () => {
           marginTop="mt-8 mb-8"
         />
         <img src={about} className={styles.about_image} alt="about_image" />
+      </section>
+      <section className="container-pc">
+        <h2 className={styles.heading}>AS & Partners Architect</h2>
+        <Separator marginTop="mt-5" />
+        <UnderText label="Информация о нас" marginTop="mt-5" />
       </section>
     </div>
   );
