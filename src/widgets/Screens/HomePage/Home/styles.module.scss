@@ -3,15 +3,25 @@
 }
 
 .first_section {
+  width: 50%;
   height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+.second_section {
+  width: 50%;
+  height: 90%;
+
+  &__image {
+    width: 100%;
+  }
+}
+
 .line__left {
   width: 1px;
-  height: 100%;
+  height: 105%;
   position: absolute;
   top: 0;
   @apply bg-custom-black;
@@ -19,9 +29,18 @@
 
 .line__right {
   width: 1px;
-  height: 100%;
+  height: 105%;
   position: absolute;
   right: 19.2%;
   top: 0;
+  @apply bg-custom-black;
+}
+
+.line__center {
+  width: 1px;
+  height: 105%;
+  position: absolute;
+  top: 0;
+  left: 50%;
   @apply bg-custom-black;
 }
