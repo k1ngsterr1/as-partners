@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 import { BurgerButton } from "@features/BurgerButton/ui";
+import { useDispatch, useSelector } from "react-redux";
 import { Breadcrumbs } from "@shared/ui/Breadcrumbs";
 import { Button } from "@shared/ui/Button";
 import { Separator } from "@shared/ui/Separator";
@@ -6,15 +8,16 @@ import { UnderText } from "@shared/ui/UnderText";
 import { ServiceContent } from "@shared/lib/data/serviceContent";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { toggleOffLoader } from "@redux/loaderSlice";
+import { RootState } from "@redux/store";
+import { Menu } from "@features/Menu";
+import { Footer } from "@features/Footer";
+import { FormScreen } from "@widgets/Screens/Form";
 
 import styles from "./styles.module.scss";
 
 import "swiper/css";
 import "swiper/css/autoplay";
-
-import { Menu } from "@features/Menu";
-import { Footer } from "@features/Footer";
-import { FormScreen } from "@widgets/Screens/Form";
 
 export const ServiceInnerPage: React.FC<ServiceContent> = ({
   heading,
@@ -30,6 +33,13 @@ export const ServiceInnerPage: React.FC<ServiceContent> = ({
     { label: `${heading}`, path: `/${heading}` },
   ];
 
+  const dispatch = useDispatch();
+  const isLoading = useSelector((state: RootState) => state.loader.isLoading);
+
+  useEffect(() => {
+    dispatch(toggleOffLoader());
+  }, [isLoading]);
+
   return (
     <>
       <Menu />
@@ -44,11 +54,12 @@ export const ServiceInnerPage: React.FC<ServiceContent> = ({
       </main>
       <img src={mainImage} className={styles.image} alt={heading} />
       <section className="container-no-height">
-        <h2 className={styles.heading}>Детали Услуги</h2>
+        <h2 className={`${styles.heading} mb-4`}>Детали Услуги</h2>
         <p className="paragraph_black">
-          <strong>
-            Описание: <br /> <br /> {paragraphSecond}
+          <strong className="mt-7">
+            Описание: <br /> <br />
           </strong>
+          {paragraphSecond}
         </p>
       </section>
       <section className="container-no-height !mt-20">
