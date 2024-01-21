@@ -55,7 +55,7 @@ export const HomeScreen = () => {
         <section className={`${styles.second_section}`}>
           <img
             src={image}
-            className={`${styles.second_section_image}`}
+            className={`${styles.second_section__image}`}
             alt=""
           />
         </section>

@@ -1,0 +1,44 @@
+.button {
+  width: 368px;
+  height: 98px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @apply text-white;
+  @apply bg-custom-black;
+
+  &__text {
+    font-family: "Noto Sans", sans-serif;
+    font-size: clamp(10px, 1.0416vw, 40px);
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &__burger {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @apply mt-3;
+
+    &__line_top {
+      width: 15% !important;
+      height: 1px;
+      @apply bg-white;
+    }
+    &__line_middle {
+      width: 20% !important;
+      height: 1px;
+      @apply bg-white;
+      @apply mt-2;
+    }
+    &__line_bottom {
+      width: 15% !important;
+      height: 1px;
+      @apply bg-white;
+      @apply mt-2;
+    }
+  }
+}
