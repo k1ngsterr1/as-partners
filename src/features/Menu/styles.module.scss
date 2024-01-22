@@ -50,4 +50,25 @@
       }
     }
   }
+
+  &__content_pc {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    &__content {
+      display: none;
+    }
+
+    &__content_pc {
+      display: flex;
+
+      &__header {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
 }

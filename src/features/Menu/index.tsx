@@ -94,6 +94,15 @@ export const Menu = () => {
           </Link>
         </nav>
       </div>
+      <div className={styles.menu__content_pc}>
+        <div className={styles.menu__content_pc__header}>
+          <img
+            src={logo}
+            className={styles.menu__content_pc__header__logo}
+            alt="logo"
+          />
+        </div>
+      </div>
     </aside>
   );
 };
