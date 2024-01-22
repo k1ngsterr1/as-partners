@@ -1,0 +1,16 @@
+@media screen and (max-width: 448px) {
+  .line_separator {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .line_separator {
+    width: 100%;
+    height: clamp(50px, 5.208vw, 200px);
+    display: flex !important;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    @apply border-custom-black;
+  }
+}

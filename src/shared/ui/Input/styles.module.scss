@@ -29,3 +29,13 @@
     @apply pb-2;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .input {
+    width: clamp(250px, 26.04vw, 1000px);
+    height: clamp(16.5px, 1.71864vw, 66px);
+    font-family: Montserrat;
+    font-size: clamp(10px, 1.0416vw, 40px);
+    border-bottom: 1px solid;
+  }
+}

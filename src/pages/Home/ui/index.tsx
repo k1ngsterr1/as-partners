@@ -12,6 +12,7 @@ import { Loader } from "@features/Loader/ui";
 import { toggleOffLoader } from "@redux/loaderSlice";
 import { Header } from "@entities/Header";
 import { useEffect } from "react";
+import { LineSeparator } from "@shared/ui/LineSeparator";
 
 export const HomePage = () => {
   const dispatch = useDispatch();
@@ -31,9 +32,11 @@ export const HomePage = () => {
         <HomeScreen />
         <Menu />
         <AboutScreen />
+        <LineSeparator />
         <ServicesScreen />
         <ProjectsScreen />
         <ClientsScreen />
+        <LineSeparator />
         <FormScreen />
       </div>
       <Footer />

@@ -34,6 +34,16 @@ export const FormScreen = () => {
           <Button text="Отправить" margin="mt-10" />
         </form>
       </div>
+      <div className="container-pc">
+        <section className={styles.section_one}>
+          <form className="flex flex-col">
+            <Input placeholder="Ваше имя" type="text" />
+            <Input placeholder="Ваша электронный адрес" type="email" />
+            <Selector placeholder="Услуга" options={options} />
+          </form>
+        </section>
+        <section className={styles.section_two}></section>
+      </div>
     </div>
   );
 };
