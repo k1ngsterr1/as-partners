@@ -67,7 +67,10 @@ export const ClientsScreen = () => {
           />
         </Marquee>
       </section>
-      <section className="container-pc flex flex-col items-center" id="clients">
+      <section
+        className="container-pc-no-height flex flex-col items-center !mb-40"
+        id="clients"
+      >
         <h5 className={styles.heading}>Клиенты</h5>
         <Separator marginTop="mt-5" />
         <p className="paragraph black !text-center !w-[50%] mt-8">

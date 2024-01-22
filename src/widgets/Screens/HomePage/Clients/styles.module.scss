@@ -19,10 +19,6 @@
 @media screen and (min-width: 1024px) {
   .heading {
     font-size: clamp(35px, 3.6456vw, 140px);
-    font-family: Montserrat;
-    text-align: center;
-    @apply text-custom-black;
-    @apply mt-8;
   }
 
   .logo {

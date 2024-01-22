@@ -82,10 +82,14 @@
 
     &__container {
       width: 61.614583333333336%;
+      display: flex;
+      align-items: center;
       @apply mt-20;
       @apply pl-8;
       @apply pr-8;
+
       &__section_one {
+        width: 50%;
         display: flex;
         flex-direction: column;
 
@@ -94,6 +98,13 @@
           flex-shrink: 0;
           cursor: pointer;
         }
+      }
+
+      &__section_two {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
       }
     }
   }

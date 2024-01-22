@@ -1,14 +1,17 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Separator } from "@shared/ui/Separator";
-
-import logo from "@assets/main/logo_white.svg";
-
-import styles from "./styles.module.scss";
 import {
   faInstagram,
   faVk,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { SmallAutoSlider } from "@features/SmallAutoSlider/ui";
+import { smallGalleryContent } from "@shared/lib/data/smallGalleryContent";
+
+import logo from "@assets/main/logo_white.svg";
+
+import styles from "./styles.module.scss";
+import { ButtonWhite } from "@shared/ui/Button";
 
 export const Footer = () => {
   return (
@@ -52,7 +55,7 @@ export const Footer = () => {
             <strong className="text-white text-2xl font-[Montserrat]">
               Алматы
             </strong>
-            <address className="!not-italic w-[30%] text-white text-2xl  mt-5 mb-5 font-light font-[Montserrat]">
+            <address className="!not-italic w-[60%] text-white text-2xl  mt-5 mb-5 font-light font-[Montserrat]">
               ул. Маметова 54, 4 этаж
               <br />
               <br />
@@ -60,7 +63,7 @@ export const Footer = () => {
             </address>
             <a
               href="tel:+77017812956"
-              className="!w-[15%] underline font-[Montserrat] text-white text-2xl font-light transition-all hover:text-custom-blue"
+              className="!w-[22%] underline font-[Montserrat] text-white text-2xl font-light transition-all hover:text-custom-blue"
             >
               +7 701 781 29 56
             </a>
@@ -68,8 +71,13 @@ export const Footer = () => {
               © 2023 | ООО "AS & Partners Architects"
             </span>
           </div>
-
-          <div className={styles.footer_pc__container__section_two}></div>
+          <div className={styles.footer_pc__container__section_two}>
+            <SmallAutoSlider
+              photos={smallGalleryContent.first.photos}
+              name={smallGalleryContent.first.name}
+            />
+            <ButtonWhite text="Вверх" margin="mt-8" />
+          </div>
         </div>
       </footer>
     </>

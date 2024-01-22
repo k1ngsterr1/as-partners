@@ -62,11 +62,12 @@ export const ServiceInnerPage: React.FC<ServiceContent> = ({
           {paragraphSecond}
         </p>
       </section>
-      <section className="container-no-height !mt-20">
+      <Separator marginTop="mt-10 m-auto" />
+      <section className="container-no-height ">
         <h3 className={styles.heading}>{headingSecond}</h3>
         <p className="paragraph_black text-left">{paragraph}</p>
         <Swiper
-          className="swiper"
+          className={styles.swiper}
           spaceBetween={50}
           slidesPerView={1}
           modules={[Autoplay]}
