@@ -68,3 +68,37 @@
     @apply text-white;
   }
 }
+
+.footer_pc {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer_pc {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    @apply bg-custom-black;
+
+    &__container {
+      width: 61.614583333333336%;
+      @apply mt-20;
+      @apply pl-8;
+      @apply pr-8;
+      &__section_one {
+        display: flex;
+        flex-direction: column;
+
+        &__logo {
+          width: clamp(210px, 21.8736vw, 840px);
+          flex-shrink: 0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .footer {
+    display: none;
+  }
+}

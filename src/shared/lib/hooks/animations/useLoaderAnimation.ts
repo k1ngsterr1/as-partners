@@ -51,7 +51,7 @@ export const useLoaderAnimation = (): {
           });
       } else {
         tl.to(loaderRef.current, {
-          y: "1000",
+          y: "30000",
         });
       }
     }
