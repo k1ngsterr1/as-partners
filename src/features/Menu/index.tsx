@@ -1,13 +1,14 @@
 import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import { BurgerButton } from "@features/BurgerButton/ui";
+import { Link as ScrollLink } from "react-scroll";
 import { useDispatch, useSelector } from "react-redux";
 import { useMenuAnimation } from "@shared/lib/hooks/animations/useMenuAnimation";
 import { closeMenu } from "@redux/menuSlice";
 import { RootState } from "@redux/store";
 import {
   faInstagram,
+  faVk,
   faWhatsapp,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
@@ -113,6 +114,107 @@ export const Menu = () => {
               ref={crossRef}
             />
           </button>
+        </div>
+        <div className={styles.menu__content_pc__container}>
+          <div className={styles.menu__content_pc__container__section_one}>
+            <Link
+              className={`${styles.menu__content_pc__container__section_one__link}`}
+              to="/home"
+            >
+              Главная
+            </Link>
+            <Link
+              className={`${styles.menu__content_pc__container__section_one__link} mt-5`}
+              to="/about"
+            >
+              О Нас
+            </Link>
+            <Link
+              className={`${styles.menu__content_pc__container__section_one__link} mt-5`}
+              to="/services"
+            >
+              Наши Услуги
+            </Link>
+            <Link
+              className={`${styles.menu__content_pc__container__section_one__link} mt-5`}
+              to="/portfolio"
+            >
+              Наше Портфолио
+            </Link>
+            <Link
+              className={`${styles.menu__content_pc__container__section_one__link} mt-5`}
+              to="/contacts"
+            >
+              Контакты
+            </Link>
+            <div className="flex items-center justify-between w-[24%] mt-8 ml-8">
+              <FontAwesomeIcon
+                icon={faYoutube}
+                className="text-white cursor-pointer text-5xl transition-all hover:text-custom-blue"
+              />
+              <FontAwesomeIcon
+                icon={faInstagram}
+                className="text-white cursor-pointer text-5xl transition-all hover:text-custom-blue"
+              />
+              <FontAwesomeIcon
+                icon={faVk}
+                className="text-white cursor-pointer text-5xl transition-all hover:text-custom-blue"
+              />
+            </div>
+            <a
+              href="tel:+77017812956"
+              className="text-white mt-8 ml-8 text-2xl underline font-[Montserrat] transition-all hover:text-custom-blue"
+            >
+              +7 701 781 29 56
+            </a>
+            <address className="!not-italic text-2xl font-[Montserrat] ml-8 w-[60%] text-white mt-8">
+              ул. Маметова 54, 4 этаж
+              <br />
+              <br />
+              Время работы: с 08:00 до 17:00 Выходные: суббота, воскресенье
+            </address>
+          </div>
+          <div className={styles.menu__content_pc__container__section_two}>
+            <span
+              className={`${styles.menu__content_pc__container__section_two__text} text-2xl text-gray-500  opacity-60 font-[Noto Sans]`}
+            >
+              Услуги
+            </span>
+            <div className="flex flex-col">
+              <div className="flex items-center mt-4">
+                <span className="text-3xl text-white font-normal noto cursor-pointer transition-all hover:text-custom-blue">
+                  Пример Услуги
+                </span>
+                <span className="ml-8 text-3xl text-white  font-normal noto cursor-pointer transition-all hover:text-custom-blue">
+                  Пример Услуги
+                </span>
+              </div>
+              <div className="flex items-center mt-4">
+                <span className="text-3xl text-white font-normal noto cursor-pointer transition-all hover:text-custom-blue">
+                  Пример Услуги
+                </span>
+                <span className="ml-8 text-3xl text-white  font-normal noto cursor-pointer transition-all hover:text-custom-blue">
+                  Пример Услуги
+                </span>
+              </div>
+              <div className="flex items-center mt-4">
+                <span className="text-3xl text-white font-normal noto cursor-pointer transition-all hover:text-custom-blue">
+                  Пример Услуги
+                </span>
+                <span className="ml-8 text-3xl text-white  font-normal noto cursor-pointer transition-all hover:text-custom-blue">
+                  Пример Услуги
+                </span>
+              </div>
+              <div className="flex items-center mt-4">
+                <span className="text-3xl text-white font-normal noto">
+                  Пример Услуги
+                </span>
+                <span className="ml-8 text-3xl text-white  font-normal noto">
+                  Пример Услуги
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </aside>

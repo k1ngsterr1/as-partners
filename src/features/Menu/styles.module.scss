@@ -63,7 +63,9 @@
     }
 
     &__content_pc {
+      height: 100%;
       display: flex;
+      flex-direction: column;
 
       &__line_left {
         width: 1px;
@@ -119,6 +121,48 @@
           &__image {
             width: clamp(32px, 3.33312vw, 128px);
             height: clamp(32px, 3.33312vw, 128px);
+          }
+        }
+      }
+
+      &__container {
+        width: 61.614583333333336%;
+        height: 100% !important;
+        margin: auto;
+        display: flex;
+
+        &__section_one {
+          width: 50%;
+          height: 100% !important;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          justify-content: center;
+
+          &__link {
+            font-family: Noto Sans;
+            font-size: clamp(14px, 1.45824vw, 56px);
+            font-style: normal;
+            font-weight: 600;
+            line-height: 141.412%;
+            transition: 0.3s all;
+            @apply text-white;
+            @apply ml-8;
+            &:hover {
+              @apply text-custom-blue;
+            }
+          }
+        }
+
+        &__section_two {
+          width: 50%;
+          height: 100% !important;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          &__text {
+            font-family: Noto Sans;
           }
         }
       }
