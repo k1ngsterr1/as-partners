@@ -1,3 +1,4 @@
+import { useEffect, useState, useRef } from "react";
 import { Separator } from "@shared/ui/Separator";
 import Marquee from "react-fast-marquee";
 
@@ -66,6 +67,7 @@ export const ClientsScreen = () => {
           />
         </Marquee>
       </section>
+      <section className="container-pc z-[4000]"></section>
     </div>
   );
 };

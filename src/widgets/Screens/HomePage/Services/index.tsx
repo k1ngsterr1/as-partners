@@ -37,7 +37,7 @@ export const ServicesScreen = () => {
             alt="service_image"
           />
           <img
-            className={`${styles.image} mt-8`}
+            className={`${styles.image} mt-8 mb-8`}
             src={image}
             alt="service_image"
           />

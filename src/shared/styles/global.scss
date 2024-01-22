@@ -111,6 +111,10 @@ h6 {
     margin: auto;
   }
 
+  .container-no-height {
+    display: none;
+  }
+
   .paragraph {
     font-size: clamp(9px, 0.93744vw, 36px);
     text-align: left;
