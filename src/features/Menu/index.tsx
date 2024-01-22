@@ -95,12 +95,24 @@ export const Menu = () => {
         </nav>
       </div>
       <div className={styles.menu__content_pc}>
+        <figure className={styles.menu__content_pc__line_left} />
+        <figure className={styles.menu__content_pc__line_right} />
+        <figure className={styles.menu__content_pc__line_center} />
         <div className={styles.menu__content_pc__header}>
           <img
             src={logo}
-            className={styles.menu__content_pc__header__logo}
+            className={`${styles.menu__content_pc__header__logo}`}
             alt="logo"
           />
+          <button className={styles.menu__content_pc__header__cross_btn}>
+            <img
+              src={plus}
+              className={styles.menu__content_pc__header__cross_btn__image}
+              alt="plus"
+              onClick={() => handleClose()}
+              ref={crossRef}
+            />
+          </button>
         </div>
       </div>
     </aside>
