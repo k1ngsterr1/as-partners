@@ -55,8 +55,17 @@
 
 @media screen and (min-width: 1024px) {
   .selector {
-    width: 500px;
-    // height: 5;
+    width: clamp(250px, 26.04vw, 1000px);
+    font-size: clamp(10px, 1.0416vw, 40px);
     border-bottom: 1px solid;
+  }
+
+  .list {
+    width: 100%;
+
+    &__item {
+      font-size: clamp(8.5px, 0.88536vw, 34px);
+      cursor: pointer;
+    }
   }
 }

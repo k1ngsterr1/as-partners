@@ -14,4 +14,26 @@
     @apply text-custom-black;
     @apply mt-8;
   }
+
+  .section_one {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section_two {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    @apply mb-20;
+  }
+
+  .heading {
+    font-size: clamp(35px, 3.6456vw, 140px);
+    @apply mr-8;
+  }
 }

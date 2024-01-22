@@ -93,6 +93,10 @@ h6 {
   display: none;
 }
 
+.container-pc-no-height {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   h1 {
     font-size: clamp(35px, 3.6456vw, 140px) !important;
@@ -106,6 +110,13 @@ h6 {
   .container-pc {
     width: 61.614583333333336%;
     min-height: 100vh !important;
+    height: auto;
+    display: flex;
+    margin: auto;
+  }
+
+  .container-pc-no-height {
+    width: 61.614583333333336%;
     height: auto;
     display: flex;
     margin: auto;

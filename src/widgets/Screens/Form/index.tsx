@@ -34,15 +34,28 @@ export const FormScreen = () => {
           <Button text="Отправить" margin="mt-10" />
         </form>
       </div>
-      <div className="container-pc">
+      <div className="container-pc-no-height !h-[70vh]">
         <section className={styles.section_one}>
           <form className="flex flex-col">
             <Input placeholder="Ваше имя" type="text" />
-            <Input placeholder="Ваша электронный адрес" type="email" />
-            <Selector placeholder="Услуга" options={options} />
+            <Input
+              placeholder="Ваша электронный адрес"
+              margin="mt-8"
+              type="email"
+            />
+            <Selector placeholder="Услуга" margin="mt-8" options={options} />
+            <Button text="Отправить" margin="mt-12" />
           </form>
         </section>
-        <section className={styles.section_two}></section>
+        <section className={styles.section_two}>
+          <h5 className={styles.heading}>Контакты</h5>
+          <Separator marginTop="mt-5 mr-8" />
+          <p className="paragraph black !text-right !w-[60%] mr-8 mt-8">
+            Добро пожаловать на сайт AS Partners Architect, вашего надежного
+            партнера в мире современной архитектуры и дизайна. Мы
+            специализируемся на создании инновационных.
+          </p>
+        </section>
       </div>
     </div>
   );
