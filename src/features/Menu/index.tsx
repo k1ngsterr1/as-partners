@@ -9,9 +9,10 @@ import { RootState } from "@redux/store";
 import {
   faInstagram,
   faVk,
-  faWhatsapp,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { SmallAutoSlider } from "@features/SmallAutoSlider/ui";
+import { smallGalleryContent } from "@shared/lib/data/smallGalleryContent";
 
 import plus from "@assets/main/plus.svg";
 import logo from "@assets/main/logo_white.svg";
@@ -176,11 +177,11 @@ export const Menu = () => {
           </div>
           <div className={styles.menu__content_pc__container__section_two}>
             <span
-              className={`${styles.menu__content_pc__container__section_two__text} text-2xl text-gray-500  opacity-60 font-[Noto Sans]`}
+              className={`${styles.menu__content_pc__container__section_two__text} text-2xl text-gray-500 ml-8 opacity-60 font-[Noto Sans]`}
             >
               Услуги
             </span>
-            <div className="flex flex-col">
+            <div className="flex flex-col ml-8">
               <div className="flex items-center mt-4">
                 <span className="text-3xl text-white font-normal noto cursor-pointer transition-all hover:text-custom-blue">
                   Пример Услуги
@@ -213,6 +214,17 @@ export const Menu = () => {
                   Пример Услуги
                 </span>
               </div>
+            </div>
+            <span
+              className={`${styles.menu__content_pc__container__section_two__text} text-2xl text-gray-500 ml-8 mt-8 mb-8 opacity-60 font-[Noto Sans]`}
+            >
+              Наши Работы
+            </span>
+            <div className="w-[65%] flex justify-start ml-8">
+              <SmallAutoSlider
+                photos={smallGalleryContent.first.photos}
+                name={smallGalleryContent.first.name}
+              />
             </div>
           </div>
         </div>
