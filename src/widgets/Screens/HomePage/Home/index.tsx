@@ -1,3 +1,4 @@
+import { useEffect, useState, useRef } from "react";
 import { Slide } from "react-awesome-reveal";
 import { Arrow } from "@shared/ui/Arrow";
 import { BurgerButton } from "@features/BurgerButton/ui";
@@ -9,6 +10,27 @@ import logo from "@assets/main/logo_white.svg";
 import styles from "./styles.module.scss";
 
 export const HomeScreen = () => {
+  const [isClientVisible, setIsClientVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        setIsClientVisible(entries[0].isIntersecting);
+      },
+      { threshold: 0.2 }
+    );
+    const clientSection = document.getElementById("clients");
+    if (clientSection) {
+      observer.observe(clientSection);
+    }
+
+    return () => {
+      if (clientSection) {
+        observer.unobserve(clientSection);
+      }
+    };
+  });
+
   return (
     <>
       <main className="container">
@@ -40,7 +62,7 @@ export const HomeScreen = () => {
       <main className="container-pc">
         <figure className={styles.line__left} />
         <figure className={styles.line__right} />
-        <figure className={styles.line__center} />
+        {isClientVisible ? null : <figure className={styles.line__center} />}
         <section className={`${styles.first_section} mt-0`}>
           <h1 className="black w-[100%] ml-8">AS & Partners Architect</h1>
           <Separator marginTop="mt-5 ml-8" />

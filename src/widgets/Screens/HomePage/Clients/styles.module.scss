@@ -15,3 +15,23 @@
   width: clamp(100px, 46.727999999999994vw, 400px);
   height: clamp(100px, 46.727999999999994vw, 400px);
 }
+
+@media screen and (min-width: 1024px) {
+  .heading {
+    font-size: clamp(35px, 3.6456vw, 140px);
+    font-family: Montserrat;
+    text-align: center;
+    @apply text-custom-black;
+    @apply mt-8;
+  }
+
+  .logo {
+    width: clamp(50px, 5.208vw, 200px);
+    height: clamp(50px, 5.208vw, 200px);
+  }
+
+  .freedom {
+    width: clamp(100px, 10.416vw, 400px);
+    height: clamp(100px, 10.416vw, 400px);
+  }
+}

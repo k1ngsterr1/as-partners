@@ -67,7 +67,56 @@ export const ClientsScreen = () => {
           />
         </Marquee>
       </section>
-      <section className="container-pc z-[4000]"></section>
+      <section className="container-pc flex flex-col items-center" id="clients">
+        <h5 className={styles.heading}>Клиенты</h5>
+        <Separator marginTop="mt-5" />
+        <p className="paragraph black !text-center !w-[50%] mt-8">
+          Добро пожаловать на сайт AS Partners Architect, вашего надежного
+          партнера в мире современной архитектуры и дизайна. Мы специализируемся
+          на создании инновационных, функциональных и эстетически
+          привлекательных архитектурных решений, которые отражают последние
+          тенденции в области урбанистики и дизайна интерьеров.
+        </p>
+        <Marquee speed={100} className="mt-8">
+          <img className={`${styles.logo} ml-8 mr-8`} src={logo01} alt="logo" />
+          <img src={logo02} className={`${styles.logo} ml-8 mr-8`} alt="logo" />
+          <img
+            src={logo03}
+            className={`${styles.logo} ml-8 mr-8 `}
+            alt="logo"
+          />
+          <img
+            src={logo04}
+            className={`${styles.freedom} ml-8 mr-8 `}
+            alt="logo"
+          />
+          <img
+            src={logo05}
+            className={`${styles.logo} ml-8 mr-8 `}
+            alt="logo"
+          />
+          <img
+            src={logo06}
+            className={`${styles.freedom} ml-8 mr-8 `}
+            alt="logo"
+          />
+          <img
+            src={logo07}
+            className={`${styles.freedom} ml-8 mr-8 `}
+            alt="logo"
+          />
+          <img
+            src={logo08}
+            className={`${styles.freedom} ml-8 mr-8 `}
+            alt="logo"
+          />
+          <img
+            src={logo09}
+            className={`${styles.freedom} ml-8 mr-8 `}
+            alt="logo"
+          />
+        </Marquee>
+      </section>
     </div>
   );
 };
