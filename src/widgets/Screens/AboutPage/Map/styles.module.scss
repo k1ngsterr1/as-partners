@@ -6,3 +6,30 @@
   @apply text-custom-black;
   @apply mt-8;
 }
+
+.background-circle {
+  background-image: url("../../../../assets/main/elipse.svg");
+}
+
+@media screen and (min-width: 1024px) {
+  .background-circle {
+    background-image: url("../../../../assets/main/elipse.svg");
+  }
+
+  .section_one {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    @apply ml-8;
+  }
+  .section_two {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    @apply ml-8;
+    @apply mt-28;
+  }
+}

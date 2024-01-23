@@ -20,3 +20,29 @@
     @apply text-white;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .counter_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @apply text-white;
+
+    &__counter {
+      font-size: clamp(27.5px, 2.8644000000000003vw, 110px);
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 141.412%;
+      @apply text-white;
+    }
+
+    &__text {
+      width: 40%;
+      font-size: clamp(16px, 1.66656vw, 64px);
+      font-family: Noto Sans;
+      font-weight: 200;
+      @apply text-white;
+    }
+  }
+}
