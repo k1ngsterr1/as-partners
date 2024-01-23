@@ -33,6 +33,7 @@ export const AboutPage = () => {
       <MapScreen />
       <LineSeparator />
       <ClientsScreen />
+      <LineSeparator />
       <FormScreen />
       <Footer />
       <Menu />

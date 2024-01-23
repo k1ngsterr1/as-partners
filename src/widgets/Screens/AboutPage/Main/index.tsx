@@ -36,10 +36,8 @@ export const AboutMainScreen = () => {
     }
 
     return () => {
-      if (clientSection) {
+      if (clientSection || mapSection) {
         observer.unobserve(clientSection);
-      }
-      if (mapSection) {
         observer.unobserve(mapSection);
       }
     };
