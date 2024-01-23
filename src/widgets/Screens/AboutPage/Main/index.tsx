@@ -17,31 +17,37 @@ export const AboutMainScreen = () => {
   ];
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        setIsClientVisible(entries[0].isIntersecting);
-        setIsMapVisible(entries[0].isIntersecting);
-      },
-      { threshold: 0.2 }
-    );
+    // Define observer callback
+    const observerCallback = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.target.id === "clients") {
+          setIsClientVisible(entry.isIntersecting);
+        }
+        if (entry.target.id === "map") {
+          setIsMapVisible(entry.isIntersecting);
+        }
+      });
+    };
+
+    // Create the observer
+    const observer = new IntersectionObserver(observerCallback, {
+      threshold: 0.2,
+    });
+
+    // Get the elements
     const mapSection = document.getElementById("map");
     const clientSection = document.getElementById("clients");
 
-    if (clientSection) {
-      observer.observe(clientSection);
-    }
+    // Observe the elements
+    if (clientSection) observer.observe(clientSection);
+    if (mapSection) observer.observe(mapSection);
 
-    if (mapSection) {
-      observer.observe(mapSection);
-    }
-
+    // Clean up function
     return () => {
-      if (clientSection || mapSection) {
-        observer.unobserve(clientSection);
-        observer.unobserve(mapSection);
-      }
+      if (clientSection) observer.unobserve(clientSection);
+      if (mapSection) observer.unobserve(mapSection);
     };
-  });
+  }, []);
 
   return (
     <>
@@ -62,7 +68,7 @@ export const AboutMainScreen = () => {
       <main className="container-pc">
         <figure className={styles.line__left} />
         <figure className={styles.line__right} />
-        {isClientVisible || isMapVisible ? null : (
+        {!isClientVisible && !isMapVisible && (
           <figure className={styles.line__center} />
         )}
         <section className={styles.section_one}>
