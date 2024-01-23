@@ -6,3 +6,14 @@
   font-family: 200;
   @apply text-custom-black;
 }
+
+@media screen and (min-width: 1024px) {
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    font-size: clamp(8px, 0.83328vw, 32px);
+    font-family: Noto Sans;
+    font-family: 200;
+    @apply text-custom-black;
+  }
+}
