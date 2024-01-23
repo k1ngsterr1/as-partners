@@ -151,24 +151,24 @@ export const Menu = () => {
             <div className="flex items-center justify-between w-[24%] mt-8 ml-8">
               <FontAwesomeIcon
                 icon={faYoutube}
-                className="text-white cursor-pointer text-5xl transition-all hover:text-custom-blue"
+                className="text-white cursor-pointer text-3xl transition-all hover:text-custom-blue"
               />
               <FontAwesomeIcon
                 icon={faInstagram}
-                className="text-white cursor-pointer text-5xl transition-all hover:text-custom-blue"
+                className="text-white cursor-pointer text-3xl transition-all hover:text-custom-blue"
               />
               <FontAwesomeIcon
                 icon={faVk}
-                className="text-white cursor-pointer text-5xl transition-all hover:text-custom-blue"
+                className="text-white cursor-pointer text-3xl transition-all hover:text-custom-blue"
               />
             </div>
             <a
               href="tel:+77017812956"
-              className="text-white mt-8 ml-8 text-2xl underline font-[Montserrat] transition-all hover:text-custom-blue"
+              className="text-white mt-8 ml-8 text-xl underline font-[Montserrat] transition-all hover:text-custom-blue"
             >
               +7 701 781 29 56
             </a>
-            <address className="!not-italic text-2xl font-[Montserrat] ml-8 w-[60%] text-white mt-8">
+            <address className="!not-italic text-xl font-[Montserrat] ml-8 w-[70%] text-white mt-8">
               ул. Маметова 54, 4 этаж
               <br />
               <br />
@@ -177,46 +177,46 @@ export const Menu = () => {
           </div>
           <div className={styles.menu__content_pc__container__section_two}>
             <span
-              className={`${styles.menu__content_pc__container__section_two__text} text-2xl text-gray-500 ml-8 opacity-60 font-[Noto Sans]`}
+              className={`${styles.menu__content_pc__container__section_two__text} text-lg text-gray-500 ml-8 opacity-60 font-[Noto Sans]`}
             >
               Услуги
             </span>
             <div className="flex flex-col ml-8">
               <div className="flex items-center mt-4">
-                <span className="text-3xl text-white font-normal noto cursor-pointer transition-all hover:text-custom-blue">
+                <span className="text-xl text-white font-normal noto cursor-pointer transition-all hover:text-custom-blue">
                   Пример Услуги
                 </span>
-                <span className="ml-8 text-3xl text-white  font-normal noto cursor-pointer transition-all hover:text-custom-blue">
-                  Пример Услуги
-                </span>
-              </div>
-              <div className="flex items-center mt-4">
-                <span className="text-3xl text-white font-normal noto cursor-pointer transition-all hover:text-custom-blue">
-                  Пример Услуги
-                </span>
-                <span className="ml-8 text-3xl text-white  font-normal noto cursor-pointer transition-all hover:text-custom-blue">
+                <span className="ml-8 text-xl text-white  font-normal noto cursor-pointer transition-all hover:text-custom-blue">
                   Пример Услуги
                 </span>
               </div>
               <div className="flex items-center mt-4">
-                <span className="text-3xl text-white font-normal noto cursor-pointer transition-all hover:text-custom-blue">
+                <span className="text-xl text-white font-normal noto cursor-pointer transition-all hover:text-custom-blue">
                   Пример Услуги
                 </span>
-                <span className="ml-8 text-3xl text-white  font-normal noto cursor-pointer transition-all hover:text-custom-blue">
+                <span className="ml-8 text-xl text-white  font-normal noto cursor-pointer transition-all hover:text-custom-blue">
                   Пример Услуги
                 </span>
               </div>
               <div className="flex items-center mt-4">
-                <span className="text-3xl text-white font-normal noto">
+                <span className="text-xl text-white font-normal noto cursor-pointer transition-all hover:text-custom-blue">
                   Пример Услуги
                 </span>
-                <span className="ml-8 text-3xl text-white  font-normal noto">
+                <span className="ml-8 text-xl text-white  font-normal noto cursor-pointer transition-all hover:text-custom-blue">
+                  Пример Услуги
+                </span>
+              </div>
+              <div className="flex items-center mt-4">
+                <span className="text-xl text-white font-normal noto">
+                  Пример Услуги
+                </span>
+                <span className="ml-8 text-xl text-white  font-normal noto">
                   Пример Услуги
                 </span>
               </div>
             </div>
             <span
-              className={`${styles.menu__content_pc__container__section_two__text} text-2xl text-gray-500 ml-8 mt-8 mb-8 opacity-60 font-[Noto Sans]`}
+              className={`${styles.menu__content_pc__container__section_two__text} text-lg text-gray-500 ml-8 mt-8 mb-8 opacity-60 font-[Noto Sans]`}
             >
               Наши Работы
             </span>
