@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { BurgerButton } from "@features/BurgerButton/ui";
 import { Breadcrumbs } from "@shared/ui/Breadcrumbs";
 import { Button } from "@shared/ui/Button";
@@ -7,10 +8,42 @@ import { UnderText } from "@shared/ui/UnderText";
 import styles from "./styles.module.scss";
 
 export const AboutMainScreen = () => {
+  const [isClientVisible, setIsClientVisible] = useState(false);
+  const [isMapVisible, setIsMapVisible] = useState(false);
+
   const breadcrumbData = [
     { label: "Главная", path: "/" },
     { label: "О Нас", path: "/about" },
   ];
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        setIsClientVisible(entries[0].isIntersecting);
+        setIsMapVisible(entries[0].isIntersecting);
+      },
+      { threshold: 0.2 }
+    );
+    const mapSection = document.getElementById("map");
+    const clientSection = document.getElementById("clients");
+
+    if (clientSection) {
+      observer.observe(clientSection);
+    }
+
+    if (mapSection) {
+      observer.observe(mapSection);
+    }
+
+    return () => {
+      if (clientSection) {
+        observer.unobserve(clientSection);
+      }
+      if (mapSection) {
+        observer.unobserve(mapSection);
+      }
+    };
+  });
 
   return (
     <>
@@ -31,7 +64,9 @@ export const AboutMainScreen = () => {
       <main className="container-pc">
         <figure className={styles.line__left} />
         <figure className={styles.line__right} />
-        <figure className={styles.line__center} />
+        {isClientVisible || isMapVisible ? null : (
+          <figure className={styles.line__center} />
+        )}
         <section className={styles.section_one}>
           <h1 className={`${styles.section_one__heading} !text-custom-black`}>
             AS & Partners Architect

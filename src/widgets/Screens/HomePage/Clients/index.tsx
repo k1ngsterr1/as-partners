@@ -16,8 +16,8 @@ import styles from "./styles.module.scss";
 
 export const ClientsScreen = () => {
   return (
-    <div className="w-full h-auto bg-white">
-      <section className="container-no-height">
+    <div className="w-full h-auto bg-white" id="clients">
+      <section className="container-no-height" id="clients">
         <h5 className={styles.heading}>Клиенты</h5>
         <Separator marginTop="mt-4" />
         <p className="paragraph_black mt-4">

@@ -16,20 +16,7 @@
     background-image: url("../../../../assets/main/elipse.svg");
   }
 
-  .section_one {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    @apply ml-8;
-  }
-  .section_two {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    @apply ml-8;
-    @apply mt-28;
+  .heading {
+    font-size: clamp(32.5px, 3.3852vw, 130px);
   }
 }

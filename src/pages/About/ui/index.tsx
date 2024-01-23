@@ -11,6 +11,7 @@ import { ClientsScreen } from "@widgets/Screens/HomePage/Clients";
 import { Footer } from "@features/Footer";
 import { FormScreen } from "@widgets/Screens/Form";
 import { Header } from "@entities/Header";
+import { LineSeparator } from "@shared/ui/LineSeparator";
 
 export const AboutPage = () => {
   const dispatch = useDispatch();
@@ -27,8 +28,10 @@ export const AboutPage = () => {
       <Header />
       <Loader />
       <AboutMainScreen />
+      <LineSeparator />
       <StatsScreen />
       <MapScreen />
+      <LineSeparator />
       <ClientsScreen />
       <FormScreen />
       <Footer />
