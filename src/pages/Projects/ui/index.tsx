@@ -9,6 +9,7 @@ import { RootState } from "@redux/store";
 import { Loader } from "@features/Loader/ui";
 import { Portfolio } from "@widgets/Screens/AllProjectsPage/Portfolio";
 import { Header } from "@entities/Header";
+import { LineSeparator } from "@shared/ui/LineSeparator";
 
 export const AllProjectsPage = () => {
   const dispatch = useDispatch();
@@ -25,6 +26,7 @@ export const AllProjectsPage = () => {
       <Loader />
       <Header />
       <AllProjectsMain />
+      <LineSeparator />
       <Menu />
       <Portfolio />
       <FormScreen />

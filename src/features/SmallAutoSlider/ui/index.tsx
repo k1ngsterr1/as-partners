@@ -16,16 +16,18 @@ interface Photos {
 interface iSmallAutoSlider {
   photos: Photos[];
   name: string;
+  className?: string;
 }
 
 export const SmallAutoSlider: React.FC<iSmallAutoSlider> = ({
   photos,
+  className,
   name,
 }) => {
   return (
     <>
       <Swiper
-        className={styles.swiper}
+        className={`${styles.swiper} ${className}`}
         spaceBetween={50}
         slidesPerView={1}
         modules={[Autoplay]}

@@ -30,15 +30,16 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  @apply ml-8;
 }
-
-.heading {
-  font-size: clamp(25px, 2.604vw, 100px) !important;
-}
-
 .section_two {
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
+}
+
+.heading {
+  font-size: clamp(25px, 2.604vw, 100px) !important;
 }
