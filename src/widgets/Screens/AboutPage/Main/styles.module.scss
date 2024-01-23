@@ -35,7 +35,7 @@
   &__heading {
     color: #1c1c1c !important;
     font-family: Montserrat;
-    font-size: 70px;
+    font-size: clamp(35px, 3.6456vw, 140px);
     font-style: normal;
     font-weight: 300;
     line-height: normal;

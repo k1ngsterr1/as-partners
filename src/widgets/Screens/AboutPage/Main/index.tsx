@@ -39,6 +39,7 @@ export const AboutMainScreen = () => {
           <Separator marginTop="mt-5 mb-5" />
           <UnderText label="ИНФОРМАЦИЯ О НАС" marginTop="mt-0" />
           <Breadcrumbs crumbs={breadcrumbData} marginTop="mt-4" />
+          <Button text="Подробнее" margin="mt-10" />
         </section>
         <section className={styles.section_two}>
           <p className="paragraph black">
