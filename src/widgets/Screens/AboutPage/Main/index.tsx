@@ -17,7 +17,6 @@ export const AboutMainScreen = () => {
   ];
 
   useEffect(() => {
-    // Define observer callback
     const observerCallback = (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.target.id === "clients") {
@@ -29,20 +28,16 @@ export const AboutMainScreen = () => {
       });
     };
 
-    // Create the observer
     const observer = new IntersectionObserver(observerCallback, {
-      threshold: 0.2,
+      threshold: 0.1,
     });
 
-    // Get the elements
     const mapSection = document.getElementById("map");
     const clientSection = document.getElementById("clients");
 
-    // Observe the elements
     if (clientSection) observer.observe(clientSection);
     if (mapSection) observer.observe(mapSection);
 
-    // Clean up function
     return () => {
       if (clientSection) observer.unobserve(clientSection);
       if (mapSection) observer.unobserve(mapSection);

@@ -8,6 +8,7 @@ import { toggleOffLoader } from "@redux/loaderSlice";
 import { RootState } from "@redux/store";
 import { Loader } from "@features/Loader/ui";
 import { Portfolio } from "@widgets/Screens/AllProjectsPage/Portfolio";
+import { Header } from "@entities/Header";
 
 export const AllProjectsPage = () => {
   const dispatch = useDispatch();
@@ -22,6 +23,7 @@ export const AllProjectsPage = () => {
   return (
     <div className="page white_bg">
       <Loader />
+      <Header />
       <AllProjectsMain />
       <Menu />
       <Portfolio />

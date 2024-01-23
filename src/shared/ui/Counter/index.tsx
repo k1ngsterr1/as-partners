@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import CountUp from "react-countup";
 
-import styles from "./stlyes.module.scss";
+import styles from "./styles.module.scss";
 
 interface CounterProps {
   duration: number;
