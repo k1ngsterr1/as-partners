@@ -7,6 +7,10 @@ import { useSelector } from "react-redux";
 import { portfolioItems } from "@pages/Projects/ui/portfolioItems";
 import { PortfolioProjectsTab } from "@entities/PortfolioProjectTab";
 
+import name from "@assets/main/about_block_image.webp";
+import ReactCurvedText from "react-curved-text";
+import { HoverEffect } from "@entities/HoverEffect";
+
 export const Portfolio = () => {
   const options = [
     { value: "houses", label: "Дизайн Интерьера" },
@@ -40,18 +44,129 @@ export const Portfolio = () => {
           </Slide>
         ))}
       </section>
-      <section className="container-pc">
-        {" "}
-        {itemsToDisplay.map((item, index) => (
-          <Slide className="w-full flex flex-col mt-7" triggerOnce>
+      <section className="container-pc-no-height">
+        {/* Left Side */}
+        <div className="w-[50%] flex flex-col">
+          <div className="w-[100%] flex">
             <PortfolioProjectsTab
-              key={index}
-              tabName={item.name}
-              image={item.img}
+              tabName="Проверка"
+              projectType="Проверка"
+              image={name}
               onClick={() => console.log("Clicked")}
             />
-          </Slide>
-        ))}
+            <PortfolioProjectsTab
+              tabName="Проверка"
+              projectType="Проверка"
+              image={name}
+              onClick={() => console.log("Clicked")}
+            />
+          </div>
+          <div className="w-[100%] flex">
+            {" "}
+            <PortfolioProjectsTab
+              tabName="Проверка"
+              projectType="Проверка"
+              image={name}
+              onClick={() => console.log("Clicked")}
+            />
+            <PortfolioProjectsTab
+              tabName="Проверка"
+              projectType="Проверка"
+              image={name}
+              onClick={() => console.log("Clicked")}
+            />
+          </div>
+          <div className="w-[100%] flex">
+            <PortfolioProjectsTab
+              tabName="Проверка"
+              projectType="Проверка"
+              image={name}
+              onClick={() => console.log("Clicked")}
+            />
+            <PortfolioProjectsTab
+              tabName="Проверка"
+              projectType="Проверка"
+              image={name}
+              onClick={() => console.log("Clicked")}
+            />
+          </div>
+          <div className="w-[100%] flex">
+            {" "}
+            <PortfolioProjectsTab
+              tabName="Проверка"
+              projectType="Проверка"
+              image={name}
+              onClick={() => console.log("Clicked")}
+            />
+            <PortfolioProjectsTab
+              tabName="Проверка"
+              projectType="Проверка"
+              image={name}
+              onClick={() => console.log("Clicked")}
+            />
+          </div>
+        </div>
+        {/* Right Side */}
+        <div className="w-[50%] flex flex-col">
+          <div className="w-[100%] flex tabs">
+            <PortfolioProjectsTab
+              tabName="Проверка"
+              projectType="Проверка"
+              image={name}
+              onClick={() => console.log("Clicked")}
+            />
+            <PortfolioProjectsTab
+              tabName="Проверка"
+              projectType="Проверка"
+              image={name}
+              onClick={() => console.log("Clicked")}
+            />
+          </div>
+          <div className="w-[100%] flex">
+            {" "}
+            <PortfolioProjectsTab
+              tabName="Проверка"
+              projectType="Проверка"
+              image={name}
+              onClick={() => console.log("Clicked")}
+            />
+            <PortfolioProjectsTab
+              tabName="Проверка"
+              projectType="Проверка"
+              image={name}
+              onClick={() => console.log("Clicked")}
+            />
+          </div>
+          <div className="w-[100%] flex tabs">
+            <PortfolioProjectsTab
+              tabName="Проверка"
+              projectType="Проверка"
+              image={name}
+              onClick={() => console.log("Clicked")}
+            />
+            <PortfolioProjectsTab
+              tabName="Проверка"
+              projectType="Проверка"
+              image={name}
+              onClick={() => console.log("Clicked")}
+            />
+          </div>
+          <div className="w-[100%] flex">
+            {" "}
+            <PortfolioProjectsTab
+              tabName="Проверка"
+              projectType="Проверка"
+              image={name}
+              onClick={() => console.log("Clicked")}
+            />
+            <PortfolioProjectsTab
+              tabName="Проверка"
+              projectType="Проверка"
+              image={name}
+              onClick={() => console.log("Clicked")}
+            />
+          </div>
+        </div>
       </section>
     </div>
   );

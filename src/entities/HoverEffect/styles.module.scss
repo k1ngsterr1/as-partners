@@ -1,0 +1,11 @@
+.hover_effect {
+  position: absolute;
+  width: clamp(75px, 7.812vw, 300px);
+  height: clamp(75px, 7.812vw, 300px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}

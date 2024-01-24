@@ -1,8 +1,21 @@
 .project_tab {
+  position: relative;
   width: 50%;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid;
+  transition: 0.3s all;
+  @apply border-custom-black;
+
+  &:hover {
+    box-shadow: 0 50px 50px -6px rgb(0 0 0 / 0.4);
+  }
+
+  &:hover &__text {
+    @apply text-custom-blue;
+  }
 
   &__image {
     width: 100%;
@@ -15,7 +28,9 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    transition: 0.3s all;
     @apply text-custom-black;
+    @apply pt-4;
   }
 
   &__sub_text {
@@ -24,6 +39,9 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    transition: 0.3s all;
     @apply text-custom-black;
+    @apply mt-2;
+    @apply pb-5;
   }
 }
