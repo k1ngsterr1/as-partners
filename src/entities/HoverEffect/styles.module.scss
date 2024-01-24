@@ -7,5 +7,17 @@
   justify-content: center;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s all;
   backdrop-filter: blur(10px);
+  opacity: 0;
+  &:hover &__icon {
+    @apply text-custom-blue;
+  }
+
+  &__icon {
+    position: absolute;
+    font-size: clamp(20px, 2.0832vw, 80px);
+    transition: 0.3s all;
+    @apply text-white;
+  }
 }

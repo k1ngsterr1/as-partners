@@ -1,54 +1,33 @@
-import React from "react";
-import ReactCurvedText from "react-curved-text";
+import React, { useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./styles.module.scss";
+
 interface IHoverEffect {
   text: string;
 }
 
-// export const HoverEffect: React.FC<IHoverEffect> = ({ text }) => {
-//     const diameter = 200;
-//     const radius = diameter / 2;
-//     const centerY = radius + 20; // Adjust the 20 to whatever number you need to move the text down by
-
-//     return (
-//       <div className={styles.hover_effect}>
-//         <svg
-//           width={diameter}
-//           height={diameter}
-//           viewBox={`0 0 ${diameter} ${diameter}`}
-//           xmlns="http://www.w3.org/2000/svg"
-//         >
-//           {/* ... */}
-//           <path
-//             id="curve"
-//             d={`M ${radius}, ${centerY} m -${radius}, 0 a ${radius},${radius} 0 1,0 ${diameter},0 a ${radius},${radius} 0 1,0 -${diameter},0`}
-//             fill="transparent"
-//             // ...
-//           />
-//           {/* ... */}
-//         </svg>
-//       </div>
-//     );
-//   };
-
 export const HoverEffect: React.FC<IHoverEffect> = ({ text }) => {
   const diameter = 200;
   const radius = diameter / 2;
-  const startOffset = 17;
+  const startOffset = 16;
+
+  const centerY = 80;
 
   return (
     <div className={styles.hover_effect}>
+      <FontAwesomeIcon className={styles.hover_effect__icon} icon={faPlay} />
       <svg
         width={diameter}
         height={diameter}
         viewBox={`0 0 ${diameter} ${diameter}`}
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs>{/* Define your blur filter here if needed */}</defs>
+        <defs></defs>
         <path
           id="curve"
-          d={`M ${radius}, ${radius} m -${radius}, 0 a ${radius},${radius} 0 1,0 ${diameter},0 a ${radius},${radius} 0 1,0 -${diameter},0`}
+          d={`M ${radius}, ${centerY}m -${radius}, 0 a ${radius},${radius} 0 1,0 ${diameter},0 a ${radius},${radius} 0 1,0 -${diameter},0`}
           fill="transparent"
         />
         <text>
@@ -56,7 +35,7 @@ export const HoverEffect: React.FC<IHoverEffect> = ({ text }) => {
             href="#curve"
             startOffset={`${startOffset}%`}
             style={{
-              fontSize: "18px",
+              fontSize: "clamp(10px,1.0416vw,40px)",
               fontFamily: "Montserrat",
               fill: "white",
             }}
