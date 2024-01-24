@@ -1,7 +1,8 @@
 import React from "react";
+import { HoverEffect } from "@entities/HoverEffect";
+import { useProjectTabAnimation } from "@shared/lib/hooks/useProjectTabAnimation";
 
 import styles from "./styles.module.scss";
-import { HoverEffect } from "@entities/HoverEffect";
 
 interface PortfolioTabProps {
   image: string;
@@ -17,12 +18,19 @@ export const PortfolioProjectsTab: React.FC<PortfolioTabProps> = ({
   projectType,
   onClick,
 }) => {
+  const { hoverRef, animateOnHover, animateOnLeave } = useProjectTabAnimation();
+
   return (
-    <div className={styles.project_tab} onClick={onClick}>
+    <div
+      className={styles.project_tab}
+      onClick={onClick}
+      onMouseEnter={() => animateOnHover()}
+      onMouseLeave={() => animateOnLeave()}
+    >
       <img src={image} className={styles.project_tab__image} alt={tabName} />
       <span className={styles.project_tab__text}>{tabName}</span>
       <span className={styles.project_tab__sub_text}>{projectType}</span>
-      <HoverEffect text="Проверка" />
+      <HoverEffect text="Проверка" ref={hoverRef} />
     </div>
   );
 };

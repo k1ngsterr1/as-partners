@@ -1,32 +1,31 @@
-import { useEffect, useRef } from "react";
-import { useSelector } from "react-redux";
-import { RootState } from "@redux/store";
+import { useRef, useCallback } from "react";
 import gsap from "gsap";
 
-export const useProjectTabAnimation = (): {
-  hoverRef: React.RefObject<HTMLDivElement>;
-} => {
-  const isHover = useSelector((state: RootState) => state.hover.isHover);
+export const useProjectTabAnimation = () => {
   const hoverRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
+  const animateOnHover = useCallback(() => {
     if (hoverRef.current) {
-      const tl = gsap.timeline();
-
-      if (isHover) {
-        tl.to(hoverRef.current, {
-          opacity: 1,
-          duration: 0,
-          ease: "power3.out",
-        });
-      } else {
-        tl.to(hoverRef.current, {
-          opacity: 0,
-          duration: 0.3,
-        });
-      }
+      gsap.to(hoverRef.current, {
+        opacity: 1,
+        duration: 0.2,
+        ease: "ease.in",
+      });
     }
-  }, [isHover, hoverRef]);
+  }, []);
 
-  return { hoverRef };
+  const animateOnLeave = useCallback(() => {
+    console.log(hoverRef.current);
+
+    if (hoverRef.current) {
+      console.log(hoverRef.current);
+      gsap.to(hoverRef.current, {
+        opacity: 0,
+        duration: 0.2,
+        ease: "ease.out",
+      });
+    }
+  }, []);
+
+  return { hoverRef, animateOnHover, animateOnLeave };
 };

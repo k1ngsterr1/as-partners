@@ -1,5 +1,8 @@
 .hover_effect {
   position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
   width: clamp(75px, 7.812vw, 300px);
   height: clamp(75px, 7.812vw, 300px);
   display: flex;
