@@ -15,12 +15,12 @@ import { FormScreen } from "@widgets/Screens/Form";
 import { PortfolioContent } from "@shared/lib/data/portfolioContent";
 import { Lines } from "@shared/ui/Lines";
 import { Header } from "@entities/Header";
-
-import styles from "./styles.module.scss";
 import { SectionGallery } from "@features/SectionGallery/ui";
 import { LineSeparator } from "@shared/ui/LineSeparator";
 import { ListItemComponent } from "@shared/ui/ListItem";
 import { ThumbnainGallery } from "@features/ThumbnailGallery/ui";
+
+import styles from "./styles.module.scss";
 
 export const PortfolioInner: React.FC<PortfolioContent> = ({
   heading,
@@ -136,13 +136,15 @@ export const PortfolioInner: React.FC<PortfolioContent> = ({
           <div className={styles.section_one}>
             <ThumbnainGallery images={images} />
           </div>
-          <div className={`${styles.section_two} !justify-start`}>
+          <div className={`${styles.section_two} !justify-center`}>
             <h3 className={styles.smaller_heading}>{headingSecond}</h3>
             <Separator marginTop="mt-5 mb-5 ml-8" />
             <p className="paragraph black ml-8">{paragraphSecond}</p>
             <p className="paragraph black mt-8 ml-8">{paragraphSecond}</p>
           </div>
         </section>
+        <LineSeparator />
+        <FormScreen />
         <Footer />
       </div>
     </>

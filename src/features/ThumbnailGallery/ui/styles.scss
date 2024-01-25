@@ -1,0 +1,10 @@
+.image-gallery {
+  width: 92%;
+  margin: auto;
+}
+
+.image-gallery-image {
+  width: 100%;
+  min-height: clamp(350px, 36.456vw, 1400px);
+  object-fit: fill !important;
+}
