@@ -16,6 +16,7 @@ export const PortfolioProjectsTab: React.FC<PortfolioTabProps> = ({
   image,
   tabName,
   projectType,
+  curvedText,
   onClick,
 }) => {
   const { hoverRef, animateOnHover, animateOnLeave } = useProjectTabAnimation();
@@ -30,7 +31,7 @@ export const PortfolioProjectsTab: React.FC<PortfolioTabProps> = ({
       <img src={image} className={styles.project_tab__image} alt={tabName} />
       <span className={styles.project_tab__text}>{tabName}</span>
       <span className={styles.project_tab__sub_text}>{projectType}</span>
-      <HoverEffect text="Проверка" ref={hoverRef} />
+      <HoverEffect text={curvedText} ref={hoverRef} />
     </div>
   );
 };

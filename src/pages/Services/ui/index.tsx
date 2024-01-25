@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { Menu } from "@features/Menu";
-import { Footer } from "@features/Footer";
+import { Menu } from "@features/Menu/ui";
+import { Footer } from "@features/Footer/ui";
 import { FormScreen } from "@widgets/Screens/Form";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleOffLoader } from "@redux/loaderSlice";

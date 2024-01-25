@@ -29,7 +29,7 @@ export const Portfolio = () => {
   console.log(itemsToDisplay, selectedOption);
 
   return (
-    <div className="w-full bg-white mb-10">
+    <div className="w-full bg-white mb-10 min-[1024px]:mb-0">
       <section className="container">
         <Selector placeholder="Интерьер дома" options={options} />
         {itemsToDisplay.map((item, index) => (
@@ -45,53 +45,8 @@ export const Portfolio = () => {
         ))}
       </section>
       <section className="container-pc-no-height">
-        {/* Left Side */}
         <div className="w-[50%] flex flex-col">
-          <div className="w-[100%] flex">
-            <PortfolioProjectsTab
-              tabName="Проверка"
-              projectType="Проверка"
-              image={name}
-              onClick={() => console.log("Clicked")}
-            />
-            <PortfolioProjectsTab
-              tabName="Проверка"
-              projectType="Проверка"
-              image={name}
-              onClick={() => console.log("Clicked")}
-            />
-          </div>
-          <div className="w-[100%] flex">
-            {" "}
-            <PortfolioProjectsTab
-              tabName="Проверка"
-              projectType="Проверка"
-              image={name}
-              onClick={() => console.log("Clicked")}
-            />
-            <PortfolioProjectsTab
-              tabName="Проверка"
-              projectType="Проверка"
-              image={name}
-              onClick={() => console.log("Clicked")}
-            />
-          </div>
-          <div className="w-[100%] flex">
-            <PortfolioProjectsTab
-              tabName="Проверка"
-              projectType="Проверка"
-              image={name}
-              onClick={() => console.log("Clicked")}
-            />
-            <PortfolioProjectsTab
-              tabName="Проверка"
-              projectType="Проверка"
-              image={name}
-              onClick={() => console.log("Clicked")}
-            />
-          </div>
-          <div className="w-[100%] flex">
-            {" "}
+          <div className="w-[100%] flex justify-start flex-wrap">
             <PortfolioProjectsTab
               tabName="Проверка"
               projectType="Проверка"
@@ -108,51 +63,7 @@ export const Portfolio = () => {
         </div>
         {/* Right Side */}
         <div className="w-[50%] flex flex-col">
-          <div className="w-[100%] flex tabs">
-            <PortfolioProjectsTab
-              tabName="Проверка"
-              projectType="Проверка"
-              image={name}
-              onClick={() => console.log("Clicked")}
-            />
-            <PortfolioProjectsTab
-              tabName="Проверка"
-              projectType="Проверка"
-              image={name}
-              onClick={() => console.log("Clicked")}
-            />
-          </div>
-          <div className="w-[100%] flex">
-            {" "}
-            <PortfolioProjectsTab
-              tabName="Проверка"
-              projectType="Проверка"
-              image={name}
-              onClick={() => console.log("Clicked")}
-            />
-            <PortfolioProjectsTab
-              tabName="Проверка"
-              projectType="Проверка"
-              image={name}
-              onClick={() => console.log("Clicked")}
-            />
-          </div>
-          <div className="w-[100%] flex tabs">
-            <PortfolioProjectsTab
-              tabName="Проверка"
-              projectType="Проверка"
-              image={name}
-              onClick={() => console.log("Clicked")}
-            />
-            <PortfolioProjectsTab
-              tabName="Проверка"
-              projectType="Проверка"
-              image={name}
-              onClick={() => console.log("Clicked")}
-            />
-          </div>
-          <div className="w-[100%] flex">
-            {" "}
+          <div className="w-[100%] flex justify-start flex-wrap">
             <PortfolioProjectsTab
               tabName="Проверка"
               projectType="Проверка"

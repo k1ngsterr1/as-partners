@@ -8,8 +8,13 @@ export const Header = () => {
   const navigate = useNavigate();
 
   return (
-    <header className={styles.header} onClick={() => navigate("/home")}>
-      <img src={logo} className={styles.header__logo} alt="logo" />
+    <header className={styles.header}>
+      <img
+        src={logo}
+        className={styles.header__logo}
+        onClick={() => navigate("/home")}
+        alt="logo"
+      />
       <MenuButton />
     </header>
   );

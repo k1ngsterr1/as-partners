@@ -1,11 +1,13 @@
 .project_tab {
   position: relative;
+  flex: 0 0 calc(50% - 0px);
   width: 50%;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid;
+  border-bottom: none;
   transition: 0.3s all;
   @apply border-custom-black;
 
@@ -43,5 +45,12 @@
     @apply text-custom-black;
     @apply mt-2;
     @apply pb-5;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust the breakpoint as necessary */
+  .project-tab {
+    flex: 0 0 100%; /* On smaller screens, each tab takes full width */
   }
 }

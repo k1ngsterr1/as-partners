@@ -10,8 +10,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { toggleOffLoader } from "@redux/loaderSlice";
 import { RootState } from "@redux/store";
-import { Menu } from "@features/Menu";
-import { Footer } from "@features/Footer";
+import { Menu } from "@features/Menu/ui";
+import { Footer } from "@features/Footer/ui";
 import { FormScreen } from "@widgets/Screens/Form";
 
 import styles from "./styles.module.scss";

@@ -1,0 +1,9 @@
+.list_item {
+  font-family: Montserrat;
+  font-size: clamp(9px, 0.93744vw, 36px);
+  font-style: normal;
+  line-height: normal;
+  @apply text-custom-black;
+  @apply ml-8;
+  @apply mt-4;
+}

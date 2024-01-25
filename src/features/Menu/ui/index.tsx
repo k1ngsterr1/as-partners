@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
+
 import { useDispatch, useSelector } from "react-redux";
 import { useMenuAnimation } from "@shared/lib/hooks/animations/useMenuAnimation";
 import { closeMenu } from "@redux/menuSlice";

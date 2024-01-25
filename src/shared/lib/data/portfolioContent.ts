@@ -1,7 +1,13 @@
 import gallery02 from "@assets/services/service_tab_example.png";
 
-interface PhotoItem {
+export interface PhotoItem {
   photo: string;
+  thumbnail?: string;
+}
+
+export interface ListItem {
+  label: string;
+  value: string;
 }
 
 export interface PortfolioContent {
@@ -11,9 +17,10 @@ export interface PortfolioContent {
   paragraph: string;
   paragraphSecond: string;
   images: PhotoItem[];
+  listItems: ListItem[];
 }
 
-export const serviceContent: Record<string, PortfolioContent> = {
+export const portfolioContent: Record<string, PortfolioContent> = {
   design: {
     heading: "Дизайн Интерьеров",
     headingSecond: "Второй заголовок",
@@ -36,6 +43,20 @@ export const serviceContent: Record<string, PortfolioContent> = {
       },
       {
         photo: gallery02,
+      },
+    ],
+    listItems: [
+      {
+        label: "Год проектирования:",
+        value: "2021",
+      },
+      {
+        label: "Площадь проекта:",
+        value: "11 762 кв.м.",
+      },
+      {
+        label: "Стадия Проекта:",
+        value: "Завершен",
       },
     ],
     mainImage: gallery02,

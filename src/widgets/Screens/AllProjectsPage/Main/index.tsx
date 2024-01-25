@@ -7,6 +7,7 @@ import { SmallAutoSlider } from "@features/SmallAutoSlider/ui";
 import { smallGalleryContent } from "@shared/lib/data/smallGalleryContent";
 
 import styles from "./styles.module.scss";
+import { Lines } from "@shared/ui/Lines";
 
 export const AllProjectsMain = () => {
   const breadcrumbData = [
@@ -32,9 +33,7 @@ export const AllProjectsMain = () => {
         <Button text="Наши работы" margin="mt-8" />
       </main>
       <main className="container-pc">
-        <figure className={styles.line__left} />
-        <figure className={styles.line__right} />
-        <figure className={styles.line__center} />
+        <Lines />
         <section className={styles.section_one}>
           <h1 className={`${styles.heading} w-[100%]  !text-custom-black`}>
             ПРОЕКТИРО­ВАНИЕ ПОСЕЛКОВ И КВАРТАЛОВ

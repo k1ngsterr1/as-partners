@@ -19,11 +19,17 @@ import { ServicesPage } from "./Services/ui";
 
 // Content
 import { serviceContent } from "@shared/lib/data/serviceContent";
-import { ServiceInnerPage } from "./ServiceInner/index";
+import { portfolioContent } from "@shared/lib/data/portfolioContent";
 
 const LazyServiceInner = lazy(() =>
   import("./ServiceInner/index").then((module) => ({
     default: module.ServiceInnerPage,
+  }))
+);
+
+const LazyPortfolioInner = lazy(() =>
+  import("./PortfolioInner/ui/index").then((module) => ({
+    default: module.PortfolioInner,
   }))
 );
 
@@ -74,6 +80,16 @@ export const MyRoutes = () => {
                 serviceType
               )}
               element={<LazyServiceInner {...content} />}
+            />
+          ))}
+          {Object.entries(portfolioContent).map(([portfolioType, content]) => (
+            <Route
+              key={portfolioType}
+              path={ROUTE_CONSTANTS.PORTFOLIO_OBJECT.replace(
+                ":portfolioType",
+                portfolioType
+              )}
+              element={<LazyPortfolioInner {...content} />}
             />
           ))}
         </Routes>
