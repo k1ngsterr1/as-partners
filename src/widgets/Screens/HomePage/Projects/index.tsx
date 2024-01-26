@@ -5,6 +5,7 @@ import { Separator } from "@shared/ui/Separator";
 import image from "@assets/services/services.webp";
 
 import styles from "./styles.module.scss";
+import { Fade } from "react-awesome-reveal";
 
 export const ProjectsScreen = () => {
   return (
@@ -27,16 +28,25 @@ export const ProjectsScreen = () => {
       </section>
       <section className="container-pc">
         <div className={styles.section_one}>
-          <h4 className={`${styles.heading} ml-8`}>Проекты</h4>
-          <Separator marginTop="mt-5 ml-8" />
-          <p className="paragraph white mt-7 ml-8">
-            Добро пожаловать на сайт AS Partners Architect, вашего надежного
-            партнера в мире современной архитектуры и дизайна. Мы
-            специализируемся на создании инновационных, функциональных и
-            эстетически привлекательных архитектурных решений, которые отражают
-            последние тенденции в области урбанистики и дизайна интерьеров.
-          </p>
-          <ButtonWhite text="Все проекты" margin="ml-8" />
+          <Fade delay={100}>
+            <h4 className={`${styles.heading} ml-8`}>Проекты</h4>
+          </Fade>
+          <Fade delay={150}>
+            <Separator marginTop="mt-5 ml-8" />
+          </Fade>
+          <Fade delay={200}>
+            <p className="paragraph white mt-7 ml-8">
+              Добро пожаловать на сайт AS Partners Architect, вашего надежного
+              партнера в мире современной архитектуры и дизайна. Мы
+              специализируемся на создании инновационных, функциональных и
+              эстетически привлекательных архитектурных решений, которые
+              отражают последние тенденции в области урбанистики и дизайна
+              интерьеров.
+            </p>
+          </Fade>
+          <Fade delay={250}>
+            <ButtonWhite text="Все проекты" margin="ml-8" />
+          </Fade>
         </div>
         <div className={styles.section_two}>
           <img

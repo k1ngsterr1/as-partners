@@ -5,6 +5,7 @@ import { Input } from "@shared/ui/Input";
 import { Selector } from "@shared/ui/Selector";
 
 import styles from "./styles.module.scss";
+import { Fade } from "react-awesome-reveal";
 
 export const FormScreen = () => {
   const options = [
@@ -36,25 +37,33 @@ export const FormScreen = () => {
       </div>
       <div className="container-pc-no-height !h-[70vh]">
         <section className={styles.section_one}>
-          <form className="flex flex-col">
-            <Input placeholder="Ваше имя" type="text" />
-            <Input
-              placeholder="Ваша электронный адрес"
-              margin="mt-8"
-              type="email"
-            />
-            <Selector placeholder="Услуга" margin="mt-8" options={options} />
-            <Button text="Отправить" margin="mt-12" />
-          </form>
+          <Fade delay={100}>
+            <form className="flex flex-col">
+              <Input placeholder="Ваше имя" type="text" />
+              <Input
+                placeholder="Ваша электронный адрес"
+                margin="mt-8"
+                type="email"
+              />
+              <Selector placeholder="Услуга" margin="mt-8" options={options} />
+              <Button text="Отправить" margin="mt-12" />
+            </form>
+          </Fade>
         </section>
         <section className={styles.section_two}>
-          <h5 className={styles.heading}>Контакты</h5>
-          <Separator marginTop="mt-5 mr-8" />
-          <p className="paragraph black !text-right !w-[60%] mr-8 mt-8">
-            Добро пожаловать на сайт AS Partners Architect, вашего надежного
-            партнера в мире современной архитектуры и дизайна. Мы
-            специализируемся на создании инновационных.
-          </p>
+          <Fade delay={150}>
+            <h5 className={styles.heading}>Контакты</h5>
+          </Fade>
+          <Fade delay={200}>
+            <Separator marginTop="mt-5 mr-8" />
+          </Fade>
+          <Fade delay={300} className="flex justify-end">
+            <p className="paragraph black !text-right !w-[60%] mr-8 mt-8">
+              Добро пожаловать на сайт AS Partners Architect, вашего надежного
+              партнера в мире современной архитектуры и дизайна. Мы
+              специализируемся на создании инновационных.
+            </p>
+          </Fade>
         </section>
       </div>
     </div>

@@ -22,6 +22,19 @@ h6 {
   font-family: Montserrat;
 }
 
+.scrollable_section {
+  overflow-y: scroll !important;
+  height: 100vh !important;
+}
+
+.unscrollable_section {
+  overflow-y: hidden !important;
+}
+
+.scrollable_section::-webkit-scrollbar {
+  display: none;
+}
+
 .page {
   width: 100%;
   min-height: 100vh;

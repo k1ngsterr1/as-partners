@@ -1,13 +1,17 @@
 import { ServiceTab } from "@entities/ServiceTab";
 import { Separator } from "@shared/ui/Separator";
 import { Button } from "@shared/ui/Button";
+import { useEffect, useRef } from "react";
+import { Fade } from "react-awesome-reveal";
 
 import image from "@assets/main/about_block_image.webp";
 
 import styles from "./styles.module.scss";
-import { Fade } from "react-awesome-reveal";
+import useCustomScroll from "@shared/lib/hooks/useSectionScroll";
 
 export const ServicesScreen = () => {
+  const { startElementRef, endElementRef } = useCustomScroll("#start", "#end");
+
   return (
     <div className="w-full bg-white">
       <section className="container">
@@ -26,13 +30,17 @@ export const ServicesScreen = () => {
         <Button text="Все услуги" margin="mt-8 mb-8" />
       </section>
       <section className="container-pc">
-        <div className={styles.section_one}>
+        <div
+          className={`${styles.section_one} scrollable_section`}
+          ref={startElementRef}
+        >
           <Fade
             cascade
             damping={0.2}
             className="w-[100%] flex flex-col items-center"
           >
             <img
+              id="start"
               className={`${styles.image} mt-8`}
               src={image}
               alt="service_image"
@@ -47,9 +55,23 @@ export const ServicesScreen = () => {
               src={image}
               alt="service_image"
             />
+            <img
+              className={`${styles.image} mt-8 mb-8`}
+              src={image}
+              alt="service_image"
+            />
+            <img
+              className={`${styles.image} mt-8 mb-8`}
+              src={image}
+              alt="service_image"
+              id="end"
+            />
           </Fade>
         </div>
-        <div className={styles.section_two}>
+        <div
+          className={`${styles.section_two} unscrollable_section`}
+          ref={endElementRef}
+        >
           <Fade delay={100}>
             <h3 className={styles.heading}>Наши Услуги</h3>
           </Fade>
