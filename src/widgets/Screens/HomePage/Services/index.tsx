@@ -7,11 +7,11 @@ import { Fade } from "react-awesome-reveal";
 import image from "@assets/main/about_block_image.webp";
 
 import styles from "./styles.module.scss";
-import useCustomScroll from "@shared/lib/hooks/useSectionScroll";
+import { Arrow, BlueArrow } from "@shared/ui/Arrow";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 export const ServicesScreen = () => {
-  const { startElementRef, endElementRef } = useCustomScroll("#start", "#end");
-
   return (
     <div className="w-full bg-white">
       <section className="container">
@@ -30,48 +30,20 @@ export const ServicesScreen = () => {
         <Button text="Все услуги" margin="mt-8 mb-8" />
       </section>
       <section className="container-pc">
-        <div
-          className={`${styles.section_one} scrollable_section`}
-          ref={startElementRef}
-        >
+        <div className={`${styles.section_one} scrollable_section relative`}>
           <Fade
             cascade
             damping={0.2}
-            className="w-[100%] flex flex-col items-center"
+            className="w-[100%] flex flex-col items-center relative"
           >
-            <img
-              id="start"
-              className={`${styles.image} mt-8`}
-              src={image}
-              alt="service_image"
-            />
-            <img
-              className={`${styles.image} mt-8`}
-              src={image}
-              alt="service_image"
-            />
-            <img
-              className={`${styles.image} mt-8 mb-8`}
-              src={image}
-              alt="service_image"
-            />
-            <img
-              className={`${styles.image} mt-8 mb-8`}
-              src={image}
-              alt="service_image"
-            />
-            <img
-              className={`${styles.image} mt-8 mb-8`}
-              src={image}
-              alt="service_image"
-              id="end"
-            />
+            <ServiceTab text="Услуга" margin="mt-8" />
+            <ServiceTab text="Услуга" margin="mt-8" />
+            <ServiceTab text="Услуга" margin="mt-8" />
+            <ServiceTab text="Услуга" margin="mt-8" />
+            <ServiceTab text="Услуга" margin="mt-8 mb-8" />
           </Fade>
         </div>
-        <div
-          className={`${styles.section_two} unscrollable_section`}
-          ref={endElementRef}
-        >
+        <div className={`${styles.section_two} unscrollable_section`}>
           <Fade delay={100}>
             <h3 className={styles.heading}>Наши Услуги</h3>
           </Fade>

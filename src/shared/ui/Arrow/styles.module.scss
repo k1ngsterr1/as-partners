@@ -4,3 +4,8 @@
   @apply mt-20;
   @apply animate-pulse;
 }
+
+.arrow_icon_blue {
+  @extend .arrow_icon;
+  @apply text-custom-blue;
+}

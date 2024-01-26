@@ -6,9 +6,17 @@ import styles from "./styles.module.scss";
 export const Arrow = () => {
   return (
     <>
+      <FontAwesomeIcon icon={faChevronDown} className={styles.arrow_icon} />
+    </>
+  );
+};
+
+export const BlueArrow = () => {
+  return (
+    <>
       <FontAwesomeIcon
         icon={faChevronDown}
-        className={`${styles.arrow_icon}`}
+        className={styles.arrow_icon_blue}
       />
     </>
   );

@@ -10,6 +10,7 @@
   .heading {
     text-align: right;
     font-size: clamp(37.5px, 3.906vw, 150px);
+    @apply mt-12;
     @apply mr-8;
   }
 

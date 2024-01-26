@@ -2,6 +2,7 @@
   width: 100%;
   height: clamp(145px, 67.7556vw, 580px);
   position: relative;
+  background-repeat: no-repeat;
   background-image: url("../../assets/services/service_tab_example.png");
 
   &__text {
@@ -14,5 +15,12 @@
     font-style: normal;
     font-weight: 700;
     line-height: 141.412%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .service_tab {
+    width: 90%;
+    height: clamp(151.5px, 15.780240000000001vw, 606px);
   }
 }
