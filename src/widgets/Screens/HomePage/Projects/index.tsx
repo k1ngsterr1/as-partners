@@ -60,7 +60,7 @@ export const ProjectsScreen = () => {
             <ProjectTab text="Пример проекта" margin="mt-8" />
             <ProjectTab text="Пример проекта" margin="mt-8" />
             <ProjectTab text="Пример проекта" margin="mt-8" />
-            <ProjectTab text="Пример проекта" margin="mt-8" />
+            <ProjectTab text="Пример проекта" margin="mt-8 mb-8" />
           </Fade>
         </div>
       </section>
