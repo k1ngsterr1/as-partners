@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { useDispatch, useSelector } from "react-redux";
 import { useMenuAnimation } from "@shared/lib/hooks/animations/useMenuAnimation";
@@ -13,11 +13,12 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { SmallAutoSlider } from "@features/SmallAutoSlider/ui";
 import { smallGalleryContent } from "@shared/lib/data/smallGalleryContent";
-
+import { Lines } from "@shared/ui/Lines";
 import plus from "@assets/main/plus.svg";
 import logo from "@assets/main/logo_white.svg";
 
 import styles from "./styles.module.scss";
+import { toggleOnLoader } from "@redux/loaderSlice";
 
 export const Menu = () => {
   const dispatch = useDispatch();
@@ -32,6 +33,7 @@ export const Menu = () => {
 
   function handleClose() {
     dispatch(closeMenu());
+    dispatch(toggleOnLoader());
   }
 
   useEffect(() => {
@@ -63,6 +65,7 @@ export const Menu = () => {
             className={`${styles.menu__content__links__link}`}
             ref={addToLinkRefs}
             to="/home"
+            onClick={() => handleClose()}
           >
             Главная
           </Link>
@@ -70,6 +73,7 @@ export const Menu = () => {
             className={`${styles.menu__content__links__link} mt-5`}
             ref={addToLinkRefs}
             to="/about"
+            onClick={() => handleClose()}
           >
             О Нас
           </Link>
@@ -77,6 +81,7 @@ export const Menu = () => {
             className={`${styles.menu__content__links__link} mt-5`}
             ref={addToLinkRefs}
             to="/services"
+            onClick={() => handleClose()}
           >
             Наши Услуги
           </Link>
@@ -84,6 +89,7 @@ export const Menu = () => {
             className={`${styles.menu__content__links__link} mt-5`}
             ref={addToLinkRefs}
             to="/portfolio"
+            onClick={() => handleClose()}
           >
             Наше Портфолио
           </Link>
@@ -91,15 +97,14 @@ export const Menu = () => {
             className={`${styles.menu__content__links__link} mt-5`}
             ref={addToLinkRefs}
             to="/contacts"
+            onClick={() => handleClose()}
           >
             Контакты
           </Link>
         </nav>
       </div>
       <div className={styles.menu__content_pc}>
-        <figure className={styles.menu__content_pc__line_left} />
-        <figure className={styles.menu__content_pc__line_right} />
-        <figure className={styles.menu__content_pc__line_center} />
+        <Lines />
         <div className={styles.menu__content_pc__header}>
           <img
             src={logo}
@@ -121,11 +126,13 @@ export const Menu = () => {
             <Link
               className={`${styles.menu__content_pc__container__section_one__link}`}
               to="/home"
+              onClick={() => handleClose()}
             >
               Главная
             </Link>
             <Link
               className={`${styles.menu__content_pc__container__section_one__link} mt-5`}
+              onClick={() => handleClose()}
               to="/about"
             >
               О Нас
@@ -133,18 +140,21 @@ export const Menu = () => {
             <Link
               className={`${styles.menu__content_pc__container__section_one__link} mt-5`}
               to="/services"
+              onClick={() => handleClose()}
             >
               Наши Услуги
             </Link>
             <Link
               className={`${styles.menu__content_pc__container__section_one__link} mt-5`}
               to="/portfolio"
+              onClick={() => handleClose()}
             >
               Наше Портфолио
             </Link>
             <Link
               className={`${styles.menu__content_pc__container__section_one__link} mt-5`}
               to="/contacts"
+              onClick={() => handleClose()}
             >
               Контакты
             </Link>

@@ -23,6 +23,7 @@
   width: 1px;
   height: 105%;
   position: fixed;
+  z-index: 105;
   top: 0;
   background-color: #676767;
 }
@@ -32,6 +33,8 @@
   height: 105%;
   position: fixed;
   right: 19.2%;
+  z-index: 105;
+
   top: 0;
   background-color: #676767;
 }
@@ -41,6 +44,8 @@
   height: 105%;
   position: fixed;
   top: 0;
+  z-index: 105;
+
   left: 50%;
   background-color: #676767;
 }

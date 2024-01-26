@@ -3,8 +3,9 @@ import { Slide } from "react-awesome-reveal";
 import { Arrow } from "@shared/ui/Arrow";
 import { BurgerButton } from "@features/BurgerButton/ui";
 import { Separator } from "@shared/ui/Separator";
+import { SectionGallery } from "@features/SectionGallery/ui";
+import { sectionGalleryContent } from "@shared/lib/data/sectionGalleryContent";
 
-import image from "@assets/main/main_background.webp";
 import logo from "@assets/main/logo_white.svg";
 
 import styles from "./styles.module.scss";
@@ -75,11 +76,7 @@ export const HomeScreen = () => {
           </p>
         </section>
         <section className={`${styles.second_section}`}>
-          <img
-            src={image}
-            className={`${styles.second_section__image}`}
-            alt=""
-          />
+          <SectionGallery images={sectionGalleryContent.first.photos} />
         </section>
       </main>
     </>

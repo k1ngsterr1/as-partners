@@ -9,20 +9,19 @@ import { Menu } from "@features/Menu/ui";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@redux/store";
 import { Loader } from "@features/Loader/ui";
-import { toggleOffLoader } from "@redux/loaderSlice";
+import { toggleOffLoader, toggleOnLoader } from "@redux/loaderSlice";
 import { Header } from "@entities/Header";
 import { useEffect } from "react";
 import { LineSeparator } from "@shared/ui/LineSeparator";
 
 export const HomePage = () => {
   const dispatch = useDispatch();
-  const isLoading = useSelector((state: RootState) => state.loader.isLoading);
 
   useEffect(() => {
     setTimeout(() => {
       dispatch(toggleOffLoader());
     }, 2000);
-  }, [isLoading]);
+  }, []);
 
   return (
     <>
