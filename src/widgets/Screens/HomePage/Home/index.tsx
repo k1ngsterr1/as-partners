@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import { Slide } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 import { Arrow } from "@shared/ui/Arrow";
 import { BurgerButton } from "@features/BurgerButton/ui";
 import { Separator } from "@shared/ui/Separator";
@@ -65,15 +65,18 @@ export const HomeScreen = () => {
         <figure className={styles.line__right} />
         {isClientVisible ? null : <figure className={styles.line__center} />}
         <section className={`${styles.first_section} mt-0`}>
-          <h1 className="black w-[100%] ml-8">AS & Partners Architect</h1>
-          <Separator marginTop="mt-5 ml-8" />
-          <p className="paragraph black mt-7 ml-8 !w-[70%]">
-            Добро пожаловать на сайт AS Partners Architect, вашего надежного
-            партнера в мире современной архитектуры и дизайна. Мы
-            специализируемся на создании инновационных, функциональных и
-            эстетически привлекательных архитектурных решений, которые отражают
-            последние тенденции в области урбанистики и дизайна интерьеров.
-          </p>
+          <Fade cascade triggerOnce>
+            <h1 className="black w-[100%] ml-8">AS & Partners Architect</h1>
+            <Separator marginTop="mt-5 ml-8" />
+            <p className="paragraph black mt-7 ml-8 !w-[70%]">
+              Добро пожаловать на сайт AS Partners Architect, вашего надежного
+              партнера в мире современной архитектуры и дизайна. Мы
+              специализируемся на создании инновационных, функциональных и
+              эстетически привлекательных архитектурных решений, которые
+              отражают последние тенденции в области урбанистики и дизайна
+              интерьеров.
+            </p>
+          </Fade>
         </section>
         <section className={`${styles.second_section}`}>
           <SectionGallery images={sectionGalleryContent.first.photos} />
