@@ -6,6 +6,7 @@ interface ButtonProps {
   text: string;
   margin: string;
   size?: string;
+  onClick: () => void;
 }
 
 export const Button: React.FC<ButtonProps> = ({ text, margin, size }) => {

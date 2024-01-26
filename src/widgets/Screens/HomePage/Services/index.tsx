@@ -3,13 +3,13 @@ import { Separator } from "@shared/ui/Separator";
 import { Button } from "@shared/ui/Button";
 import { useEffect, useRef } from "react";
 import { Fade } from "react-awesome-reveal";
+import { Arrow, BlueArrow } from "@shared/ui/Arrow";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 import image from "@assets/main/about_block_image.webp";
 
 import styles from "./styles.module.scss";
-import { Arrow, BlueArrow } from "@shared/ui/Arrow";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 export const ServicesScreen = () => {
   return (

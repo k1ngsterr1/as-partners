@@ -1,11 +1,11 @@
 import { ProjectTab } from "@entities/ProjectTab";
 import { ButtonWhite } from "@shared/ui/Button";
 import { Separator } from "@shared/ui/Separator";
+import { Fade } from "react-awesome-reveal";
 
 import image from "@assets/services/services.webp";
 
 import styles from "./styles.module.scss";
-import { Fade } from "react-awesome-reveal";
 
 export const ProjectsScreen = () => {
   return (
@@ -27,7 +27,7 @@ export const ProjectsScreen = () => {
         <ButtonWhite text="Все проекты" margin="mt-8 mb-8" />
       </section>
       <section className="container-pc">
-        <div className={styles.section_one}>
+        <div className={`${styles.section_one}`}>
           <Fade delay={100}>
             <h4 className={`${styles.heading} ml-8`}>Проекты</h4>
           </Fade>
@@ -45,25 +45,23 @@ export const ProjectsScreen = () => {
             </p>
           </Fade>
           <Fade delay={250}>
-            <ButtonWhite text="Все проекты" margin="ml-8" />
+            <ButtonWhite text="Все проекты" margin="ml-8 mt-8" />
           </Fade>
         </div>
-        <div className={styles.section_two}>
-          <img
-            className={`${styles.image} mt-8`}
-            src={image}
-            alt="service_image"
-          />
-          <img
-            className={`${styles.image} mt-8`}
-            src={image}
-            alt="service_image"
-          />
-          <img
-            className={`${styles.image} mt-8 mb-8`}
-            src={image}
-            alt="service_image"
-          />
+        <div className={`${styles.section_two} scrollable_section relative`}>
+          <Fade
+            cascade
+            damping={0.2}
+            className="w-[100%] flex flex-col items-center relative"
+          >
+            <ProjectTab text="Пример проекта" margin="mt-8" />
+            <ProjectTab text="Пример проекта" margin="mt-8" />
+            <ProjectTab text="Пример проекта" margin="mt-8" />
+            <ProjectTab text="Пример проекта" margin="mt-8" />
+            <ProjectTab text="Пример проекта" margin="mt-8" />
+            <ProjectTab text="Пример проекта" margin="mt-8" />
+            <ProjectTab text="Пример проекта" margin="mt-8" />
+          </Fade>
         </div>
       </section>
     </div>

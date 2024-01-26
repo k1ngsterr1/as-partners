@@ -14,6 +14,7 @@
     font-size: clamp(10px, 4.6728vw, 40px);
     font-style: normal;
     font-weight: 700;
+    transition: 0.3s all;
     line-height: 141.412%;
   }
 }
@@ -22,5 +23,19 @@
   .service_tab {
     width: 90%;
     height: clamp(151.5px, 15.780240000000001vw, 606px);
+    cursor: pointer;
+    transition: 0.3s all;
+
+    &__text {
+      font-size: clamp(16px, 1.66656vw, 64px);
+    }
+
+    &:hover {
+      @apply drop-shadow-2xl;
+    }
+
+    &:hover &__text {
+      @apply text-blue-100;
+    }
   }
 }
