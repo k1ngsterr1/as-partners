@@ -8,9 +8,8 @@ interface SelectorProps {
   placeholder: string;
   value: string;
   margin: string;
-  onChange: () => void;
-  onOpen: () => void;
-  options: any;
+  onChange: (value: string) => void; // Adjusted to accept a string parameter
+  options: { label: string; value: string }[]; // Assuming options is an array of objects with label and value
 }
 
 export const Selector: React.FC<SelectorProps> = ({
@@ -21,12 +20,21 @@ export const Selector: React.FC<SelectorProps> = ({
   options,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const toggleDropdown = () => setIsOpen(!isOpen);
+
+  const handleOptionClick = (selectedValue: string) => {
+    onChange(selectedValue);
+    setIsOpen(false);
+  };
 
   return (
     <div className="w-full flex flex-col items-center">
-      <div className={`${styles.selector} ${margin}`} onClick={toggleDropdown}>
-        <span className={styles.selector__placeholder}>{placeholder}</span>
+      <div
+        className={`${styles.selector} ${margin}`}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <span className={styles.selector__placeholder}>
+          {value || placeholder}
+        </span>
         <FontAwesomeIcon
           className={styles.selector__chevron}
           icon={isOpen ? faChevronUp : faChevronDown}
@@ -34,8 +42,12 @@ export const Selector: React.FC<SelectorProps> = ({
       </div>
       {isOpen && (
         <ul className={styles.list}>
-          {options.map((option: any) => (
-            <li key={option.value} className={styles.list__item}>
+          {options.map((option) => (
+            <li
+              key={option.value}
+              onClick={() => handleOptionClick(option.value)}
+              className={styles.list__item}
+            >
               {option.label}
             </li>
           ))}

@@ -6,14 +6,25 @@ import { Fade } from "react-awesome-reveal";
 import image from "@assets/services/services.webp";
 
 import styles from "./styles.module.scss";
+import { useNavigate } from "react-router-dom";
 
 export const ProjectsScreen = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="w-full bg-custom-black">
       <section className="container">
         <div className={styles.button_row}>
-          <ButtonWhite text="Архитектурные решения" margin="mt-8 mb-4" />
-          <ButtonWhite text="Дизайн Интерьера" margin="mt-5 mb-4" />
+          <ButtonWhiteNavigation
+            text="Архитектурные решения"
+            margin="mt-8 mb-4"
+            to={"/services/architecture"}
+          />
+          <ButtonWhite
+            text="Дизайн Интерьера"
+            margin="mt-5 mb-4"
+            to={"/services/architecture"}
+          />
         </div>
         <h4 className={styles.heading}>Проекты</h4>
         <Separator marginTop="mt-4" />
@@ -21,10 +32,26 @@ export const ProjectsScreen = () => {
           Добро пожаловать на сайт AS Partners Architect, вашего надежного
           партнера в мире современной архитектуры и дизайна.
         </p>
-        <ProjectTab text="Пример проекта" margin="mt-8" />
-        <ProjectTab text="Пример проекта" margin="mt-8" />
-        <ProjectTab text="Пример проекта" margin="mt-8" />
-        <ButtonWhite text="Все проекты" margin="mt-8 mb-8" />
+        <ProjectTab
+          text="Пример проекта"
+          margin="mt-8"
+          onClick={() => navigate("/portfolio/design")}
+        />
+        <ProjectTab
+          text="Пример проекта"
+          margin="mt-8"
+          onClick={() => navigate("/portfolio/design")}
+        />
+        <ProjectTab
+          text="Пример проекта"
+          margin="mt-8"
+          onClick={() => navigate("/portfolio/design")}
+        />
+        <ButtonWhiteNavigation
+          text="Все проекты"
+          margin="mt-8 mb-8"
+          to={"/portfolio"}
+        />
       </section>
       <section className="container-pc">
         <div className={`${styles.section_one}`}>

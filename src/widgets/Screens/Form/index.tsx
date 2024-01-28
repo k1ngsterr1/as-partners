@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@shared/ui/Button";
 import { Separator } from "@shared/ui/Separator";
 import { Input } from "@shared/ui/Input";
@@ -8,11 +8,18 @@ import styles from "./styles.module.scss";
 import { Fade } from "react-awesome-reveal";
 
 export const FormScreen = () => {
+  const [selectedValue, setSelectedValue] = useState("");
+
   const options = [
-    { value: "interior_design", label: "Дизайн Интерьера" },
-    { value: "apartment_design", label: "Дизайн Квартиры" },
-    { value: "house_design", label: "Дизайн Дома" },
+    { value: "Дизайн Интерьера", label: "Дизайн Интерьера" },
+    { value: "Дизайн Квартиры", label: "Дизайн Квартиры" },
+    { value: "Дизайн Домв", label: "Дизайн Дома" },
   ];
+
+  const handleSelectChange = (value: string) => {
+    setSelectedValue(value);
+    console.log("Selected Value:", value);
+  };
 
   return (
     <div className="w-full bg-white">
@@ -45,8 +52,14 @@ export const FormScreen = () => {
                 margin="mt-8"
                 type="email"
               />
-              <Selector placeholder="Услуга" margin="mt-8" options={options} />
-              <Button text="Отправить" margin="mt-12" />
+              <Selector
+                placeholder="Услуга"
+                margin="mt-8"
+                options={options}
+                value={selectedValue}
+                onChange={handleSelectChange}
+              />
+              <Button text="Отправить" type="submit" margin="mt-12" />
             </form>
           </Fade>
         </section>

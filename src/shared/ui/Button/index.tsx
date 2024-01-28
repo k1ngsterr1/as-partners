@@ -8,11 +8,25 @@ import { toggleOnLoader } from "@redux/loaderSlice";
 
 interface ButtonProps {
   text: string;
+  type?: string;
   margin: string;
   size?: string;
   to: any;
   onClick?: () => void;
 }
+
+export const ButtonRegular: React.FC<ButtonProps> = ({
+  text,
+  margin,
+  size,
+  type,
+}) => {
+  return (
+    <button className={`${styles.button}  ${margin} ${size}`} type={type}>
+      {text}
+    </button>
+  );
+};
 
 export const Button: React.FC<ButtonProps> = ({ text, margin, size, to }) => {
   return (
