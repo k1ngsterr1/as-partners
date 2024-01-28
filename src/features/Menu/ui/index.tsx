@@ -14,11 +14,11 @@ import {
 import { SmallAutoSlider } from "@features/SmallAutoSlider/ui";
 import { smallGalleryContent } from "@shared/lib/data/smallGalleryContent";
 import { Lines } from "@shared/ui/Lines";
+import { toggleOnLoader } from "@redux/loaderSlice";
 import plus from "@assets/main/plus.svg";
 import logo from "@assets/main/logo_white.svg";
 
 import styles from "./styles.module.scss";
-import { toggleOnLoader } from "@redux/loaderSlice";
 
 export const Menu = () => {
   const dispatch = useDispatch();
@@ -33,7 +33,7 @@ export const Menu = () => {
 
   function handleClose() {
     dispatch(closeMenu());
-    dispatch(toggleOnLoader());
+    // dispatch(toggleOnLoader());
   }
 
   useEffect(() => {
