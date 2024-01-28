@@ -1,5 +1,5 @@
 import { ProjectTab } from "@entities/ProjectTab";
-import { ButtonWhite } from "@shared/ui/Button";
+import { ButtonWhite, ButtonWhiteNavigation } from "@shared/ui/Button";
 import { Separator } from "@shared/ui/Separator";
 import { Fade } from "react-awesome-reveal";
 
@@ -45,7 +45,11 @@ export const ProjectsScreen = () => {
             </p>
           </Fade>
           <Fade delay={250}>
-            <ButtonWhite text="Все проекты" margin="ml-8 mt-8" />
+            <ButtonWhiteNavigation
+              to={"/portfolio"}
+              text="Все проекты"
+              margin="ml-8 mt-8"
+            />
           </Fade>
         </div>
         <div className={`${styles.section_two} scrollable_section relative`}>

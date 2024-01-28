@@ -8,8 +8,6 @@ import { portfolioItems } from "@pages/Projects/ui/portfolioItems";
 import { PortfolioProjectsTab } from "@entities/PortfolioProjectTab";
 
 import name from "@assets/main/about_block_image.webp";
-import ReactCurvedText from "react-curved-text";
-import { HoverEffect } from "@entities/HoverEffect";
 
 export const Portfolio = () => {
   const options = [
@@ -29,7 +27,7 @@ export const Portfolio = () => {
   console.log(itemsToDisplay, selectedOption);
 
   return (
-    <div className="w-full bg-white mb-10 min-[1024px]:mb-0">
+    <div className="w-full bg-white mb-10 min-[1024px]:mb-0" id="more">
       <section className="container">
         <Selector placeholder="Интерьер дома" options={options} />
         {itemsToDisplay.map((item, index) => (
@@ -50,29 +48,32 @@ export const Portfolio = () => {
             <PortfolioProjectsTab
               tabName="Проверка"
               projectType="Проверка"
+              curvedText="Проверка"
               image={name}
               onClick={() => console.log("Clicked")}
             />
             <PortfolioProjectsTab
               tabName="Проверка"
               projectType="Проверка"
+              curvedText="Проверка"
               image={name}
               onClick={() => console.log("Clicked")}
             />
           </div>
         </div>
-        {/* Right Side */}
         <div className="w-[50%] flex flex-col">
           <div className="w-[100%] flex justify-start flex-wrap">
             <PortfolioProjectsTab
               tabName="Проверка"
               projectType="Проверка"
+              curvedText="Проверка"
               image={name}
               onClick={() => console.log("Clicked")}
             />
             <PortfolioProjectsTab
               tabName="Проверка"
               projectType="Проверка"
+              curvedText="Проверка"
               image={name}
               onClick={() => console.log("Clicked")}
             />

@@ -30,7 +30,7 @@ export const AllProjectsMain = () => {
           применяем наш авторский подход, сформированный многолетним опытом в
           сфере архитектуры и дизайна
         </p>
-        <Button text="Наши работы" margin="mt-8" />
+        <Button text="Наши работы" margin="mt-8" to={"more"} />
       </main>
       <main className="container-pc">
         <Lines />
@@ -57,7 +57,7 @@ export const AllProjectsMain = () => {
             photos={smallGalleryContent.first.photos}
             name={smallGalleryContent.first.name}
           />
-          <Button text="Подробнее" margin="mt-8" />
+          <Button text="Подробнее" margin="mt-8" to={"more"} />
         </section>
       </main>
     </>

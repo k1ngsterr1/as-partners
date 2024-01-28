@@ -1,11 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { PhotoItem } from "@shared/lib/data/portfolioContent";
 
 import "swiper/css";
 import "swiper/css/autoplay";
 
 import styles from "./styles.module.scss";
-import { PhotoItem } from "@shared/lib/data/portfolioContent";
 
 interface ISectionGalleryData {
   images: PhotoItem[];

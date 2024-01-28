@@ -56,10 +56,10 @@ export const ServiceInnerPage: React.FC<ServiceContent> = ({
           <UnderText label="НАШИ УСЛУГИ" marginTop="mt-6" />
           <Breadcrumbs crumbs={breadcrumbData} marginTop="mt-4" />
           <p className="paragraph_black mt-6">{paragraph}</p>
-          <Button text="Подробнее" margin="mt-8" />
+          <Button text="Подробнее" margin="mt-8" to={"more"} />
         </main>
         <img src={mainImage} className={styles.image} alt={heading} />
-        <section className="container-no-height">
+        <section className="container-no-height" id="more">
           <h2 className={`${styles.heading} mb-4`}>Детали Услуги</h2>
           <p className="paragraph_black">
             <strong className="mt-7">
@@ -100,40 +100,17 @@ export const ServiceInnerPage: React.FC<ServiceContent> = ({
           <div className={styles.section_one}>
             <h1 className="black ml-8">{heading}</h1>
             <Separator marginTop="mt-8 ml-8" />
-            <UnderText label="ПОРТФОЛИО ПРОЕКТОВ" marginTop="mt-8 ml-8" />
+            <UnderText label="Дизайн Интерьеров" marginTop="mt-8 ml-8" />
             <Breadcrumbs crumbs={breadcrumbData} marginTop="mt-5 ml-8" />
-            <Button text="Подробнее" margin="mt-8 ml-8" />
+            <Button text="Подробнее" margin="mt-8 ml-8" to={"more"} />
           </div>
           <div className={styles.section_two}>
             <SectionGallery images={images} />
           </div>
         </main>
         <LineSeparator />
-        {/* <section className="container-pc-no-height">
-          <div className={styles.section_one}>
-            <h2 className={`${styles.heading} black ml-8 !mt-20`}>
-              Детали Проекта
-            </h2>
-            <p className="paragraph black ml-8 mt-4">
-              <strong>Описание:</strong> {paragraph}
-            </p>
-            <ol className="mb-20">
-              {listItems.map((item, index) => (
-                <ListItemComponent
-                  key={index}
-                  label={item.label}
-                  value={item.value}
-                />
-              ))}
-            </ol>
-          </div>
-          <div className={`${styles.section_two} !justify-start`}>
-            <p className="paragraph black ml-8 mt-20">{paragraphSecond}</p>
-          </div>
-        </section>
-        <LineSeparator /> */}
         <img className="w-[100vw] h-[100vh]" src={mainImage} />
-        <section className="container-pc">
+        <section className="container-pc" id="more">
           <div className={styles.section_one}>
             <ThumbnainGallery images={images} />
           </div>

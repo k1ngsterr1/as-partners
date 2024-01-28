@@ -55,10 +55,10 @@ export const PortfolioInner: React.FC<PortfolioContent> = ({
           <UnderText label="НАШИ УСЛУГИ" marginTop="mt-6" />
           <Breadcrumbs crumbs={breadcrumbData} marginTop="mt-4" />
           <p className="paragraph_black mt-6">{paragraph}</p>
-          <Button text="Подробнее" margin="mt-8" />
+          <Button text="Подробнее" margin="mt-8" to={"more"} />
         </main>
         <img src={mainImage} className={styles.image} alt={heading} />
-        <section className="container-no-height">
+        <section className="container-no-height" id="more">
           <h2 className={`${styles.heading} mb-4`}>Детали Услуги</h2>
           <p className="paragraph_black">
             <strong className="mt-7">
@@ -101,14 +101,14 @@ export const PortfolioInner: React.FC<PortfolioContent> = ({
             <Separator marginTop="mt-8 ml-8" />
             <UnderText label="ПОРТФОЛИО ПРОЕКТОВ" marginTop="mt-8 ml-8" />
             <Breadcrumbs crumbs={breadcrumbData} marginTop="mt-5 ml-8" />
-            <Button text="Подробнее" margin="mt-8 ml-8" />
+            <Button text="Подробнее" margin="mt-8 ml-8" to={"more"} />
           </div>
           <div className={styles.section_two}>
             <SectionGallery images={images} />
           </div>
         </main>
         <LineSeparator />
-        <section className="container-pc-no-height">
+        <section className="container-pc-no-height" id="more">
           <div className={styles.section_one}>
             <h2 className={`${styles.heading} black ml-8 !mt-20`}>
               Детали Проекта

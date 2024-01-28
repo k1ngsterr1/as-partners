@@ -1,6 +1,6 @@
 import { ServiceTab } from "@entities/ServiceTab";
 import { Separator } from "@shared/ui/Separator";
-import { Button } from "@shared/ui/Button";
+import { Button, ButtonNavigation } from "@shared/ui/Button";
 import { useEffect, useRef } from "react";
 import { Fade } from "react-awesome-reveal";
 import { Arrow, BlueArrow } from "@shared/ui/Arrow";
@@ -61,7 +61,11 @@ export const ServicesScreen = () => {
             </p>
           </Fade>
           <Fade delay={250}>
-            <Button text="Все услуги" margin="mt-8 mr-8" />
+            <ButtonNavigation
+              to={"/services"}
+              text="Все услуги"
+              margin="mt-8 mr-8"
+            />
           </Fade>
         </div>
       </section>

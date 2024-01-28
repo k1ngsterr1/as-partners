@@ -35,6 +35,7 @@
     "@types/react-curved-text": "^2.0.3",
     "@types/react-dom": "^18.2.17",
     "@types/react-image-gallery": "^1.2.4",
+    "@types/react-scroll": "^1.8.10",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
