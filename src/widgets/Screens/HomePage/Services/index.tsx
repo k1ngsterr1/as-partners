@@ -1,17 +1,14 @@
 import { ServiceTab } from "@entities/ServiceTab";
 import { Separator } from "@shared/ui/Separator";
-import { Button, ButtonNavigation } from "@shared/ui/Button";
-import { useEffect, useRef } from "react";
+import { ButtonNavigation } from "@shared/ui/Button";
 import { Fade } from "react-awesome-reveal";
-import { Arrow, BlueArrow } from "@shared/ui/Arrow";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-
-import image from "@assets/main/about_block_image.webp";
+import { useNavigate } from "react-router-dom";
 
 import styles from "./styles.module.scss";
 
 export const ServicesScreen = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="w-full bg-white">
       <section className="container">
@@ -24,10 +21,26 @@ export const ServicesScreen = () => {
           привлекательных архитектурных решений, которые отражают последние
           тенденции в области урбанистики и дизайна интерьеров.
         </p>
-        <ServiceTab text="Пример проекта" margin="mt-8" />
-        <ServiceTab text="Пример проекта" margin="mt-8" />
-        <ServiceTab text="Пример проекта" margin="mt-8" />
-        <Button text="Все услуги" margin="mt-8 mb-8" />
+        <ServiceTab
+          text="Пример проекта"
+          margin="mt-8"
+          onClick={() => navigate("/services/design")}
+        />
+        <ServiceTab
+          text="Пример проекта"
+          margin="mt-8"
+          onClick={() => navigate("/services/design")}
+        />
+        <ServiceTab
+          text="Пример проекта"
+          margin="mt-8"
+          onClick={() => navigate("/services/design")}
+        />
+        <ButtonNavigation
+          text="Все услуги"
+          margin="mt-8 mb-8"
+          to={"/services"}
+        />
       </section>
       <section className="container-pc">
         <div className={`${styles.section_one} scrollable_section relative`}>
@@ -36,11 +49,31 @@ export const ServicesScreen = () => {
             damping={0.2}
             className="w-[100%] flex flex-col items-center relative"
           >
-            <ServiceTab text="Услуга" margin="mt-8" />
-            <ServiceTab text="Услуга" margin="mt-8" />
-            <ServiceTab text="Услуга" margin="mt-8" />
-            <ServiceTab text="Услуга" margin="mt-8" />
-            <ServiceTab text="Услуга" margin="mt-8 mb-8" />
+            <ServiceTab
+              text="Услуга"
+              margin="mt-8"
+              onClick={() => navigate("/services/design")}
+            />
+            <ServiceTab
+              text="Услуга"
+              margin="mt-8"
+              onClick={() => navigate("/services/design")}
+            />
+            <ServiceTab
+              text="Услуга"
+              margin="mt-8"
+              onClick={() => navigate("/services/design")}
+            />
+            <ServiceTab
+              text="Услуга"
+              margin="mt-8"
+              onClick={() => navigate("/services/design")}
+            />
+            <ServiceTab
+              text="Услуга"
+              margin="mt-8 mb-8"
+              onClick={() => navigate("/services/design")}
+            />
           </Fade>
         </div>
         <div className={`${styles.section_two} unscrollable_section`}>

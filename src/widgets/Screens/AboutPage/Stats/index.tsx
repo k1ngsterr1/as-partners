@@ -8,7 +8,7 @@ export const StatsScreen = () => {
   return (
     <>
       <div className={`w-full bg-custom-black ${styles.circle}`}>
-        <section className="container">
+        <section className="container" id="more-mob">
           <h2 className={styles.heading}>Немного Статистики</h2>
           <Separator marginTop="mt-5 mb-5" />
           <p className={styles.paragraph_heading}>
@@ -41,7 +41,7 @@ export const StatsScreen = () => {
         </section>
       </div>
       <div className="w-full bg-custom-black circle">
-        <div className="container-pc">
+        <div className="container-pc" id="more-pc">
           <section className={styles.section_one}>
             <h2 className={`${styles.heading} text-white text-left`}>
               Немного Статистики
@@ -67,8 +67,18 @@ export const StatsScreen = () => {
               />
             </div>
             <div className="w-[85%] flex items-center justify-between mt-10">
-              <Counter end={150} duration={3} text="Проектов всего" />
-              <Counter end={320} duration={3} text="Проектов всего" />
+              <Counter
+                end={150}
+                duration={3}
+                text="Проектов всего"
+                marginTop="mt-0"
+              />
+              <Counter
+                end={320}
+                duration={3}
+                text="Проектов всего"
+                marginTop="mt-0"
+              />
             </div>
           </section>
           <section className={styles.section_two}>

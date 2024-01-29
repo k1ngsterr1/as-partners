@@ -95,7 +95,7 @@ export const ServiceInnerPage: React.FC<ServiceContent> = ({
       <div className="desktop w-full max-[448px]:hidden">
         <Header />
         <Menu />
-        <main className="container-pc">
+        <main className="container-pc" id="upper">
           <Lines />
           <div className={styles.section_one}>
             <h1 className="black ml-8">{heading}</h1>

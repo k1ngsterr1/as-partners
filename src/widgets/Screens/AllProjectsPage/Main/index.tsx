@@ -32,7 +32,7 @@ export const AllProjectsMain = () => {
         </p>
         <Button text="Наши работы" margin="mt-8" to={"more"} />
       </main>
-      <main className="container-pc">
+      <main className="container-pc" id="upper">
         <Lines />
         <section className={styles.section_one}>
           <h1 className={`${styles.heading} w-[100%]  !text-custom-black`}>

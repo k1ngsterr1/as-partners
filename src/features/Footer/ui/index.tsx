@@ -76,7 +76,7 @@ export const Footer = () => {
               photos={smallGalleryContent.first.photos}
               name={smallGalleryContent.first.name}
             />
-            <ButtonWhite text="Вверх" margin="mt-8" />
+            <ButtonWhite text="Вверх" margin="mt-8" to={"upper"} />
           </div>
         </div>
       </footer>

@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 import { Arrow } from "@shared/ui/Arrow";
 import { BurgerButton } from "@features/BurgerButton/ui";
@@ -60,7 +60,7 @@ export const HomeScreen = () => {
           <Arrow />
         </Slide>
       </main>
-      <main className="container-pc">
+      <main className="container-pc" id="upper">
         <figure className={styles.line__left} />
         <figure className={styles.line__right} />
         {isClientVisible ? null : <figure className={styles.line__center} />}

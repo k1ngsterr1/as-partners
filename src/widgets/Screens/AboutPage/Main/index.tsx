@@ -17,8 +17,8 @@ export const AboutMainScreen = () => {
   ];
 
   useEffect(() => {
-    const observerCallback = (entries, observer) => {
-      entries.forEach((entry) => {
+    const observerCallback = (entries: any) => {
+      entries.forEach((entry: any) => {
         if (entry.target.id === "clients") {
           setIsClientVisible(entry.isIntersecting);
         }
@@ -58,9 +58,9 @@ export const AboutMainScreen = () => {
           применяем наш авторский подход, сформированный многолетним опытом в
           сфере архитектуры и дизайна
         </p>
-        <Button text="Подробнее" margin="mt-8" />
+        <Button text="Подробнее" margin="mt-8" to={"more-mob"} />
       </main>
-      <main className="container-pc">
+      <main className="container-pc" id="upper">
         <figure className={styles.line__left} />
         <figure className={styles.line__right} />
         {!isClientVisible && !isMapVisible && (
@@ -73,7 +73,7 @@ export const AboutMainScreen = () => {
           <Separator marginTop="mt-5 mb-5" />
           <UnderText label="ИНФОРМАЦИЯ О НАС" marginTop="mt-0" />
           <Breadcrumbs crumbs={breadcrumbData} marginTop="mt-4" />
-          <Button text="Подробнее" margin="mt-10" />
+          <Button text="Подробнее" margin="mt-10" to={"more-pc"} />
         </section>
         <section className={styles.section_two}>
           <p className="paragraph black">

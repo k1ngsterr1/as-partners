@@ -8,6 +8,7 @@ import { portfolioItems } from "@pages/Projects/ui/portfolioItems";
 import { PortfolioProjectsTab } from "@entities/PortfolioProjectTab";
 
 import name from "@assets/main/about_block_image.webp";
+import { useNavigate } from "react-router-dom";
 
 export const Portfolio = () => {
   const options = [
@@ -15,6 +16,8 @@ export const Portfolio = () => {
     { value: "houses", label: "Дизайн Квартиры" },
     { value: "houses", label: "Дизайн Дома" },
   ];
+
+  const navigate = useNavigate();
 
   const selectedOption: string = useSelector(
     (state: RootState) => state.portfolioSelector.selectedOption
@@ -50,14 +53,14 @@ export const Portfolio = () => {
               projectType="Проверка"
               curvedText="Проверка"
               image={name}
-              onClick={() => console.log("Clicked")}
+              onClick={() => navigate("/portfolio/design")}
             />
             <PortfolioProjectsTab
               tabName="Проверка"
               projectType="Проверка"
               curvedText="Проверка"
               image={name}
-              onClick={() => console.log("Clicked")}
+              onClick={() => navigate("/portfolio/design")}
             />
           </div>
         </div>
@@ -68,14 +71,14 @@ export const Portfolio = () => {
               projectType="Проверка"
               curvedText="Проверка"
               image={name}
-              onClick={() => console.log("Clicked")}
+              onClick={() => navigate("/portfolio/design")}
             />
             <PortfolioProjectsTab
               tabName="Проверка"
               projectType="Проверка"
               curvedText="Проверка"
               image={name}
-              onClick={() => console.log("Clicked")}
+              onClick={() => navigate("/portfolio/design")}
             />
           </div>
         </div>

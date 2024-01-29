@@ -8,7 +8,7 @@ import { toggleOnLoader } from "@redux/loaderSlice";
 
 interface ButtonProps {
   text: string;
-  type?: string;
+  type?: string | any;
   margin: string;
   size?: string;
   to: any;
