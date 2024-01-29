@@ -1,21 +1,28 @@
+import { useState } from "react";
 import { useMemo } from "react";
 import { ProjectTab } from "@entities/ProjectTab";
 import { RootState } from "@redux/store";
 import { Selector } from "@shared/ui/Selector";
-import { Slide } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 import { useSelector } from "react-redux";
 import { portfolioItems } from "@pages/Projects/ui/portfolioItems";
 import { PortfolioProjectsTab } from "@entities/PortfolioProjectTab";
-
-import name from "@assets/main/about_block_image.webp";
 import { useNavigate } from "react-router-dom";
 
+import name from "@assets/main/about_block_image.webp";
+
 export const Portfolio = () => {
+  const [selectedValue, setSelectedValue] = useState("");
+
   const options = [
-    { value: "houses", label: "Дизайн Интерьера" },
-    { value: "houses", label: "Дизайн Квартиры" },
-    { value: "houses", label: "Дизайн Дома" },
+    { value: "Дизайн Интерьера", label: "Дизайн Интерьера" },
+    { value: "Дизайн Квартиры", label: "Дизайн Квартиры" },
+    { value: "Дизайн Дома", label: "Дизайн Дома" },
   ];
+
+  const handleSelectChange = (value: string) => {
+    setSelectedValue(value);
+  };
 
   const navigate = useNavigate();
 
@@ -32,7 +39,13 @@ export const Portfolio = () => {
   return (
     <div className="w-full bg-white mb-10 min-[1024px]:mb-0" id="more">
       <section className="container">
-        <Selector placeholder="Интерьер дома" options={options} />
+        <Selector
+          placeholder="Интерьер дома"
+          options={options}
+          value={selectedValue}
+          onChange={handleSelectChange}
+          margin="mt-0"
+        />
         {itemsToDisplay.map((item, index) => (
           <Slide className="w-full flex flex-col mt-7" triggerOnce>
             <ProjectTab
@@ -55,6 +68,7 @@ export const Portfolio = () => {
               image={name}
               onClick={() => navigate("/portfolio/design")}
             />
+
             <PortfolioProjectsTab
               tabName="Проверка"
               projectType="Проверка"

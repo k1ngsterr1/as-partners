@@ -24,7 +24,7 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({
           {index > 0 && <span className="ml-2 mr-2 ">/</span>}
           <Link
             to={crumb.path}
-            className="transition-all hover:text-custom-blue"
+            className="transition-all hover:text-custom-blue "
           >
             {crumb.label}
           </Link>

@@ -1,17 +1,17 @@
 import React from "react";
 import { Link as NavLink, useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
-
-import styles from "./styles.module.scss";
 import { useDispatch } from "react-redux";
 import { toggleOnLoader } from "@redux/loaderSlice";
+
+import styles from "./styles.module.scss";
 
 interface ButtonProps {
   text: string;
   type?: string | any;
   margin: string;
   size?: string;
-  to: any;
+  to?: any;
   onClick?: () => void;
 }
 
@@ -23,6 +23,19 @@ export const ButtonRegular: React.FC<ButtonProps> = ({
 }) => {
   return (
     <button className={`${styles.button}  ${margin} ${size}`} type={type}>
+      {text}
+    </button>
+  );
+};
+
+export const ButtonRegularWhite: React.FC<ButtonProps> = ({
+  text,
+  margin,
+  size,
+  type,
+}) => {
+  return (
+    <button className={`${styles.white}  ${margin} ${size}`} type={type}>
       {text}
     </button>
   );

@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { Fade } from "react-awesome-reveal";
 import { Separator } from "@shared/ui/Separator";
 import Marquee from "react-fast-marquee";
 
@@ -13,21 +13,23 @@ import logo08 from "@assets/clients/siemes.svg";
 import logo09 from "@assets/clients/syngenta.svg";
 
 import styles from "./styles.module.scss";
-import { Fade } from "react-awesome-reveal";
 
 export const ClientsScreen = () => {
   return (
     <div className="w-full h-auto bg-white" id="clients">
       <section className="container-no-height" id="clients">
-        <h5 className={styles.heading}>Клиенты</h5>
-        <Separator marginTop="mt-4" />
-        <p className="paragraph_black mt-4">
-          Добро пожаловать на сайт AS Partners Architect, вашего надежного
-          партнера в мире современной архитектуры и дизайна. Мы специализируемся
-          на создании инновационных, функциональных и эстетически
-          привлекательных архитектурных решений, которые отражают последние
-          тенденции в области урбанистики и дизайна интерьеров.
-        </p>
+        <Fade delay={150}>
+          <h5 className={styles.heading}>Клиенты</h5>
+        </Fade>
+        <Fade delay={200}>
+          <Separator marginTop="mt-4" />
+        </Fade>
+        <Fade delay={250} className="flex items-center justify-center">
+          <p className="paragraph_black mt-4">
+            Добро пожаловать на сайт AS Partners Architect, вашего надежного
+            партнера в мире современной архитектуры и дизайна.
+          </p>
+        </Fade>
         <Marquee speed={100}>
           <img className={`${styles.logo} ml-8 mr-8`} src={logo01} alt="logo" />
           <img src={logo02} className={`${styles.logo} ml-8 mr-8`} alt="logo" />

@@ -10,35 +10,49 @@ export const StatsScreen = () => {
     <>
       <div className={`w-full bg-custom-black ${styles.circle}`}>
         <section className="container" id="more-mob">
-          <h2 className={styles.heading}>Немного Статистики</h2>
-          <Separator marginTop="mt-5 mb-5" />
-          <p className={styles.paragraph_heading}>
-            Архитектурная студия AS Partners
-          </p>
-          <Counter
-            end={150}
-            duration={3}
-            text="Проектов всего"
-            marginTop="mt-8"
-          />
-          <Counter
-            end={150}
-            duration={3}
-            text="Проектов всего"
-            marginTop="mt-8"
-          />
-          <Counter
-            end={150}
-            duration={3}
-            text="Проектов всего"
-            marginTop="mt-8"
-          />
-          <Counter
-            end={150}
-            duration={3}
-            text="Проектов всего"
-            marginTop="mt-8"
-          />
+          <Fade delay={150} className="flex items-center justify-center">
+            <h2 className={styles.heading}>Немного Статистики</h2>
+          </Fade>
+          <Fade delay={200}>
+            <Separator marginTop="mt-5 mb-5" />
+          </Fade>
+          <Fade delay={250} className="flex items-center justify-center">
+            <p className={styles.paragraph_heading}>
+              Архитектурная студия AS Partners
+            </p>
+          </Fade>
+          <Fade delay={250}>
+            <Counter
+              end={400}
+              duration={3}
+              text="Проектов всего"
+              marginTop="mt-8"
+            />
+          </Fade>
+          <Fade delay={250}>
+            <Counter
+              end={400}
+              duration={3}
+              text="Проектов всего"
+              marginTop="mt-8"
+            />
+          </Fade>
+          <Fade delay={250}>
+            <Counter
+              end={400}
+              duration={3}
+              text="Проектов всего"
+              marginTop="mt-8"
+            />
+          </Fade>
+          <Fade delay={250}>
+            <Counter
+              end={400}
+              duration={3}
+              text="Проектов всего"
+              marginTop="mt-8"
+            />
+          </Fade>
         </section>
       </div>
       <div className="w-full bg-custom-black circle">

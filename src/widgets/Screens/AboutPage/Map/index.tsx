@@ -7,14 +7,20 @@ export const MapScreen = () => {
     <>
       <div className="w-full bg-white" id="map">
         <section className="container-no-height">
-          <h3 className={`${styles.heading}`}>
-            География выполненных проектов
-          </h3>
-          <p className="paragraph_black mt-4">
-            Добро пожаловать на сайт AS Partners Architect, вашего надежного
-            партнера в мире современной архитектуры и дизайна.
-          </p>
-          <img src={map} className="mt-10 mb-20" alt="map_mobile" />
+          <Fade delay={150} className="flex items-center justify-center">
+            <h3 className={`${styles.heading}`}>
+              География выполненных проектов
+            </h3>
+          </Fade>
+          <Fade delay={200} className="flex items-center justify-center">
+            <p className="paragraph_black mt-4">
+              Добро пожаловать на сайт AS Partners Architect, вашего надежного
+              партнера в мире современной архитектуры и дизайна.
+            </p>
+          </Fade>
+          <Fade delay={250}>
+            <img src={map} className="mt-10 mb-20" alt="map_mobile" />
+          </Fade>
         </section>
       </div>
       <div className="w-full bg-white" id="map">

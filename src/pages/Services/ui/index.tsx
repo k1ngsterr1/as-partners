@@ -10,6 +10,7 @@ import { ServicesScreen } from "@widgets/Screens/HomePage/Services";
 import { AllServices } from "@widgets/Screens/ServicesPage/Services";
 import { ServicesMain } from "@widgets/Screens/ServicesPage/Main";
 import { Header } from "@entities/Header";
+import { LineSeparator } from "@shared/ui/LineSeparator";
 
 export const ServicesPage = () => {
   const dispatch = useDispatch();
@@ -27,6 +28,7 @@ export const ServicesPage = () => {
       <Header />
       <Menu />
       <ServicesMain />
+      <LineSeparator />
       <AllServices />
       <FormScreen />
       <Footer />
