@@ -2,11 +2,9 @@ import { ProjectTab } from "@entities/ProjectTab";
 import { ButtonWhite, ButtonWhiteNavigation } from "@shared/ui/Button";
 import { Separator } from "@shared/ui/Separator";
 import { Fade } from "react-awesome-reveal";
-
-import image from "@assets/services/services.webp";
+import { useNavigate } from "react-router-dom";
 
 import styles from "./styles.module.scss";
-import { useNavigate } from "react-router-dom";
 
 export const ProjectsScreen = () => {
   const navigate = useNavigate();
@@ -85,13 +83,41 @@ export const ProjectsScreen = () => {
             damping={0.2}
             className="w-[100%] flex flex-col items-center relative"
           >
-            <ProjectTab text="Пример проекта" margin="mt-8" />
-            <ProjectTab text="Пример проекта" margin="mt-8" />
-            <ProjectTab text="Пример проекта" margin="mt-8" />
-            <ProjectTab text="Пример проекта" margin="mt-8" />
-            <ProjectTab text="Пример проекта" margin="mt-8" />
-            <ProjectTab text="Пример проекта" margin="mt-8" />
-            <ProjectTab text="Пример проекта" margin="mt-8 mb-8" />
+            <ProjectTab
+              text="Пример проекта"
+              margin="mt-8"
+              onClick={() => navigate("/portfolio/design")}
+            />
+            <ProjectTab
+              text="Пример проекта"
+              margin="mt-8"
+              onClick={() => navigate("/portfolio/design")}
+            />
+            <ProjectTab
+              text="Пример проекта"
+              margin="mt-8"
+              onClick={() => navigate("/portfolio/design")}
+            />
+            <ProjectTab
+              text="Пример проекта"
+              margin="mt-8"
+              onClick={() => navigate("/portfolio/design")}
+            />
+            <ProjectTab
+              text="Пример проекта"
+              margin="mt-8"
+              onClick={() => navigate("/portfolio/design")}
+            />
+            <ProjectTab
+              text="Пример проекта"
+              margin="mt-8"
+              onClick={() => navigate("/portfolio/design")}
+            />
+            <ProjectTab
+              text="Пример проекта"
+              margin="mt-8 mb-8"
+              onClick={() => navigate("/portfolio/design")}
+            />
           </Fade>
         </div>
       </section>

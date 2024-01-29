@@ -3,7 +3,7 @@ import { useMemo } from "react";
 import { ProjectTab } from "@entities/ProjectTab";
 import { RootState } from "@redux/store";
 import { Selector } from "@shared/ui/Selector";
-import { Fade, Slide } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 import { useSelector } from "react-redux";
 import { portfolioItems } from "@pages/Projects/ui/portfolioItems";
 import { PortfolioProjectsTab } from "@entities/PortfolioProjectTab";

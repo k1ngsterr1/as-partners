@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
-import { Button, ButtonRegular } from "@shared/ui/Button";
+import { useState } from "react";
+import { ButtonRegular } from "@shared/ui/Button";
 import { Separator } from "@shared/ui/Separator";
 import { Input } from "@shared/ui/Input";
 import { Selector } from "@shared/ui/Selector";
+import { Fade } from "react-awesome-reveal";
 
 import styles from "./styles.module.scss";
-import { Fade } from "react-awesome-reveal";
 
 export const FormScreen = () => {
   const [selectedValue, setSelectedValue] = useState("");

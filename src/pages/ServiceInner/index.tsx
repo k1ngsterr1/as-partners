@@ -17,7 +17,6 @@ import { Header } from "@entities/Header";
 import { Lines } from "@shared/ui/Lines";
 import { SectionGallery } from "@features/SectionGallery/ui";
 import { LineSeparator } from "@shared/ui/LineSeparator";
-import { ListItemComponent } from "@shared/ui/ListItem";
 import { ThumbnainGallery } from "@features/ThumbnailGallery/ui";
 import styles from "./styles.module.scss";
 

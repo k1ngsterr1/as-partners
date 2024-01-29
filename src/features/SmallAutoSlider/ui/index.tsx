@@ -2,8 +2,6 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
-import image from "@assets/services/services.webp";
-
 import styles from "./styles.module.scss";
 
 import "swiper/css";

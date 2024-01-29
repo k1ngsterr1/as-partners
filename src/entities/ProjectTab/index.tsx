@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 interface ProjectTabProps {
   text: string;
   margin: string;
-  image: string;
+  image?: string;
   onClick: () => void;
 }
 

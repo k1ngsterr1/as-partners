@@ -1,5 +1,5 @@
 import React from "react";
-import { Link as NavLink, useNavigate } from "react-router-dom";
+import { Link as NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
 import { useDispatch } from "react-redux";
 import { toggleOnLoader } from "@redux/loaderSlice";

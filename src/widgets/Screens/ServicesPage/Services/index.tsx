@@ -1,16 +1,35 @@
 import { PortfolioProjectsTab } from "@entities/PortfolioProjectTab";
 import { ServiceTab } from "@entities/ServiceTab";
+import { useNavigate } from "react-router-dom";
 
 import name from "@assets/main/about_block_image.webp";
 
 export const AllServices = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="w-full bg-white mb-10">
       <section className="container" id="more">
-        <ServiceTab text="Пример услуги" margin="mt-4" />
-        <ServiceTab text="Пример услуги" margin="mt-4" />
-        <ServiceTab text="Пример услуги" margin="mt-4" />
-        <ServiceTab text="Пример услуги" margin="mt-4" />
+        <ServiceTab
+          text="Пример услуги"
+          margin="mt-4"
+          onClick={() => navigate("/services/design")}
+        />
+        <ServiceTab
+          text="Пример услуги"
+          margin="mt-4"
+          onClick={() => navigate("/services/design")}
+        />
+        <ServiceTab
+          text="Пример услуги"
+          margin="mt-4"
+          onClick={() => navigate("/services/design")}
+        />
+        <ServiceTab
+          text="Пример услуги"
+          margin="mt-4"
+          onClick={() => navigate("/services/design")}
+        />
       </section>
       <section className="container-pc-no-height flex-col">
         <div className="flex">
