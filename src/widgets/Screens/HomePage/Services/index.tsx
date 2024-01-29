@@ -1,7 +1,7 @@
 import { ServiceTab } from "@entities/ServiceTab";
 import { Separator } from "@shared/ui/Separator";
 import { ButtonNavigation } from "@shared/ui/Button";
-import { Fade } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 import { useNavigate } from "react-router-dom";
 
 import styles from "./styles.module.scss";
@@ -12,20 +12,27 @@ export const ServicesScreen = () => {
   return (
     <div className="w-full bg-white">
       <section className="container">
-        <h3 className={styles.heading}>Наши Услуги</h3>
-        <Separator marginTop="mt-4" />
-        <p className="paragraph_black text-center mt-4 ">
-          Добро пожаловать на сайт AS Partners Architect, вашего надежного
-          партнера в мире современной архитектуры и дизайна. Мы специализируемся
-          на создании инновационных, функциональных и эстетически
-          привлекательных архитектурных решений, которые отражают последние
-          тенденции в области урбанистики и дизайна интерьеров.
-        </p>
+        <Fade delay={150}>
+          <h3 className={styles.heading}>Наши Услуги</h3>
+        </Fade>
+        <Fade delay={200}>
+          <Separator marginTop="mt-4" />
+        </Fade>
+        <Fade delay={250} className="flex items-center justify-center">
+          <p className="paragraph_black text-center mt-4 ">
+            Добро пожаловать на сайт AS Partners Architect, вашего надежного
+            партнера в мире современной архитектуры и дизайна. Мы
+            специализируемся на создании инновационных, функциональных и
+            эстетически привлекательных архитектурных решений, которые отражают
+            последние тенденции в области урбанистики и дизайна интерьеров.
+          </p>
+        </Fade>
         <ServiceTab
           text="Пример проекта"
           margin="mt-8"
           onClick={() => navigate("/services/design")}
         />
+
         <ServiceTab
           text="Пример проекта"
           margin="mt-8"

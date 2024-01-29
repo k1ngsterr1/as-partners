@@ -24,17 +24,24 @@ export const ProjectsScreen = () => {
             to={"/services/architecture"}
           />
         </div>
-        <h4 className={styles.heading}>Проекты</h4>
-        <Separator marginTop="mt-4" />
-        <p className="paragraph mt-4">
-          Добро пожаловать на сайт AS Partners Architect, вашего надежного
-          партнера в мире современной архитектуры и дизайна.
-        </p>
+        <Fade delay={150}>
+          <h4 className={styles.heading}>Проекты</h4>
+        </Fade>
+        <Fade delay={200}>
+          <Separator marginTop="mt-4" />
+        </Fade>
+        <Fade delay={250} className="flex items-center justify-center">
+          <p className="paragraph mt-4">
+            Добро пожаловать на сайт AS Partners Architect, вашего надежного
+            партнера в мире современной архитектуры и дизайна.
+          </p>
+        </Fade>
         <ProjectTab
           text="Пример проекта"
           margin="mt-8"
           onClick={() => navigate("/portfolio/design")}
         />
+
         <ProjectTab
           text="Пример проекта"
           margin="mt-8"
