@@ -1,7 +1,7 @@
 import { ServiceTab } from "@entities/ServiceTab";
 import { Separator } from "@shared/ui/Separator";
 import { ButtonNavigation } from "@shared/ui/Button";
-import { Fade, Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 import { useNavigate } from "react-router-dom";
 
 import styles from "./styles.module.scss";
