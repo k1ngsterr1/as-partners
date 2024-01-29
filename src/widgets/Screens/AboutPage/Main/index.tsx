@@ -6,6 +6,7 @@ import { Separator } from "@shared/ui/Separator";
 import { UnderText } from "@shared/ui/UnderText";
 
 import styles from "./styles.module.scss";
+import { Fade } from "react-awesome-reveal";
 
 export const AboutMainScreen = () => {
   const [isClientVisible, setIsClientVisible] = useState(false);
@@ -48,17 +49,29 @@ export const AboutMainScreen = () => {
     <>
       <main className="container">
         <BurgerButton color="black_bg" />
-        <h1 className="black">AS & Partners Architect</h1>
-        <Separator marginTop="mt-4" />
-        <UnderText label="ИНФОРМАЦИЯ О НАС" marginTop="mt-6" />
-        <Breadcrumbs crumbs={breadcrumbData} marginTop="mt-4" />
-        <p className="paragraph_black text-center mt-5">
-          Одним из направлений работы нашей студии является проектирование
-          коттеджных поселков разного масштаба и типологии. В работе мы
-          применяем наш авторский подход, сформированный многолетним опытом в
-          сфере архитектуры и дизайна
-        </p>
-        <Button text="Подробнее" margin="mt-8" to={"more-mob"} />
+        <Fade delay={150}>
+          <h1 className="black">AS & Partners Architect</h1>
+        </Fade>
+        <Fade delay={200}>
+          <Separator marginTop="mt-4" />
+        </Fade>
+        <Fade delay={250} className="mt-4">
+          <UnderText label="ИНФОРМАЦИЯ О НАС" marginTop="mt-6" />
+        </Fade>
+        <Fade delay={300}>
+          <Breadcrumbs crumbs={breadcrumbData} marginTop="mt-4" />
+        </Fade>
+        <Fade delay={350} className="w-full flex items-center justify-center">
+          <p className="paragraph_black text-center mt-5">
+            Одним из направлений работы нашей студии является проектирование
+            коттеджных поселков разного масштаба и типологии. В работе мы
+            применяем наш авторский подход, сформированный многолетним опытом в
+            сфере архитектуры и дизайна
+          </p>
+        </Fade>
+        <Fade delay={400} className="w-full flex items-center justify-center">
+          <Button text="Подробнее" margin="mt-8" to={"more-mob"} />
+        </Fade>
       </main>
       <main className="container-pc" id="upper">
         <figure className={styles.line__left} />
@@ -67,29 +80,43 @@ export const AboutMainScreen = () => {
           <figure className={styles.line__center} />
         )}
         <section className={styles.section_one}>
-          <h1 className={`${styles.section_one__heading} !text-custom-black`}>
-            AS & Partners Architect
-          </h1>
-          <Separator marginTop="mt-5 mb-5" />
-          <UnderText label="ИНФОРМАЦИЯ О НАС" marginTop="mt-0" />
-          <Breadcrumbs crumbs={breadcrumbData} marginTop="mt-4" />
-          <Button text="Подробнее" margin="mt-10" to={"more-pc"} />
+          <Fade delay={150}>
+            <h1 className={`${styles.section_one__heading} !text-custom-black`}>
+              AS & Partners Architect
+            </h1>
+          </Fade>
+          <Fade delay={200}>
+            <Separator marginTop="mt-5 mb-5" />
+          </Fade>
+          <Fade delay={250}>
+            <UnderText label="ИНФОРМАЦИЯ О НАС" marginTop="mt-0" />
+          </Fade>
+          <Fade delay={300}>
+            <Breadcrumbs crumbs={breadcrumbData} marginTop="mt-4" />
+          </Fade>
+          <Fade delay={350}>
+            <Button text="Подробнее" margin="mt-10" to={"more-pc"} />
+          </Fade>
         </section>
         <section className={styles.section_two}>
-          <p className="paragraph black">
-            Одним из направлений работы нашей студии является проектирование
-            коттеджных поселков разного масштаба и типологии. В работе мы
-            применяем наш авторский подход, сформированный многолетним опытом в
-            сфере архитектуры и дизайна
-          </p>
+          <Fade delay={400}>
+            <p className="paragraph black">
+              Одним из направлений работы нашей студии является проектирование
+              коттеджных поселков разного масштаба и типологии. В работе мы
+              применяем наш авторский подход, сформированный многолетним опытом
+              в сфере архитектуры и дизайна
+            </p>
+          </Fade>
           <br />
           <br />
-          <p className="paragraph black">
-            Одним из направлений работы нашей студии является проектирование
-            коттеджных поселков разного масштаба и типологии. В работе мы
-            применяем наш авторский подход, сформированный многолетним опытом в
-            сфере архитектуры и дизайна
-          </p>
+          <Fade delay={450}>
+            <p className="paragraph black">
+              Одним из направлений работы нашей студии является проектирование
+              коттеджных поселков разного масштаба и типологии. В работе мы
+              применяем наш авторский подход, сформированный многолетним опытом
+              в сфере архитектуры и дизайна
+            </p>
+          </Fade>
         </section>
       </main>
     </>
