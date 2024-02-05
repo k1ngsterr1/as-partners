@@ -1,11 +1,11 @@
 import { Separator } from "@shared/ui/Separator";
 import { Counter } from "@shared/ui/Counter";
 import { Fade, Slide } from "react-awesome-reveal";
+import { UnderText } from "@shared/ui/UnderText";
 
-import about from "@assets/main/about_block_image.webp";
+import siemens from "@assets/projects/Siemens/Siemens01.webp";
 
 import styles from "./styles.module.scss";
-import { UnderText } from "@shared/ui/UnderText";
 
 export const AboutScreen = () => {
   return (
@@ -51,7 +51,7 @@ export const AboutScreen = () => {
           text="Проектов всего"
           marginTop="mt-8 mb-8"
         />
-        <img src={about} className={styles.about_image} alt="about_image" />
+        <img src={siemens} className={styles.about_image} alt="about_image" />
       </section>
       <section className="container-pc">
         <div className={styles.section_one}>
@@ -93,7 +93,7 @@ export const AboutScreen = () => {
             </p>
           </Fade>
           <Fade delay={400}>
-            <img src={about} className={styles.image} alt="image" />
+            <img src={siemens} className={styles.image} alt="image" />
           </Fade>
         </div>
       </section>

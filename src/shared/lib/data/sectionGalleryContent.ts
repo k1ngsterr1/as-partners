@@ -1,4 +1,12 @@
-import image from "@assets/services/services.webp";
+import image from "@assets/services/services_pc.png";
+
+import tansar from "@assets/projects/Tansar/tansar06.webp";
+import wendy from "@assets/projects/Wendys/Wendy03.webp";
+import channel from "@assets/projects/31/31channel01_gallery.webp";
+import doEat from "@assets/projects/DoEat/DoEat01_gallery.webp";
+import freedomBank from "@assets/projects/FF/FFB05_gallery.webp";
+import appleCity from "@assets/projects/AppleCity/AppleCity04_gallery.webp";
+
 import { Photos } from "./smallGalleryContent";
 
 interface iSectionGallerySlider {
@@ -9,22 +17,22 @@ export const sectionGalleryContent: Record<string, iSectionGallerySlider> = {
   first: {
     photos: [
       {
-        photo: image,
+        photo: tansar,
       },
       {
-        photo: image,
+        photo: wendy,
       },
       {
-        photo: image,
+        photo: channel,
       },
       {
-        photo: image,
+        photo: doEat,
       },
       {
-        photo: image,
+        photo: freedomBank,
       },
       {
-        photo: image,
+        photo: appleCity,
       },
     ],
   },

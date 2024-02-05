@@ -193,7 +193,7 @@ export const Menu = () => {
                 href="tel:+77017812956"
                 className="text-white mt-8 ml-8 text-xl underline font-[Montserrat] transition-all hover:text-custom-blue"
               >
-                +7 701 781 29 56
+                +7 705 181 5330
               </a>
             </Fade>
             <Fade delay={700}>

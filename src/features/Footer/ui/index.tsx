@@ -65,10 +65,10 @@ export const Footer = () => {
               href="tel:+77017812956"
               className="!w-[52%] underline font-[Montserrat] text-white text-xl font-light transition-all hover:text-custom-blue"
             >
-              +7 701 781 29 56
+              +7 705 181 5330
             </a>
             <span className="text-white font-[Montserrat] text-lg font-light mt-5 mb-10">
-              © 2023 | ООО "AS & Partners Architects"
+              © 2024 | ООО "AS & Partners Architects"
             </span>
           </div>
           <div className={styles.footer_pc__container__section_two}>

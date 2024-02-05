@@ -4,9 +4,11 @@ import { Breadcrumbs } from "@shared/ui/Breadcrumbs";
 import { Button } from "@shared/ui/Button";
 import { Separator } from "@shared/ui/Separator";
 import { UnderText } from "@shared/ui/UnderText";
+import { Fade } from "react-awesome-reveal";
+
+import siemens from "@assets/projects/Siemens/Siemens01.webp";
 
 import styles from "./styles.module.scss";
-import { Fade } from "react-awesome-reveal";
 
 export const AboutMainScreen = () => {
   const [isClientVisible, setIsClientVisible] = useState(false);
