@@ -3,7 +3,9 @@
 
   &__image {
     position: relative;
-    width: 100%;
+    cursor: pointer;
+    width: clamp(200px, 20.832vw, 800px);
+    height: clamp(125px, 13.02vw, 500px);
 
     &__text {
       bottom: clamp(8px, 0.83328vw, 32px);

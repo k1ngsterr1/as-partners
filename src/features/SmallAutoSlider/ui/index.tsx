@@ -1,15 +1,13 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { Photos } from "@shared/lib/data/smallGalleryContent";
+import { useNavigate } from "react-router-dom";
 
 import styles from "./styles.module.scss";
 
 import "swiper/css";
 import "swiper/css/autoplay";
-
-interface Photos {
-  photo: string;
-}
 
 interface iSmallAutoSlider {
   photos: Photos[];
@@ -20,8 +18,9 @@ interface iSmallAutoSlider {
 export const SmallAutoSlider: React.FC<iSmallAutoSlider> = ({
   photos,
   className,
-  name,
 }) => {
+  const navigate = useNavigate();
+
   return (
     <>
       <Swiper
@@ -35,14 +34,18 @@ export const SmallAutoSlider: React.FC<iSmallAutoSlider> = ({
         }}
       >
         {photos.map((photoObject, index) => (
-          <SwiperSlide>
+          <SwiperSlide
+            onClick={() => navigate(`/portfolio/${photoObject.navigation}`)}
+          >
             <img
               src={photoObject.photo}
               key={index}
               className={styles.swiper__image}
               alt="service_photo"
             />
-            <span className={styles.swiper__image__text}>{name}</span>
+            <span className={styles.swiper__image__text}>
+              {photoObject.name}
+            </span>
           </SwiperSlide>
         ))}
       </Swiper>

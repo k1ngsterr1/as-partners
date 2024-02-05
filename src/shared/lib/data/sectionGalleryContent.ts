@@ -1,5 +1,3 @@
-import image from "@assets/services/services_pc.png";
-
 import tansar from "@assets/projects/Tansar/tansar06.webp";
 import wendy from "@assets/projects/Wendys/Wendy03.webp";
 import channel from "@assets/projects/31/31channel01_gallery.webp";
@@ -17,21 +15,27 @@ export const sectionGalleryContent: Record<string, iSectionGallerySlider> = {
   first: {
     photos: [
       {
+        navigation: "tansar",
         photo: tansar,
       },
       {
+        navigation: "wendys",
         photo: wendy,
       },
       {
+        navigation: "31_channel",
         photo: channel,
       },
       {
+        navigation: "do_eat",
         photo: doEat,
       },
       {
+        navigation: "freedom_bank",
         photo: freedomBank,
       },
       {
+        navigation: "apple_city",
         photo: appleCity,
       },
     ],

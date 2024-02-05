@@ -1,29 +1,40 @@
-import image from "@assets/services/services.webp";
+import gorky from "@assets/projects/31/31channel01.webp";
+import apple from "@assets/projects/AppleCity/AppleCity02.webp";
+import takeda from "@assets/projects/Takeda/takeda01.webp";
+import siemens from "@assets/projects/Siemens/Siemens01.webp";
 
 export interface Photos {
   photo: string;
+  name?: string;
+  navigation?: string;
 }
 
 export interface iSmallAutoSlider {
   photos: Photos[];
-  name: string;
 }
 
 export const smallGalleryContent: Record<string, iSmallAutoSlider> = {
   first: {
-    name: "Example",
     photos: [
       {
-        photo: image,
+        name: "31 Канал",
+        photo: gorky,
+        navigation: "31_channel",
       },
       {
-        photo: image,
+        name: "Apple City",
+        photo: apple,
+        navigation: "apple_city",
       },
       {
-        photo: image,
+        name: "Takeda",
+        photo: takeda,
+        navigation: "takeda",
       },
       {
-        photo: image,
+        name: "Siemens",
+        photo: siemens,
+        navigation: "siemens",
       },
     ],
   },
