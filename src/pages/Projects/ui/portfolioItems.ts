@@ -12,7 +12,7 @@ export type PortfolioItems = {
 export const portfolioItems: PortfolioItems = {
   houses: [
     {
-      name: "Пример проекта",
+      name: "Siemens",
       img: image,
     },
     {

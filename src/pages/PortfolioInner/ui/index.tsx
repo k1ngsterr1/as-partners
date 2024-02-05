@@ -26,6 +26,7 @@ export const PortfolioInner: React.FC<PortfolioContent> = ({
   heading,
   headingSecond,
   mainImage,
+  images_thumbnail,
   paragraph,
   paragraphSecond,
   images,
@@ -34,7 +35,7 @@ export const PortfolioInner: React.FC<PortfolioContent> = ({
   const breadcrumbData = [
     { label: "Главная", path: "/" },
     { label: "Портфолио", path: "/portfolio" },
-    { label: `${heading}`, path: `/${heading}` },
+    { label: `${heading}`, path: `/portfolio/${heading}` },
   ];
 
   const dispatch = useDispatch();
@@ -134,7 +135,7 @@ export const PortfolioInner: React.FC<PortfolioContent> = ({
         <img className="w-[100vw] h-[100vh]" src={mainImage} />
         <section className="container-pc">
           <div className={styles.section_one}>
-            <ThumbnainGallery images={images} />
+            <ThumbnainGallery images={images_thumbnail} />
           </div>
           <div className={`${styles.section_two} !justify-center`}>
             <h3 className={styles.smaller_heading}>{headingSecond}</h3>
