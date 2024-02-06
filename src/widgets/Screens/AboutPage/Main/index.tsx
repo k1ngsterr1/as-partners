@@ -6,8 +6,6 @@ import { Separator } from "@shared/ui/Separator";
 import { UnderText } from "@shared/ui/UnderText";
 import { Fade } from "react-awesome-reveal";
 
-import siemens from "@assets/projects/Siemens/Siemens01.webp";
-
 import styles from "./styles.module.scss";
 
 export const AboutMainScreen = () => {

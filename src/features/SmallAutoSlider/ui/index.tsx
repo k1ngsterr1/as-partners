@@ -11,7 +11,7 @@ import "swiper/css/autoplay";
 
 interface iSmallAutoSlider {
   photos: Photos[];
-  name: string;
+  name?: string;
   className?: string;
 }
 

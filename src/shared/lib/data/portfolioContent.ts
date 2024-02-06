@@ -1,5 +1,3 @@
-import gallery02 from "@assets/services/service_tab_example.png";
-
 import siemens from "@assets/projects/Siemens/Siemens01.webp";
 import siemens02 from "@assets/projects/Siemens/Siemens02.webp";
 import siemens03 from "@assets/projects/Siemens/Siemens03.webp";

@@ -273,10 +273,7 @@ export const Menu = () => {
 
             <div className="w-[65%] flex justify-start ml-8">
               <Fade delay={650}>
-                <SmallAutoSlider
-                  photos={smallGalleryContent.first.photos}
-                  name={smallGalleryContent.first.name}
-                />
+                <SmallAutoSlider photos={smallGalleryContent.first.photos} />
               </Fade>
             </div>
           </div>

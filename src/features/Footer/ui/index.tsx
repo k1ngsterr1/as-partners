@@ -72,10 +72,7 @@ export const Footer = () => {
             </span>
           </div>
           <div className={styles.footer_pc__container__section_two}>
-            <SmallAutoSlider
-              photos={smallGalleryContent.first.photos}
-              name={smallGalleryContent.first.name}
-            />
+            <SmallAutoSlider photos={smallGalleryContent.first.photos} />
             <ButtonWhite text="Вверх" margin="mt-8" to={"upper"} />
           </div>
         </div>
