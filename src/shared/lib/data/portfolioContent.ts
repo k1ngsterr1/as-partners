@@ -1065,9 +1065,6 @@ export const portfolioContent: Record<string, PortfolioContent> = {
       {
         photo: tansar05,
       },
-      {
-        photo: tansar06,
-      },
     ],
     listItems: [
       {
@@ -1083,6 +1080,6 @@ export const portfolioContent: Record<string, PortfolioContent> = {
         value: "Завершен",
       },
     ],
-    mainImage: wendys,
+    mainImage: tansar05,
   },
 };
