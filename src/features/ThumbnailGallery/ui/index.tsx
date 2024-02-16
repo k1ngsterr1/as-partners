@@ -14,7 +14,7 @@ export const ThumbnainGallery: React.FC<IThumbnainGalleryData> = ({
 }) => {
   const photos = images.map((photo) => ({
     original: photo.photo,
-    thumbnail: photo.photo,
+    thumbnail: photo.thumbnail,
   }));
 
   return (

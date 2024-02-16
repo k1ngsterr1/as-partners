@@ -1,8 +1,8 @@
-import siemens from "@assets/projects/Siemens/Siemens01.webp";
-import siemens02 from "@assets/projects/Siemens/Siemens02.webp";
-import siemens03 from "@assets/projects/Siemens/Siemens03.webp";
-import siemens04 from "@assets/projects/Siemens/Siemens04.webp";
-import siemens05 from "@assets/projects/Siemens/Siemens05.webp";
+import siemens from "@assets/projects/Siemens/siemens_big.webp";
+import siemens02 from "@assets/projects/Siemens/siemens_big_02.webp";
+import siemens03 from "@assets/projects/Siemens/siemens_big_03.webp";
+import siemens04 from "@assets/projects/Siemens/siemens_big_04.webp";
+import siemens05 from "@assets/projects/Siemens/siemens_big_05.webp";
 
 import siemens_gallery from "@assets/projects/Siemens/gallery/siemens_gallery_01.webp";
 import siemens_gallery02 from "@assets/projects/Siemens/gallery/siemens_gallery_02.webp";
@@ -59,6 +59,36 @@ import lampadario_gallery05 from "@assets/projects/Lampadario/gallery/lampadario
 import lenovo_gallery from "@assets/projects/Lenovo/gallery/lenovo_gallery_01.webp";
 import lenovo_gallery02 from "@assets/projects/Lenovo/gallery/lenovo_gallery_02.webp";
 import lenovo_gallery03 from "@assets/projects/Lenovo/gallery/lenovo_gallery_03.webp";
+
+import parkView_gallery from "@assets/projects/ParkView/gallery/park_view_gallery_01.webp";
+import parkView_gallery02 from "@assets/projects/ParkView/gallery/park_view_gallery_02.webp";
+import parkView_gallery03 from "@assets/projects/ParkView/gallery/park_view_gallery_03.webp";
+import parkView_gallery04 from "@assets/projects/ParkView/gallery/park_view_gallery_04.webp";
+import parkView_gallery05 from "@assets/projects/ParkView/gallery/park_view_gallery_05.webp";
+
+import remizovka_gallery from "@assets/projects/Remizovka/gallery/remizovka01.webp";
+import remizovka_gallery02 from "@assets/projects/Remizovka/gallery/remizovka02.webp";
+import remizovka_gallery03 from "@assets/projects/Remizovka/gallery/remizovka03.webp";
+import remizovka_gallery04 from "@assets/projects/Remizovka/gallery/remizovka04.webp";
+import remizovka_gallery05 from "@assets/projects/Remizovka/gallery/remizovka05.webp";
+
+import ritz_carlton_gallery from "@assets/projects/RitzCarlton/gallery/ritz_carlton_01.webp";
+import ritz_carlton_gallery02 from "@assets/projects/RitzCarlton/gallery/ritz_carlton_02.webp";
+import ritz_carlton_gallery03 from "@assets/projects/RitzCarlton/gallery/ritz_carlton_03.webp";
+import ritz_carlton_gallery04 from "@assets/projects/RitzCarlton/gallery/ritz_carlton_04.webp";
+import ritz_carlton_gallery05 from "@assets/projects/RitzCarlton/gallery/ritz_carlton_05.webp";
+
+import takeda_gallery from "@assets/projects/Takeda/gallery/takeda_gallery_01.webp";
+import takeda_gallery02 from "@assets/projects/Takeda/gallery/takeda_gallery_02.webp";
+import takeda_gallery03 from "@assets/projects/Takeda/gallery/takeda_gallery_03.webp";
+import takeda_gallery04 from "@assets/projects/Takeda/gallery/takeda_gallery_04.webp";
+import takeda_gallery05 from "@assets/projects/Takeda/gallery/takeda_gallery_05.webp";
+
+// import wendys_gallery from "@assets/projects/Wendys/gallery/wendys_gallery_01.webp";
+import wendys_gallery02 from "@assets/projects/Wendys/gallery/wendys_gallery_02.webp";
+import wendys_gallery03 from "@assets/projects/Wendys/gallery/wendys_gallery_03.webp";
+import wendys_gallery04 from "@assets/projects/Wendys/gallery/wendys_gallery_04.webp";
+import wendys_gallery05 from "@assets/projects/Wendys/gallery/wendys_gallery_05.webp";
 
 export interface PhotoItem {
   photo: string;
@@ -578,6 +608,273 @@ export const portfolioContent: Record<string, PortfolioContent> = {
       },
       {
         photo: lenovo_gallery03,
+      },
+    ],
+    images_thumbnail: [
+      {
+        photo: siemens02,
+      },
+      {
+        photo: siemens03,
+      },
+      {
+        photo: siemens04,
+      },
+      {
+        photo: siemens05,
+      },
+    ],
+    listItems: [
+      {
+        label: "Год проектирования:",
+        value: "2021",
+      },
+      {
+        label: "Площадь проекта:",
+        value: "32 кв.м.",
+      },
+      {
+        label: "Стадия Проекта:",
+        value: "Завершен",
+      },
+    ],
+    mainImage: siemens,
+  },
+  park_view: {
+    heading: "Park View",
+    headingSecond: "Второй заголовок",
+    paragraph:
+      "Компания Special Solution занимается разработкой передовых решений, способных удовлетворить самые изысканные и специфические запросы наших клиентов. Мы сочетаем глубокие знания отрасли с инновационным мышлением, чтобы предлагать продукты и услуги, выходящие за рамки стандартных предложений.",
+    paragraphSecond:
+      "Компания Special Solution занимается разработкой передовых решений, способных удовлетворить самые изысканные и специфические запросы наших клиентов. Мы сочетаем глубокие знания отрасли с инновационным мышлением, чтобы предлагать продукты и услуги, выходящие за рамки стандартных предложений.",
+    images: [
+      {
+        photo: parkView_gallery,
+      },
+      {
+        photo: parkView_gallery02,
+      },
+      {
+        photo: parkView_gallery03,
+      },
+      {
+        photo: parkView_gallery04,
+      },
+      {
+        photo: parkView_gallery05,
+      },
+    ],
+    images_thumbnail: [
+      {
+        photo: siemens02,
+      },
+      {
+        photo: siemens03,
+      },
+      {
+        photo: siemens04,
+      },
+      {
+        photo: siemens05,
+      },
+    ],
+    listItems: [
+      {
+        label: "Год проектирования:",
+        value: "2021",
+      },
+      {
+        label: "Площадь проекта:",
+        value: "32 кв.м.",
+      },
+      {
+        label: "Стадия Проекта:",
+        value: "Завершен",
+      },
+    ],
+    mainImage: siemens,
+  },
+  remizovka: {
+    heading: "Ремизовка",
+    headingSecond: "Второй заголовок",
+    paragraph:
+      "Компания Special Solution занимается разработкой передовых решений, способных удовлетворить самые изысканные и специфические запросы наших клиентов. Мы сочетаем глубокие знания отрасли с инновационным мышлением, чтобы предлагать продукты и услуги, выходящие за рамки стандартных предложений.",
+    paragraphSecond:
+      "Компания Special Solution занимается разработкой передовых решений, способных удовлетворить самые изысканные и специфические запросы наших клиентов. Мы сочетаем глубокие знания отрасли с инновационным мышлением, чтобы предлагать продукты и услуги, выходящие за рамки стандартных предложений.",
+    images: [
+      {
+        photo: remizovka_gallery,
+      },
+      {
+        photo: remizovka_gallery02,
+      },
+      {
+        photo: remizovka_gallery03,
+      },
+      {
+        photo: remizovka_gallery04,
+      },
+      {
+        photo: remizovka_gallery05,
+      },
+    ],
+    images_thumbnail: [
+      {
+        photo: siemens02,
+      },
+      {
+        photo: siemens03,
+      },
+      {
+        photo: siemens04,
+      },
+      {
+        photo: siemens05,
+      },
+    ],
+    listItems: [
+      {
+        label: "Год проектирования:",
+        value: "2021",
+      },
+      {
+        label: "Площадь проекта:",
+        value: "32 кв.м.",
+      },
+      {
+        label: "Стадия Проекта:",
+        value: "Завершен",
+      },
+    ],
+    mainImage: siemens,
+  },
+  ritz_carlton: {
+    heading: "Ritz Carlton",
+    headingSecond: "Второй заголовок",
+    paragraph:
+      "Компания Special Solution занимается разработкой передовых решений, способных удовлетворить самые изысканные и специфические запросы наших клиентов. Мы сочетаем глубокие знания отрасли с инновационным мышлением, чтобы предлагать продукты и услуги, выходящие за рамки стандартных предложений.",
+    paragraphSecond:
+      "Компания Special Solution занимается разработкой передовых решений, способных удовлетворить самые изысканные и специфические запросы наших клиентов. Мы сочетаем глубокие знания отрасли с инновационным мышлением, чтобы предлагать продукты и услуги, выходящие за рамки стандартных предложений.",
+    images: [
+      {
+        photo: ritz_carlton_gallery,
+      },
+      {
+        photo: ritz_carlton_gallery02,
+      },
+      {
+        photo: ritz_carlton_gallery03,
+      },
+      {
+        photo: ritz_carlton_gallery04,
+      },
+      {
+        photo: ritz_carlton_gallery05,
+      },
+    ],
+    images_thumbnail: [
+      {
+        photo: siemens02,
+      },
+      {
+        photo: siemens03,
+      },
+      {
+        photo: siemens04,
+      },
+      {
+        photo: siemens05,
+      },
+    ],
+    listItems: [
+      {
+        label: "Год проектирования:",
+        value: "2021",
+      },
+      {
+        label: "Площадь проекта:",
+        value: "32 кв.м.",
+      },
+      {
+        label: "Стадия Проекта:",
+        value: "Завершен",
+      },
+    ],
+    mainImage: siemens,
+  },
+  takeda: {
+    heading: "Ritz Carlton",
+    headingSecond: "Второй заголовок",
+    paragraph:
+      "Компания Special Solution занимается разработкой передовых решений, способных удовлетворить самые изысканные и специфические запросы наших клиентов. Мы сочетаем глубокие знания отрасли с инновационным мышлением, чтобы предлагать продукты и услуги, выходящие за рамки стандартных предложений.",
+    paragraphSecond:
+      "Компания Special Solution занимается разработкой передовых решений, способных удовлетворить самые изысканные и специфические запросы наших клиентов. Мы сочетаем глубокие знания отрасли с инновационным мышлением, чтобы предлагать продукты и услуги, выходящие за рамки стандартных предложений.",
+    images: [
+      {
+        photo: takeda_gallery,
+      },
+      {
+        photo: takeda_gallery02,
+      },
+      {
+        photo: takeda_gallery03,
+      },
+      {
+        photo: takeda_gallery04,
+      },
+      {
+        photo: takeda_gallery05,
+      },
+    ],
+    images_thumbnail: [
+      {
+        photo: siemens02,
+      },
+      {
+        photo: siemens03,
+      },
+      {
+        photo: siemens04,
+      },
+      {
+        photo: siemens05,
+      },
+    ],
+    listItems: [
+      {
+        label: "Год проектирования:",
+        value: "2021",
+      },
+      {
+        label: "Площадь проекта:",
+        value: "32 кв.м.",
+      },
+      {
+        label: "Стадия Проекта:",
+        value: "Завершен",
+      },
+    ],
+    mainImage: siemens,
+  },
+  wendys: {
+    heading: "Wendy's",
+    headingSecond: "Второй заголовок",
+    paragraph:
+      "Компания Special Solution занимается разработкой передовых решений, способных удовлетворить самые изысканные и специфические запросы наших клиентов. Мы сочетаем глубокие знания отрасли с инновационным мышлением, чтобы предлагать продукты и услуги, выходящие за рамки стандартных предложений.",
+    paragraphSecond:
+      "Компания Special Solution занимается разработкой передовых решений, способных удовлетворить самые изысканные и специфические запросы наших клиентов. Мы сочетаем глубокие знания отрасли с инновационным мышлением, чтобы предлагать продукты и услуги, выходящие за рамки стандартных предложений.",
+    images: [
+      {
+        photo: wendys_gallery02,
+      },
+      {
+        photo: wendys_gallery03,
+      },
+      {
+        photo: wendys_gallery04,
+      },
+      {
+        photo: wendys_gallery05,
       },
     ],
     images_thumbnail: [
