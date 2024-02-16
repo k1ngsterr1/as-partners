@@ -30,17 +30,13 @@ export const ServicesScreen = () => {
         <ServiceTab
           text="Пример проекта"
           margin="mt-8"
-          onClick={() => navigate("/services/design")}
-        />
-
-        <ServiceTab
-          text="Пример проекта"
-          margin="mt-8"
+          bgImage="first"
           onClick={() => navigate("/services/design")}
         />
         <ServiceTab
           text="Пример проекта"
           margin="mt-8"
+          bgImage="second"
           onClick={() => navigate("/services/design")}
         />
         <ButtonNavigation
@@ -57,28 +53,15 @@ export const ServicesScreen = () => {
             className="w-[100%] flex flex-col items-center relative"
           >
             <ServiceTab
-              text="Услуга"
+              text="Разработка дизайн проекта"
               margin="mt-8"
+              bgImage="first"
               onClick={() => navigate("/services/design")}
             />
             <ServiceTab
-              text="Услуга"
+              text="Разработка рабочей документации интерьера"
               margin="mt-8"
-              onClick={() => navigate("/services/design")}
-            />
-            <ServiceTab
-              text="Услуга"
-              margin="mt-8"
-              onClick={() => navigate("/services/design")}
-            />
-            <ServiceTab
-              text="Услуга"
-              margin="mt-8"
-              onClick={() => navigate("/services/design")}
-            />
-            <ServiceTab
-              text="Услуга"
-              margin="mt-8 mb-8"
+              bgImage="second"
               onClick={() => navigate("/services/design")}
             />
           </Fade>

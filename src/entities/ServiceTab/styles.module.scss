@@ -1,9 +1,17 @@
+.first {
+  background-image: url("../../assets/services/service_01.webp");
+}
+
+.second {
+  background-image: url("../../assets/services/service_02.webp");
+}
+
 .service_tab {
   width: 100%;
   height: clamp(145px, 67.7556vw, 580px);
   position: relative;
   background-repeat: no-repeat;
-  background-image: url("../../assets/services/service_tab_example.png");
+  // background-image: url("../../assets/services/service_01.webp");
 
   &__text {
     position: absolute;
@@ -20,6 +28,14 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .first {
+    background-image: url("../../assets/services/service_01.webp");
+  }
+
+  .second {
+    background-image: url("../../assets/services/service_02.webp");
+  }
+
   .service_tab {
     width: 90%;
     height: clamp(151.5px, 15.780240000000001vw, 606px);
@@ -27,7 +43,10 @@
     transition: 0.3s all;
 
     &__text {
-      font-size: clamp(16px, 1.66656vw, 64px);
+      left: clamp(12px, 1.24992vw, 48px);
+      bottom: clamp(12px, 1.24992vw, 48px);
+      width: 70%;
+      font-size: clamp(12px, 1.24992vw, 48px);
     }
 
     &:hover {

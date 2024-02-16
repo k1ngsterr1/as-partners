@@ -1,0 +1,74 @@
+// Reset
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding and margin */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Allow percentage-based heights in the application */
+html,
+body {
+  height: 100%;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Improve the readability of content */
+body {
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+
+/* Reset styles for headings, links, and buttons */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  text-align: inherit;
+  line-height: inherit;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+/* Responsive images and videos */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A very basic "clearfix" */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
