@@ -4,6 +4,51 @@ import siemens03 from "@assets/projects/Siemens/siemens_big_03.webp";
 import siemens04 from "@assets/projects/Siemens/siemens_big_04.webp";
 import siemens05 from "@assets/projects/Siemens/siemens_big_05.webp";
 
+import channel from "@assets/projects/31/31channel01.webp";
+import channel02 from "@assets/projects/31/31channel02.webp";
+import channel03 from "@assets/projects/31/31channel03.webp";
+import channel04 from "@assets/projects/31/31channel04.webp";
+import channel05 from "@assets/projects/31/31channel05.webp";
+
+import applecity from "@assets/projects/AppleCity/AppleCity02.webp";
+import applecity02 from "@assets/projects/AppleCity/AppleCity03.webp";
+import applecity03 from "@assets/projects/AppleCity/AppleCity04.webp";
+import applecity04 from "@assets/projects/AppleCity/AppleCity05.webp";
+import applecity05 from "@assets/projects/AppleCity/AppleCity06.webp";
+import applecity06 from "@assets/projects/AppleCity/AppleCity07.webp";
+import applecity07 from "@assets/projects/AppleCity/AppleCity08.webp";
+import applecity08 from "@assets/projects/AppleCity/AppleCity09.webp";
+import applecity09 from "@assets/projects/AppleCity/AppleCity10.webp";
+
+import doeat from "@assets/projects/DoEat/DoEat01.webp";
+import doeat02 from "@assets/projects/DoEat/DoEat02.webp";
+import doeat03 from "@assets/projects/DoEat/DoEat03.webp";
+import doeat04 from "@assets/projects/DoEat/DoEat04.webp";
+import doeat05 from "@assets/projects/DoEat/DoEat05.webp";
+
+import ff from "@assets/projects/FF/FFB01.webp";
+import ff02 from "@assets/projects/FF/FFB02.webp";
+import ff03 from "@assets/projects/FF/FFB03.webp";
+import ff04 from "@assets/projects/FF/FFB04.webp";
+import ff05 from "@assets/projects/FF/FFB05.webp";
+
+import global_dev from "@assets/projects/GlobalDev/GlobalDev01.webp";
+import global_dev02 from "@assets/projects/GlobalDev/GlobalDev02.webp";
+import global_dev03 from "@assets/projects/GlobalDev/GlobalDev03.webp";
+import global_dev04 from "@assets/projects/GlobalDev/GlobalDev04.webp";
+
+import gorky_dev from "@assets/projects/Gorky/gorky_tennis01.webp";
+import gorky_dev02 from "@assets/projects/Gorky/gorky_tennis02.webp";
+import gorky_dev03 from "@assets/projects/Gorky/gorky_tennis03.webp";
+import gorky_dev04 from "@assets/projects/Gorky/gorky_tennis04.webp";
+import gorky_dev05 from "@assets/projects/Gorky/gorky_tennis05.webp";
+
+import lamiya from "@assets/projects/Lamiya/Lamiya01.webp";
+import lamiya02 from "@assets/projects/Lamiya/Lamiya02.webp";
+import lamiya03 from "@assets/projects/Lamiya/Lamiya03.webp";
+import lamiya04 from "@assets/projects/Lamiya/Lamiya04.webp";
+import lamiya05 from "@assets/projects/Lamiya/Lamiya05.webp";
+
 import siemens_gallery from "@assets/projects/Siemens/gallery/siemens_gallery_01.webp";
 import siemens_gallery02 from "@assets/projects/Siemens/gallery/siemens_gallery_02.webp";
 import siemens_gallery03 from "@assets/projects/Siemens/gallery/siemens_gallery_03.webp";
@@ -192,16 +237,19 @@ export const portfolioContent: Record<string, PortfolioContent> = {
     ],
     images_thumbnail: [
       {
-        photo: siemens02,
+        photo: channel,
       },
       {
-        photo: siemens03,
+        photo: channel02,
       },
       {
-        photo: siemens04,
+        photo: channel03,
       },
       {
-        photo: siemens05,
+        photo: channel04,
+      },
+      {
+        photo: channel05,
       },
     ],
     listItems: [
@@ -218,7 +266,7 @@ export const portfolioContent: Record<string, PortfolioContent> = {
         value: "Завершен",
       },
     ],
-    mainImage: siemens,
+    mainImage: channel,
   },
   apple_city: {
     heading: "Apple City",
@@ -246,16 +294,31 @@ export const portfolioContent: Record<string, PortfolioContent> = {
     ],
     images_thumbnail: [
       {
-        photo: siemens02,
+        photo: applecity,
       },
       {
-        photo: siemens03,
+        photo: applecity02,
       },
       {
-        photo: siemens04,
+        photo: applecity03,
       },
       {
-        photo: siemens05,
+        photo: applecity04,
+      },
+      {
+        photo: applecity05,
+      },
+      {
+        photo: applecity06,
+      },
+      {
+        photo: applecity07,
+      },
+      {
+        photo: applecity08,
+      },
+      {
+        photo: applecity09,
       },
     ],
     listItems: [
@@ -272,7 +335,7 @@ export const portfolioContent: Record<string, PortfolioContent> = {
         value: "Завершен",
       },
     ],
-    mainImage: siemens,
+    mainImage: applecity02,
   },
   do_eat: {
     heading: "Do Eat",
@@ -300,16 +363,19 @@ export const portfolioContent: Record<string, PortfolioContent> = {
     ],
     images_thumbnail: [
       {
-        photo: siemens02,
+        photo: doeat,
       },
       {
-        photo: siemens03,
+        photo: doeat02,
       },
       {
-        photo: siemens04,
+        photo: doeat03,
       },
       {
-        photo: siemens05,
+        photo: doeat04,
+      },
+      {
+        photo: doeat05,
       },
     ],
     listItems: [
@@ -326,7 +392,7 @@ export const portfolioContent: Record<string, PortfolioContent> = {
         value: "Завершен",
       },
     ],
-    mainImage: siemens,
+    mainImage: doeat,
   },
   freedom_finance: {
     heading: "Freedom Finance",
@@ -354,16 +420,19 @@ export const portfolioContent: Record<string, PortfolioContent> = {
     ],
     images_thumbnail: [
       {
-        photo: siemens02,
+        photo: ff,
       },
       {
-        photo: siemens03,
+        photo: ff02,
       },
       {
-        photo: siemens04,
+        photo: ff03,
       },
       {
-        photo: siemens05,
+        photo: ff04,
+      },
+      {
+        photo: ff05,
       },
     ],
     listItems: [
@@ -380,7 +449,7 @@ export const portfolioContent: Record<string, PortfolioContent> = {
         value: "Завершен",
       },
     ],
-    mainImage: siemens,
+    mainImage: ff,
   },
   global_dev: {
     heading: "Global Development",
@@ -408,16 +477,16 @@ export const portfolioContent: Record<string, PortfolioContent> = {
     ],
     images_thumbnail: [
       {
-        photo: siemens02,
+        photo: global_dev,
       },
       {
-        photo: siemens03,
+        photo: global_dev02,
       },
       {
-        photo: siemens04,
+        photo: global_dev03,
       },
       {
-        photo: siemens05,
+        photo: global_dev04,
       },
     ],
     listItems: [
@@ -434,7 +503,7 @@ export const portfolioContent: Record<string, PortfolioContent> = {
         value: "Завершен",
       },
     ],
-    mainImage: siemens,
+    mainImage: global_dev,
   },
   gorky: {
     heading: "Tennis Park",
@@ -462,16 +531,19 @@ export const portfolioContent: Record<string, PortfolioContent> = {
     ],
     images_thumbnail: [
       {
-        photo: siemens02,
+        photo: gorky_dev,
       },
       {
-        photo: siemens03,
+        photo: gorky_dev02,
       },
       {
-        photo: siemens04,
+        photo: gorky_dev03,
       },
       {
-        photo: siemens05,
+        photo: gorky_dev04,
+      },
+      {
+        photo: gorky_dev05,
       },
     ],
     listItems: [
@@ -488,7 +560,7 @@ export const portfolioContent: Record<string, PortfolioContent> = {
         value: "Завершен",
       },
     ],
-    mainImage: siemens,
+    mainImage: gorky_dev,
   },
   lamiya: {
     heading: "Lamiya",
@@ -510,16 +582,19 @@ export const portfolioContent: Record<string, PortfolioContent> = {
     ],
     images_thumbnail: [
       {
-        photo: siemens02,
+        photo: lamiya,
       },
       {
-        photo: siemens03,
+        photo: lamiya02,
       },
       {
-        photo: siemens04,
+        photo: lamiya03,
       },
       {
-        photo: siemens05,
+        photo: lamiya04,
+      },
+      {
+        photo: lamiya05,
       },
     ],
     listItems: [
@@ -536,7 +611,7 @@ export const portfolioContent: Record<string, PortfolioContent> = {
         value: "Завершен",
       },
     ],
-    mainImage: siemens,
+    mainImage: lamiya,
   },
   lampadario: {
     heading: "Lampadario",
