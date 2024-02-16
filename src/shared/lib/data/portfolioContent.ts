@@ -49,6 +49,33 @@ import lamiya03 from "@assets/projects/Lamiya/Lamiya03.webp";
 import lamiya04 from "@assets/projects/Lamiya/Lamiya04.webp";
 import lamiya05 from "@assets/projects/Lamiya/Lamiya05.webp";
 
+import lampadario from "@assets/projects/Lampadario/Lampadario01.webp";
+import lampadario02 from "@assets/projects/Lampadario/Lampadario02.webp";
+import lampadario03 from "@assets/projects/Lampadario/Lampadario03.webp";
+import lampadario04 from "@assets/projects/Lampadario/Lampadario04.webp";
+
+import lenovo from "@assets/projects/Lenovo/Lenovo01.webp";
+import lenovo02 from "@assets/projects/Lenovo/Lenovo02.webp";
+import lenovo03 from "@assets/projects/Lenovo/Lenovo03.webp";
+
+import remizovka from "@assets/projects/Remizovka/remizovka01.webp";
+import remizovka02 from "@assets/projects/Remizovka/remizovka02.webp";
+import remizovka03 from "@assets/projects/Remizovka/remizovka03.webp";
+import remizovka04 from "@assets/projects/Remizovka/remizovka04.webp";
+import remizovka05 from "@assets/projects/Remizovka/remizovka05.webp";
+
+import takeda from "@assets/projects/Takeda/takeda01.webp";
+import takeda02 from "@assets/projects/Takeda/takeda02.webp";
+import takeda03 from "@assets/projects/Takeda/takeda03.webp";
+import takeda04 from "@assets/projects/Takeda/takeda04.webp";
+import takeda05 from "@assets/projects/Takeda/takeda05.webp";
+
+import wendys from "@assets/projects/Wendys/Wendy01.webp";
+import wendys02 from "@assets/projects/Wendys/Wendy02.webp";
+import wendys03 from "@assets/projects/Wendys/Wendy03.webp";
+import wendys04 from "@assets/projects/Wendys/Wendy04.webp";
+import wendys05 from "@assets/projects/Wendys/Wendy05.webp";
+
 import siemens_gallery from "@assets/projects/Siemens/gallery/siemens_gallery_01.webp";
 import siemens_gallery02 from "@assets/projects/Siemens/gallery/siemens_gallery_02.webp";
 import siemens_gallery03 from "@assets/projects/Siemens/gallery/siemens_gallery_03.webp";
@@ -105,6 +132,16 @@ import lenovo_gallery from "@assets/projects/Lenovo/gallery/lenovo_gallery_01.we
 import lenovo_gallery02 from "@assets/projects/Lenovo/gallery/lenovo_gallery_02.webp";
 import lenovo_gallery03 from "@assets/projects/Lenovo/gallery/lenovo_gallery_03.webp";
 
+import park_view from "@assets/projects/ParkView/ParkView01.webp";
+import park_view02 from "@assets/projects/ParkView/ParkView02.webp";
+import park_view03 from "@assets/projects/ParkView/ParkView03.webp";
+import park_view04 from "@assets/projects/ParkView/ParkView04.webp";
+
+import ritzCarlton from "@assets/projects/RitzCarlton/ritzCarlton01.webp";
+import ritzCarlton02 from "@assets/projects/RitzCarlton/ritzCarlton02.webp";
+import ritzCarlton03 from "@assets/projects/RitzCarlton/ritzCarlton03.webp";
+import ritzCarlton04 from "@assets/projects/RitzCarlton/ritzCarlton04.webp";
+
 import parkView_gallery from "@assets/projects/ParkView/gallery/park_view_gallery_01.webp";
 import parkView_gallery02 from "@assets/projects/ParkView/gallery/park_view_gallery_02.webp";
 import parkView_gallery03 from "@assets/projects/ParkView/gallery/park_view_gallery_03.webp";
@@ -134,6 +171,12 @@ import wendys_gallery02 from "@assets/projects/Wendys/gallery/wendys_gallery_02.
 import wendys_gallery03 from "@assets/projects/Wendys/gallery/wendys_gallery_03.webp";
 import wendys_gallery04 from "@assets/projects/Wendys/gallery/wendys_gallery_04.webp";
 import wendys_gallery05 from "@assets/projects/Wendys/gallery/wendys_gallery_05.webp";
+
+import tansar from "@assets/projects/Tansar/tansar.webp";
+import tansar02 from "@assets/projects/Tansar/tansar02.webp";
+import tansar03 from "@assets/projects/Tansar/tansar03.webp";
+import tansar04 from "@assets/projects/Tansar/tansar04.webp";
+import tansar05 from "@assets/projects/Tansar/tansar05.webp";
 
 export interface PhotoItem {
   photo: string;
@@ -639,16 +682,16 @@ export const portfolioContent: Record<string, PortfolioContent> = {
     ],
     images_thumbnail: [
       {
-        photo: siemens02,
+        photo: lampadario,
       },
       {
-        photo: siemens03,
+        photo: lampadario02,
       },
       {
-        photo: siemens04,
+        photo: lampadario03,
       },
       {
-        photo: siemens05,
+        photo: lampadario04,
       },
     ],
     listItems: [
@@ -665,7 +708,7 @@ export const portfolioContent: Record<string, PortfolioContent> = {
         value: "Завершен",
       },
     ],
-    mainImage: siemens,
+    mainImage: lampadario,
   },
   lenovo: {
     heading: "Lenovo",
@@ -687,16 +730,13 @@ export const portfolioContent: Record<string, PortfolioContent> = {
     ],
     images_thumbnail: [
       {
-        photo: siemens02,
+        photo: lenovo,
       },
       {
-        photo: siemens03,
+        photo: lenovo02,
       },
       {
-        photo: siemens04,
-      },
-      {
-        photo: siemens05,
+        photo: lenovo03,
       },
     ],
     listItems: [
@@ -713,7 +753,7 @@ export const portfolioContent: Record<string, PortfolioContent> = {
         value: "Завершен",
       },
     ],
-    mainImage: siemens,
+    mainImage: lenovo,
   },
   park_view: {
     heading: "Park View",
@@ -741,16 +781,16 @@ export const portfolioContent: Record<string, PortfolioContent> = {
     ],
     images_thumbnail: [
       {
-        photo: siemens02,
+        photo: park_view,
       },
       {
-        photo: siemens03,
+        photo: park_view02,
       },
       {
-        photo: siemens04,
+        photo: park_view03,
       },
       {
-        photo: siemens05,
+        photo: park_view04,
       },
     ],
     listItems: [
@@ -767,7 +807,7 @@ export const portfolioContent: Record<string, PortfolioContent> = {
         value: "Завершен",
       },
     ],
-    mainImage: siemens,
+    mainImage: park_view,
   },
   remizovka: {
     heading: "Ремизовка",
@@ -795,16 +835,19 @@ export const portfolioContent: Record<string, PortfolioContent> = {
     ],
     images_thumbnail: [
       {
-        photo: siemens02,
+        photo: remizovka,
       },
       {
-        photo: siemens03,
+        photo: remizovka02,
       },
       {
-        photo: siemens04,
+        photo: remizovka03,
       },
       {
-        photo: siemens05,
+        photo: remizovka04,
+      },
+      {
+        photo: remizovka05,
       },
     ],
     listItems: [
@@ -821,7 +864,7 @@ export const portfolioContent: Record<string, PortfolioContent> = {
         value: "Завершен",
       },
     ],
-    mainImage: siemens,
+    mainImage: remizovka,
   },
   ritz_carlton: {
     heading: "Ritz Carlton",
@@ -849,16 +892,16 @@ export const portfolioContent: Record<string, PortfolioContent> = {
     ],
     images_thumbnail: [
       {
-        photo: siemens02,
+        photo: ritzCarlton,
       },
       {
-        photo: siemens03,
+        photo: ritzCarlton02,
       },
       {
-        photo: siemens04,
+        photo: ritzCarlton03,
       },
       {
-        photo: siemens05,
+        photo: ritzCarlton04,
       },
     ],
     listItems: [
@@ -903,16 +946,19 @@ export const portfolioContent: Record<string, PortfolioContent> = {
     ],
     images_thumbnail: [
       {
-        photo: siemens02,
+        photo: takeda,
       },
       {
-        photo: siemens03,
+        photo: takeda02,
       },
       {
-        photo: siemens04,
+        photo: takeda03,
       },
       {
-        photo: siemens05,
+        photo: takeda04,
+      },
+      {
+        photo: takeda05,
       },
     ],
     listItems: [
@@ -929,7 +975,7 @@ export const portfolioContent: Record<string, PortfolioContent> = {
         value: "Завершен",
       },
     ],
-    mainImage: siemens,
+    mainImage: takeda03,
   },
   wendys: {
     heading: "Wendy's",
@@ -954,16 +1000,16 @@ export const portfolioContent: Record<string, PortfolioContent> = {
     ],
     images_thumbnail: [
       {
-        photo: siemens02,
+        photo: wendys,
       },
       {
-        photo: siemens03,
+        photo: wendys02,
       },
       {
-        photo: siemens04,
+        photo: wendys03,
       },
       {
-        photo: siemens05,
+        photo: wendys04,
       },
     ],
     listItems: [
@@ -980,6 +1026,63 @@ export const portfolioContent: Record<string, PortfolioContent> = {
         value: "Завершен",
       },
     ],
-    mainImage: siemens,
+    mainImage: wendys,
+  },
+  tansar: {
+    heading: "Tansar",
+    headingSecond: "Второй заголовок",
+    paragraph:
+      "Компания Special Solution занимается разработкой передовых решений, способных удовлетворить самые изысканные и специфические запросы наших клиентов. Мы сочетаем глубокие знания отрасли с инновационным мышлением, чтобы предлагать продукты и услуги, выходящие за рамки стандартных предложений.",
+    paragraphSecond:
+      "Компания Special Solution занимается разработкой передовых решений, способных удовлетворить самые изысканные и специфические запросы наших клиентов. Мы сочетаем глубокие знания отрасли с инновационным мышлением, чтобы предлагать продукты и услуги, выходящие за рамки стандартных предложений.",
+    images: [
+      {
+        photo: tansar,
+      },
+      {
+        photo: tansar02,
+      },
+      {
+        photo: tansar03,
+      },
+      {
+        photo: tansar04,
+      },
+    ],
+    images_thumbnail: [
+      {
+        photo: tansar,
+      },
+      {
+        photo: tansar02,
+      },
+      {
+        photo: tansar03,
+      },
+      {
+        photo: tansar04,
+      },
+      {
+        photo: tansar05,
+      },
+      {
+        photo: tansar06,
+      },
+    ],
+    listItems: [
+      {
+        label: "Год проектирования:",
+        value: "2021",
+      },
+      {
+        label: "Площадь проекта:",
+        value: "32 кв.м.",
+      },
+      {
+        label: "Стадия Проекта:",
+        value: "Завершен",
+      },
+    ],
+    mainImage: wendys,
   },
 };
