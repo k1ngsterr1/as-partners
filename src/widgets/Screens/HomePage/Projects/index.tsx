@@ -39,9 +39,9 @@ export const ProjectsScreen = () => {
         <ProjectTab
           text="Пример проекта"
           margin="mt-8"
+          image="chanel"
           onClick={() => navigate("/portfolio/design")}
         />
-
         <ProjectTab
           text="Пример проекта"
           margin="mt-8"
@@ -87,42 +87,79 @@ export const ProjectsScreen = () => {
         <div className={`${styles.section_two} scrollable_section relative`}>
           <Fade
             cascade
-            damping={0.2}
+            damping={0.05}
             className="w-[100%] flex flex-col items-center relative"
           >
             <ProjectTab
-              text="Пример проекта"
+              text="31 Канал"
               margin="mt-8"
+              image="chanel"
               onClick={() => navigate("/portfolio/design")}
             />
             <ProjectTab
-              text="Пример проекта"
+              text="Apple City"
               margin="mt-8"
+              image="apple"
               onClick={() => navigate("/portfolio/design")}
             />
             <ProjectTab
-              text="Пример проекта"
+              text="Коттедж"
               margin="mt-8"
+              image="cottage"
               onClick={() => navigate("/portfolio/design")}
             />
             <ProjectTab
-              text="Пример проекта"
+              text="Do Eat"
               margin="mt-8"
+              image="doeat"
               onClick={() => navigate("/portfolio/design")}
             />
             <ProjectTab
-              text="Пример проекта"
+              text="Freedom Finance"
               margin="mt-8"
+              image="ff"
               onClick={() => navigate("/portfolio/design")}
             />
             <ProjectTab
-              text="Пример проекта"
+              text="Gorky Tennis Park"
               margin="mt-8"
+              image="gorky"
               onClick={() => navigate("/portfolio/design")}
             />
             <ProjectTab
-              text="Пример проекта"
+              text="Lamiya"
               margin="mt-8 mb-8"
+              image="lamiya"
+              onClick={() => navigate("/portfolio/design")}
+            />
+            <ProjectTab
+              text="Lampadario"
+              margin="mt-8 mb-8"
+              image="Lampadario"
+              onClick={() => navigate("/portfolio/design")}
+            />
+            <ProjectTab
+              text="Lenovo"
+              margin="mt-8 mb-8"
+              image="Lenovo"
+              onClick={() => navigate("/portfolio/design")}
+            />
+            <ProjectTab
+              text="Ремизовка"
+              margin="mt-8 mb-8"
+              image="remizovka"
+              onClick={() => navigate("/portfolio/design")}
+            />
+            <ProjectTab
+              text="Wendy's"
+              margin="mt-8 mb-8"
+              image="wendys"
+              onClick={() => navigate("/portfolio/design")}
+            />
+            <ProjectTab
+              text="Tansar"
+              margin="mt-8 mb-8"
+              image="tansar"
               onClick={() => navigate("/portfolio/design")}
             />
           </Fade>

@@ -9,22 +9,22 @@ import { portfolioItems } from "@pages/Projects/ui/portfolioItems";
 import { PortfolioProjectsTab } from "@entities/PortfolioProjectTab";
 import { useNavigate } from "react-router-dom";
 
-import siemens from "@assets/projects/Siemens/Siemens01.webp";
-import FB from "@assets/projects/FF/FFB02.webp";
-import channel from "@assets/projects/31/31channel04.webp";
-import gorky from "@assets/projects/Gorky/gorky_tennis01.webp";
-import apple_city from "@assets/projects/AppleCity/AppleCity02.webp";
-import ritz_carlton from "@assets/projects/RitzCarlton/ritzCarlton01.webp";
-import lampadario from "@assets/projects/Lampadario/Lampadario01.webp";
-import doEat from "@assets/projects/DoEat/DoEat01.webp";
-import lamiya from "@assets/projects/Lamiya/Lamiya01.webp";
-import lenovo from "@assets/projects/Lenovo/Lenovo01.webp";
+import siemens from "@assets/projects/all/siemens_project.webp";
+import FB from "@assets/projects/all/ffb_project.webp";
+import channel from "@assets/projects/all/31_project.webp";
+import gorky from "@assets/projects/all/gorky_project.webp";
+import apple_city from "@assets/projects/all/apple_project.webp";
+import ritz_carlton from "@assets/projects/all/ritz_project.webp";
+import lampadario from "@assets/projects/all/lampadario_project.webp";
+import doEat from "@assets/projects/all/doeat_project.webp";
+import lamiya from "@assets/projects/all/lamiya_project.webp";
+import lenovo from "@assets/projects/all/lenovo_project.webp";
 import globalDev from "@assets/projects/GlobalDev/GlobalDev04.webp";
-import parkView from "@assets/projects/ParkView/ParkView01.webp";
-import remizovka from "@assets/projects/Remizovka/remizovka01.webp";
-import takeda from "@assets/projects/Takeda/takeda02.webp";
-import wendys from "@assets/projects/Wendys/Wendy01.webp";
-import tansar from "@assets/projects/Tansar/tansar01.webp";
+import parkView from "@assets/projects/all/park_project.webp";
+import remizovka from "@assets/projects/all/remizovka_project.webp";
+import takeda from "@assets/projects/all/takeda_project.webp";
+import wendys from "@assets/projects/all/wendys_project.webp";
+import tansar from "@assets/projects/all/tansar_project.webp";
 
 export const Portfolio = () => {
   const [selectedValue, setSelectedValue] = useState("");

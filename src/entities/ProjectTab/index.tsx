@@ -11,11 +11,15 @@ interface ProjectTabProps {
 
 export const ProjectTab: React.FC<ProjectTabProps> = ({
   text,
+  image,
   margin,
   onClick,
 }) => {
   return (
-    <div className={`${styles.project_tab} ${margin}`} onClick={onClick}>
+    <div
+      className={`${styles.project_tab} ${margin} ${image}`}
+      onClick={onClick}
+    >
       <span className={styles.project_tab__text}>{text}</span>
     </div>
   );
