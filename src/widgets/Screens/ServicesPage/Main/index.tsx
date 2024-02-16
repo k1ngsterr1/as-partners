@@ -75,7 +75,6 @@ export const ServicesMain = () => {
             <SmallAutoSlider
               className="ml-0 mt-8"
               photos={smallGalleryContent.first.photos}
-              name={smallGalleryContent.first.name}
             />
           </Fade>
           <Fade delay={550}>
