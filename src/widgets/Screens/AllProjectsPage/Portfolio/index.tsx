@@ -91,7 +91,7 @@ export const Portfolio = () => {
                   projectType="Bank"
                   curvedText="Freedom Bank"
                   image={FB}
-                  onClick={() => navigate("/portfolio/freedom_bank")}
+                  onClick={() => navigate("/portfolio/freedom_finance")}
                 />
               </div>
             </div>
@@ -102,7 +102,7 @@ export const Portfolio = () => {
                   projectType="Office"
                   curvedText="31 Канал"
                   image={channel}
-                  onClick={() => navigate("/portfolio/31_channel")}
+                  onClick={() => navigate("/portfolio/thirtyone")}
                 />
                 <PortfolioProjectsTab
                   tabName="Gorky Tennis"
@@ -179,7 +179,7 @@ export const Portfolio = () => {
                   projectType="Office"
                   curvedText="Global Dev"
                   image={globalDev}
-                  onClick={() => navigate("/portfolio/global_deb")}
+                  onClick={() => navigate("/portfolio/global_dev")}
                 />
                 <PortfolioProjectsTab
                   tabName="Park View"

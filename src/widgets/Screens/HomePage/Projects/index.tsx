@@ -37,20 +37,70 @@ export const ProjectsScreen = () => {
           </p>
         </Fade>
         <ProjectTab
-          text="Пример проекта"
+          text="31 Канал"
           margin="mt-8"
           image="chanel"
-          onClick={() => navigate("/portfolio/design")}
+          onClick={() => navigate("/portfolio/thirtyone")}
         />
         <ProjectTab
-          text="Пример проекта"
+          text="Apple City"
           margin="mt-8"
-          onClick={() => navigate("/portfolio/design")}
+          image="apple"
+          onClick={() => navigate("/portfolio/apple_city")}
         />
         <ProjectTab
-          text="Пример проекта"
+          text="Do Eat"
           margin="mt-8"
-          onClick={() => navigate("/portfolio/design")}
+          image="doeat"
+          onClick={() => navigate("/portfolio/do_eat")}
+        />
+        <ProjectTab
+          text="Freedom Finance"
+          margin="mt-8"
+          image="ff"
+          onClick={() => navigate("/portfolio/freedom_finance")}
+        />
+        <ProjectTab
+          text="Gorky Tennis Park"
+          margin="mt-8"
+          image="gorky"
+          onClick={() => navigate("/portfolio/gorky")}
+        />
+        <ProjectTab
+          text="Lamiya"
+          margin="mt-8 mb-8"
+          image="lamiya"
+          onClick={() => navigate("/portfolio/lamiya")}
+        />
+        <ProjectTab
+          text="Lampadario"
+          margin="mt-8 mb-8"
+          image="Lampadario"
+          onClick={() => navigate("/portfolio/lampadario")}
+        />
+        <ProjectTab
+          text="Lenovo"
+          margin="mt-8 mb-8"
+          image="Lenovo"
+          onClick={() => navigate("/portfolio/lenovo")}
+        />
+        <ProjectTab
+          text="Ремизовка"
+          margin="mt-8 mb-8"
+          image="remizovka"
+          onClick={() => navigate("/portfolio/remizovka")}
+        />
+        <ProjectTab
+          text="Wendy's"
+          margin="mt-8 mb-8"
+          image="wendys"
+          onClick={() => navigate("/portfolio/wendys")}
+        />
+        <ProjectTab
+          text="Tansar"
+          margin="mt-8 mb-8"
+          image="tansar"
+          onClick={() => navigate("/portfolio/tansar")}
         />
         <ButtonWhiteNavigation
           text="Все проекты"
@@ -94,73 +144,67 @@ export const ProjectsScreen = () => {
               text="31 Канал"
               margin="mt-8"
               image="chanel"
-              onClick={() => navigate("/portfolio/design")}
+              onClick={() => navigate("/portfolio/thirtyone")}
             />
             <ProjectTab
               text="Apple City"
               margin="mt-8"
               image="apple"
-              onClick={() => navigate("/portfolio/design")}
-            />
-            <ProjectTab
-              text="Коттедж"
-              margin="mt-8"
-              image="cottage"
-              onClick={() => navigate("/portfolio/design")}
+              onClick={() => navigate("/portfolio/apple_city")}
             />
             <ProjectTab
               text="Do Eat"
               margin="mt-8"
               image="doeat"
-              onClick={() => navigate("/portfolio/design")}
+              onClick={() => navigate("/portfolio/do_eat")}
             />
             <ProjectTab
               text="Freedom Finance"
               margin="mt-8"
               image="ff"
-              onClick={() => navigate("/portfolio/design")}
+              onClick={() => navigate("/portfolio/freedom_finance")}
             />
             <ProjectTab
               text="Gorky Tennis Park"
               margin="mt-8"
               image="gorky"
-              onClick={() => navigate("/portfolio/design")}
+              onClick={() => navigate("/portfolio/gorky")}
             />
             <ProjectTab
               text="Lamiya"
               margin="mt-8 mb-8"
               image="lamiya"
-              onClick={() => navigate("/portfolio/design")}
+              onClick={() => navigate("/portfolio/lamiya")}
             />
             <ProjectTab
               text="Lampadario"
               margin="mt-8 mb-8"
               image="Lampadario"
-              onClick={() => navigate("/portfolio/design")}
+              onClick={() => navigate("/portfolio/lampadario")}
             />
             <ProjectTab
               text="Lenovo"
               margin="mt-8 mb-8"
               image="Lenovo"
-              onClick={() => navigate("/portfolio/design")}
+              onClick={() => navigate("/portfolio/lenovo")}
             />
             <ProjectTab
               text="Ремизовка"
               margin="mt-8 mb-8"
               image="remizovka"
-              onClick={() => navigate("/portfolio/design")}
+              onClick={() => navigate("/portfolio/remizovka")}
             />
             <ProjectTab
               text="Wendy's"
               margin="mt-8 mb-8"
               image="wendys"
-              onClick={() => navigate("/portfolio/design")}
+              onClick={() => navigate("/portfolio/wendys")}
             />
             <ProjectTab
               text="Tansar"
               margin="mt-8 mb-8"
               image="tansar"
-              onClick={() => navigate("/portfolio/design")}
+              onClick={() => navigate("/portfolio/tansar")}
             />
           </Fade>
         </div>

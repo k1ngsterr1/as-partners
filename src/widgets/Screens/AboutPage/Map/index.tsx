@@ -26,7 +26,7 @@ export const MapScreen = () => {
       <div className="w-full bg-white" id="map">
         <section className="container-pc-no-height flex flex-col items-center">
           <Fade delay={150}>
-            <h3 className={`${styles.heading} w-[100%]`}>
+            <h3 className={`${styles.heading} !mt-8`}>
               География выполненных проектов
             </h3>
           </Fade>

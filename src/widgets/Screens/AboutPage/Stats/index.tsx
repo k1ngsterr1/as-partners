@@ -23,9 +23,9 @@ export const StatsScreen = () => {
           </Fade>
           <Fade delay={250}>
             <Counter
-              end={400}
+              end={10}
               duration={3}
-              text="Проектов всего"
+              text="Лет опыт работы компании"
               marginTop="mt-8"
             />
           </Fade>
@@ -39,9 +39,9 @@ export const StatsScreen = () => {
           </Fade>
           <Fade delay={250}>
             <Counter
-              end={400}
+              end={50}
               duration={3}
-              text="Проектов всего"
+              text="Выполненных проектов"
               marginTop="mt-8"
             />
           </Fade>
@@ -66,7 +66,7 @@ export const StatsScreen = () => {
             <Fade delay={150}>
               <Separator marginTop="mt-2" />
             </Fade>
-            <Fade delay={200}>
+            <Fade delay={200} className="mt-4">
               <UnderText
                 label="Данные в цифрах"
                 color="text-white"
@@ -76,17 +76,17 @@ export const StatsScreen = () => {
             <div className="w-[85%] flex items-center justify-between mt-10">
               <Fade delay={250}>
                 <Counter
-                  end={150}
+                  end={10}
                   duration={3}
-                  text="Проектов всего"
+                  text="Лет Опыта"
                   marginTop="mt-0"
                 />
               </Fade>
               <Fade delay={300}>
                 <Counter
-                  end={400}
+                  end={50}
                   duration={3}
-                  text="Проектов всего"
+                  text="Выполненных проектов"
                   marginTop="mt-0"
                 />
               </Fade>

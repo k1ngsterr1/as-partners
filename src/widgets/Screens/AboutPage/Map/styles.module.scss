@@ -17,6 +17,9 @@
   }
 
   .heading {
+    width: 70% !important;
+    text-align: center !important;
+    margin: auto !important;
     font-size: clamp(32.5px, 3.3852vw, 130px);
   }
 }

@@ -28,13 +28,13 @@ export const ServicesScreen = () => {
           </p>
         </Fade>
         <ServiceTab
-          text="Пример проекта"
+          text="Разработка дизайн проекта"
           margin="mt-8"
           bgImage="first"
           onClick={() => navigate("/services/design")}
         />
         <ServiceTab
-          text="Пример проекта"
+          text="Разработка рабочей документации интерьера"
           margin="mt-8"
           bgImage="second"
           onClick={() => navigate("/services/design")}
