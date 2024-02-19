@@ -74,7 +74,6 @@ import wendys from "@assets/projects/Wendys/Wendy01.webp";
 import wendys02 from "@assets/projects/Wendys/Wendy02.webp";
 import wendys03 from "@assets/projects/Wendys/Wendy03.webp";
 import wendys04 from "@assets/projects/Wendys/Wendy04.webp";
-import wendys05 from "@assets/projects/Wendys/Wendy05.webp";
 
 import siemens_gallery from "@assets/projects/Siemens/gallery/siemens_gallery_01.webp";
 import siemens_gallery02 from "@assets/projects/Siemens/gallery/siemens_gallery_02.webp";

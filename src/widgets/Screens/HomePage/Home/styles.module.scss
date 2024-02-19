@@ -49,3 +49,34 @@
   left: 50%;
   background-color: #676767;
 }
+
+@media screen and (max-width: 1024px) {
+  .line__left {
+    width: 1px;
+    height: 105%;
+    position: fixed;
+    z-index: 105;
+    top: 0;
+    background-color: #676767;
+  }
+
+  .line__right {
+    width: 1px;
+    height: 105%;
+    position: fixed;
+    right: 5%;
+    z-index: 105;
+    top: 0;
+    background-color: #676767;
+  }
+
+  .line__center {
+    width: 1px;
+    height: 105%;
+    position: fixed;
+    top: 0;
+    z-index: 105;
+    left: 50%;
+    background-color: #676767;
+  }
+}

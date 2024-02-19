@@ -201,6 +201,16 @@ h6 {
   font-family: Noto Sans;
 }
 
+@media screen and (max-width: 1024px) {
+  .container-pc {
+    width: 90% !important;
+  }
+
+  p {
+    font-size: 16px !important;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   h1 {
     font-size: clamp(35px, 3.6456vw, 140px) !important;
