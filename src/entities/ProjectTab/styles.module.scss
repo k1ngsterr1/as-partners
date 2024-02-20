@@ -37,3 +37,13 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .project_tab {
+    height: clamp(150px, 29.296875vw, 600px);
+
+    &__text {
+      font-size: clamp(16px, 3.125vw, 64px);
+    }
+  }
+}

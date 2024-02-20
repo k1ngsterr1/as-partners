@@ -53,6 +53,18 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .selector {
+    font-size: clamp(8px, 1.5625vw, 32px) !important;
+  }
+
+  .list {
+    &__item {
+      font-size: clamp(8px, 1.5625vw, 32px) !important;
+    }
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .selector {
     width: clamp(250px, 26.04vw, 1000px);

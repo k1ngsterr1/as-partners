@@ -66,7 +66,9 @@ export const HomeScreen = () => {
         {isClientVisible ? null : <figure className={styles.line__center} />}
         <section className={`${styles.first_section} mt-0`}>
           <Fade cascade triggerOnce>
-            <h1 className="black w-[100%] ml-8">AS & Partners Architect</h1>
+            <h1 className="black w-[100%] ml-8 max-[1024px]:w-[70%]">
+              AS & Partners Architect
+            </h1>
             <Separator marginTop="mt-5 ml-8" />
             <p className="paragraph black mt-7 ml-8 !w-[70%]">
               Добро пожаловать на сайт AS Partners Architect, вашего надежного

@@ -28,3 +28,10 @@
     align-items: center;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .heading {
+    font-size: clamp(35px, 3.6456vw, 140px) !important;
+    text-align: left !important;
+  }
+}

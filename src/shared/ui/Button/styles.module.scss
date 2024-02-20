@@ -43,6 +43,19 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .button {
+    height: clamp(20px, 3.90625vw, 80px) !important;
+    font-size: clamp(7px, 1.3671875vw, 28px) !important;
+  }
+
+  .white {
+    width: clamp(100px, 19.53125vw, 400px) !important;
+    height: clamp(20px, 3.90625vw, 80px) !important;
+    font-size: clamp(7px, 1.3671875vw, 28px) !important;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .button {
     width: clamp(133.5px, 13.90536vw, 534px);

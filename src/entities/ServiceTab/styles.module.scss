@@ -27,6 +27,16 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .service_tab {
+    height: clamp(150px, 29.296875vw, 600px) !important;
+
+    &__text {
+      font-size: clamp(11px, 2.1484375vw, 44px) !important;
+    }
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .first {
     background-image: url("../../assets/services/service_01.webp");
