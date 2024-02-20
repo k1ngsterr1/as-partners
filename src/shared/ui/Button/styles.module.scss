@@ -9,7 +9,7 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  background-image: url("../../../assets/main/button.svg");
+  background-image: url("../../../assets/main/button.svg") !important;
   background-size: cover;
   transition: 0.3s all;
   @apply text-custom-black;
@@ -45,8 +45,10 @@
 
 @media screen and (max-width: 1024px) {
   .button {
+    width: clamp(100px, 19.53125vw, 400px) !important;
     height: clamp(20px, 3.90625vw, 80px) !important;
     font-size: clamp(7px, 1.3671875vw, 28px) !important;
+    background-image: url("../../../assets/main/button.svg") !important;
   }
 
   .white {

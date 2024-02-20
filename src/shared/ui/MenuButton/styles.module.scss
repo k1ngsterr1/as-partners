@@ -46,3 +46,9 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .button {
+    margin-right: clamp(26px, 5.078125vw, 104px);
+  }
+}

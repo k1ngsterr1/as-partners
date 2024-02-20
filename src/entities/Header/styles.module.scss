@@ -22,3 +22,13 @@
     @apply ml-8;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .header {
+    width: 100% !important;
+
+    &__logo {
+      @apply ml-14;
+    }
+  }
+}
