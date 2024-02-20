@@ -52,7 +52,7 @@ export const Footer = () => {
               alt="logo"
             />
             <Separator marginTop="mt-7 mb-5" />
-            <strong className="text-white text-xl font-[Montserrat]">
+            <strong className="text-white text-xl font-[Montserrat] max-[1024px]:!inline-flex w-fit">
               Алматы
             </strong>
             <address className="!not-italic w-[70%] text-white text-lg  mt-5 mb-5 font-light font-[Montserrat]">
@@ -67,7 +67,7 @@ export const Footer = () => {
             >
               +7 705 181 5330
             </a>
-            <span className="text-white font-[Montserrat] text-lg font-light mt-5 mb-10">
+            <span className="text-white font-[Montserrat] text-lg font-light mt-5 mb-10  max-[1024px]:!inline-flex w-fit ">
               © 2024 | ООО "AS & Partners Architects"
             </span>
           </div>

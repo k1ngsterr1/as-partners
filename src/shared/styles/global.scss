@@ -208,7 +208,8 @@ h6 {
 }
 
 @media screen and (max-width: 1024px) {
-  .container-pc {
+  .container-pc,
+  .container-pc-no-height {
     width: 90% !important;
   }
 

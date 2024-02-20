@@ -18,3 +18,17 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .swiper {
+    width: clamp(150px, 29.296875vw, 600px) !important;
+    &__image {
+      width: clamp(150px, 29.296875vw, 600px) !important;
+      height: clamp(100px, 19.53125vw, 400px) !important;
+
+      &__text {
+        font-size: clamp(12px, 2.34375vw, 48px) !important;
+      }
+    }
+  }
+}

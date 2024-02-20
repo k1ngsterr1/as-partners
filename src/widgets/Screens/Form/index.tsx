@@ -71,7 +71,10 @@ export const FormScreen = () => {
                 value={selectedValue}
                 onChange={handleSelectChange}
               />
-              <Fade delay={150}>
+              <Fade
+                delay={150}
+                className="max-[1024px]:w-full flex items-center justify-center"
+              >
                 <ButtonRegular text="Отправить" type="submit" margin="mt-12" />
               </Fade>
             </form>
@@ -85,7 +88,7 @@ export const FormScreen = () => {
             <Separator marginTop="mt-5 mr-8" />
           </Fade>
           <Fade delay={300} className="flex justify-end">
-            <p className="paragraph black !text-right !w-[60%] mr-8 mt-8 max-[1024px]:!w-[100%]">
+            <p className="paragraph black !text-right !w-[60%] mr-8 mt-8 max-[1024px]:!w-[70%] ">
               Добро пожаловать на сайт AS Partners Architect, вашего надежного
               партнера в мире современной архитектуры и дизайна. Мы
               специализируемся на создании инновационных.

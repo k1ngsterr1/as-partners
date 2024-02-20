@@ -39,7 +39,17 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .section_one {
+    width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
   .section_two {
-    @apply ml-12;
+    width: fit-content !important;
+    display: inline-flex !important;
+    justify-content: center;
   }
 }

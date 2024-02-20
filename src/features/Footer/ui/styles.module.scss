@@ -75,11 +75,13 @@
 
 @media screen and (max-width: 1024px) {
   .footer_pc {
+    display: flex;
+
     &__container {
-      width: 84% !important;
-      padding-left: 0px !important;
+      width: fit-content !important;
+      display: inline-flex !important;
       &__section_one {
-        width: 100% !important;
+        display: inline-flex !important;
       }
     }
   }
