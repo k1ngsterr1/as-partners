@@ -64,7 +64,7 @@ export const ServicesMain = () => {
             </span>
           </Fade>
           <Fade delay={450}>
-            <p className="paragraph black !text-left mt-8">
+            <p className="paragraph_black black !text-left mt-8">
               Одним из направлений работы нашей студии является проектирование
               коттеджных поселков разного масштаба и типологии. В работе мы
               применяем наш авторский подход, сформированный многолетним опытом

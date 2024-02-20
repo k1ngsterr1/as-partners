@@ -31,13 +31,12 @@
 
 @media screen and (max-width: 1024px) {
   .line__left {
-    width: 15px !important;
+    width: 1px !important;
     height: 105%;
     position: fixed;
     top: 0;
     left: 19.2%;
     z-index: 105;
-    background-color: red !important;
   }
 
   .line__right {

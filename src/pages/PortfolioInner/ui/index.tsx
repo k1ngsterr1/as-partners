@@ -114,7 +114,7 @@ export const PortfolioInner: React.FC<PortfolioContent> = ({
             <h2 className={`${styles.heading} black ml-8 !mt-20`}>
               Детали Проекта
             </h2>
-            <p className="paragraph black ml-8 mt-4">
+            <p className="paragraph_black black ml-8 mt-4">
               <strong>Описание:</strong> {paragraph}
             </p>
             <ol className="mb-20">
@@ -128,7 +128,9 @@ export const PortfolioInner: React.FC<PortfolioContent> = ({
             </ol>
           </div>
           <div className={`${styles.section_two} !justify-start`}>
-            <p className="paragraph black ml-8 mt-20">{paragraphSecond}</p>
+            <p className="paragraph_black black ml-8 mt-20">
+              {paragraphSecond}
+            </p>
           </div>
         </section>
         <LineSeparator />
@@ -140,8 +142,8 @@ export const PortfolioInner: React.FC<PortfolioContent> = ({
           <div className={`${styles.section_two} !justify-center`}>
             <h3 className={styles.smaller_heading}>{headingSecond}</h3>
             <Separator marginTop="mt-5 mb-5 ml-8" />
-            <p className="paragraph black ml-8">{paragraphSecond}</p>
-            <p className="paragraph black mt-8 ml-8">{paragraphSecond}</p>
+            <p className="paragraph_black black ml-8">{paragraphSecond}</p>
+            <p className="paragraph_black black mt-8 ml-8">{paragraphSecond}</p>
           </div>
         </section>
         <LineSeparator />

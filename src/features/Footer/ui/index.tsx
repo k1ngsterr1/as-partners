@@ -40,7 +40,7 @@ export const Footer = () => {
           />
         </div>
         <span className={styles.footer__info}>
-          © 2023 | ООО "AS & Partners Architects"
+          © 2024 | ТОО "AS & Partners Architects"
         </span>
       </footer>
       <footer className={styles.footer_pc}>
@@ -68,7 +68,7 @@ export const Footer = () => {
               +7 705 181 5330
             </a>
             <span className="text-white font-[Montserrat] text-lg font-light mt-5 mb-10  max-[1024px]:!inline-flex w-fit ">
-              © 2024 | ООО "AS & Partners Architects"
+              © 2024 | ТОО "AS & Partners Architects"
             </span>
           </div>
           <div className={styles.footer_pc__container__section_two}>

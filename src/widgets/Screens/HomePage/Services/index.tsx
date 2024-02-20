@@ -74,7 +74,7 @@ export const ServicesScreen = () => {
             <Separator marginTop="mt-5 mr-8" />
           </Fade>
           <Fade delay={200} className="w-full flex justify-end">
-            <p className="paragraph black !text-right  mt-8 mr-8">
+            <p className="paragraph_black !text-custom-black !text-right  mt-8 mr-8">
               Добро пожаловать на сайт AS Partners Architect, вашего надежного
               партнера в мире современной архитектуры и дизайна. Мы
               специализируемся на создании инновационных, функциональных и
