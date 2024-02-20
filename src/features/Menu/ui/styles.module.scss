@@ -1,58 +1,60 @@
-.menu {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  transform: translateY(-2000%);
-  z-index: 100;
-  @apply bg-custom-black;
+@media screen and (min-width: 300px) {
+  .menu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    transform: translateY(-2000%);
+    z-index: 100;
+    @apply bg-custom-black;
 
-  &__content {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    &__logo {
-      width: clamp(165px, 77.10119999999999vw, 660px);
-      transform: translateY(-400%);
-      @apply mt-20;
-    }
-
-    &__plus {
-      width: clamp(40px, 18.6912vw, 160px);
-      transform: rotate(0deg);
-      @apply mt-10;
-      @apply mb-2;
-    }
-
-    &__links {
-      display: flex;
+    &__content {
+      width: 90%;
+      margin: auto;
+      display: flex !important;
       flex-direction: column;
       align-items: center;
-      @apply mt-6;
+      justify-content: center;
 
-      &__link {
-        color: #fff;
-        font-family: Noto Sans;
-        font-size: clamp(16px, 7.47648vw, 64px);
-        font-style: normal;
-        font-weight: 600;
-        line-height: 141.412%;
-        transform: translateY(2000%);
-        opacity: 0;
-        transition: 0.3s all;
-        &:hover {
-          @apply text-custom-blue;
+      &__logo {
+        width: clamp(165px, 77.10119999999999vw, 660px);
+        transform: translateY(-400%);
+        @apply mt-20;
+      }
+
+      &__plus {
+        width: clamp(40px, 18.6912vw, 160px);
+        transform: rotate(0deg);
+        @apply mt-10;
+        @apply mb-2;
+      }
+
+      &__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @apply mt-6;
+
+        &__link {
+          color: #fff;
+          font-family: Noto Sans;
+          font-size: clamp(16px, 7.47648vw, 64px);
+          font-style: normal;
+          font-weight: 600;
+          line-height: 141.412%;
+          transform: translateY(2000%);
+          opacity: 0;
+          transition: 0.3s all;
+          &:hover {
+            @apply text-custom-blue;
+          }
         }
       }
     }
-  }
 
-  &__content_pc {
-    display: none;
+    &__content_pc {
+      display: none !important;
+    }
   }
 }
 
@@ -173,12 +175,12 @@
 @media screen and (min-width: 1024px) {
   .menu {
     &__content {
-      display: none;
+      display: none !important;
     }
 
     &__content_pc {
       height: 100%;
-      display: flex;
+      display: flex !important;
       flex-direction: column;
 
       &__line_left {

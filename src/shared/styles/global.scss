@@ -92,6 +92,21 @@
   background-repeat: no-repeat;
 }
 
+h1 {
+  font-family: Montserrat;
+  font-size: clamp(25px, 11.681999999999999vw, 100px) !important;
+  text-align: center !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat;
+}
+
 @media screen and (max-width: 1000px) {
   h1 {
     font-family: Montserrat;
@@ -182,7 +197,7 @@
     font-weight: 200;
     line-height: 145.412%;
     text-align: center;
-    @apply text-white;
+    @apply text-white #{!important};
   }
 
   .paragraph_black {
@@ -226,12 +241,18 @@
     text-align: left !important;
   }
 
+  p {
+    font-weight: 300 !important;
+    font-family: "Noto Sans", sans-serif !important;
+    @apply text-custom-black;
+  }
+
   .container {
     display: none;
   }
 
   .container-pc {
-    width: 61.614583333333336%;
+    width: 61.614583333333336% !important;
     min-height: 100vh !important;
     height: auto;
     display: flex;
@@ -239,14 +260,14 @@
   }
 
   .container-pc-no-height {
-    width: 61.614583333333336%;
-    height: auto;
+    width: 61.614583333333336% !important;
+    height: auto !important;
     display: flex;
     margin: auto;
   }
 
   .container-no-height {
-    display: none;
+    display: none !important;
   }
 
   .paragraph {

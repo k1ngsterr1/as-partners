@@ -168,21 +168,9 @@ export const Menu = () => {
               </Link>
             </Fade>
             <div className="flex items-center justify-between w-[24%] mt-8 ml-8">
-              <Fade delay={450}>
-                <FontAwesomeIcon
-                  icon={faYoutube}
-                  className="text-white cursor-pointer text-3xl transition-all hover:text-custom-blue"
-                />
-              </Fade>
               <Fade delay={500}>
                 <FontAwesomeIcon
                   icon={faInstagram}
-                  className="text-white cursor-pointer text-3xl transition-all hover:text-custom-blue"
-                />
-              </Fade>
-              <Fade delay={550}>
-                <FontAwesomeIcon
-                  icon={faVk}
                   className="text-white cursor-pointer text-3xl transition-all hover:text-custom-blue"
                 />
               </Fade>
