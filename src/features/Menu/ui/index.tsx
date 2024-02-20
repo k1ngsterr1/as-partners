@@ -104,7 +104,6 @@ export const Menu = () => {
         </nav>
       </div>
       <div className={styles.menu__content_pc}>
-        <Lines />
         <div className={styles.menu__content_pc__header}>
           <img
             src={logo}
@@ -197,7 +196,7 @@ export const Menu = () => {
               </a>
             </Fade>
             <Fade delay={700}>
-              <address className="!not-italic text-xl font-[Montserrat] ml-8 w-[70%] text-white mt-8">
+              <address className="!not-italic text-xl font-[Montserrat] ml-8 w-[70%] text-white mt-8 max-[1024px]:!text-lg">
                 ул. Маметова 54, 4 этаж
                 <br />
                 <br />
@@ -216,12 +215,7 @@ export const Menu = () => {
             <div className="flex flex-col ml-8">
               <div className="flex items-center mt-4">
                 <Fade delay={200}>
-                  <span className="text-xl text-white font-normal noto cursor-pointer transition-all hover:text-custom-blue">
-                    Пример Услуги
-                  </span>
-                </Fade>
-                <Fade delay={250}>
-                  <span className="ml-8 text-xl text-white  font-normal noto cursor-pointer transition-all hover:text-custom-blue">
+                  <span className="text-xl text-white font-normal noto cursor-pointer transition-all hover:text-custom-blue max-[1024px]:text-lg">
                     Пример Услуги
                   </span>
                 </Fade>
@@ -232,11 +226,6 @@ export const Menu = () => {
                     Пример Услуги
                   </span>
                 </Fade>
-                <Fade delay={350}>
-                  <span className="ml-8 text-xl text-white  font-normal noto cursor-pointer transition-all hover:text-custom-blue">
-                    Пример Услуги
-                  </span>
-                </Fade>
               </div>
               <div className="flex items-center mt-4">
                 <Fade delay={400}>
@@ -244,20 +233,10 @@ export const Menu = () => {
                     Пример Услуги
                   </span>
                 </Fade>
-                <Fade delay={450}>
-                  <span className="ml-8 text-xl text-white  font-normal noto cursor-pointer transition-all hover:text-custom-blue">
-                    Пример Услуги
-                  </span>
-                </Fade>
               </div>
               <div className="flex items-center mt-4">
                 <Fade delay={500}>
                   <span className="text-xl text-white font-normal noto">
-                    Пример Услуги
-                  </span>
-                </Fade>
-                <Fade delay={550}>
-                  <span className="ml-8 text-xl text-white  font-normal noto">
                     Пример Услуги
                   </span>
                 </Fade>
@@ -270,7 +249,6 @@ export const Menu = () => {
                 Наши Работы
               </span>
             </Fade>
-
             <div className="w-[65%] flex justify-start ml-8">
               <Fade delay={650}>
                 <SmallAutoSlider photos={smallGalleryContent.first.photos} />

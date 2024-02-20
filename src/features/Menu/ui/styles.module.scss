@@ -56,6 +56,120 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .menu {
+    &__content {
+      display: none;
+    }
+
+    &__content_pc {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      &__line_left {
+        width: 1px;
+        height: 105%;
+        position: fixed;
+        top: 0;
+        left: 19.2%;
+        z-index: 10000;
+        background-color: #676767;
+      }
+
+      &__line_right {
+        width: 1px;
+        height: 105%;
+        position: fixed;
+        right: 19.2%;
+        top: 0;
+        z-index: 10000;
+        background-color: #676767;
+      }
+
+      &__line_center {
+        width: 1px;
+        height: 105%;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        background-color: #676767;
+      }
+
+      &__header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+        border-bottom: 1px solid #676767;
+
+        &__logo {
+          width: clamp(152px, 15.832320000000001vw, 608px);
+          @apply ml-14 #{!important};
+          @apply mt-10;
+          @apply mb-10;
+        }
+
+        &__cross_btn {
+          width: 19.2%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &__image {
+            width: clamp(32px, 3.33312vw, 128px);
+            height: clamp(32px, 3.33312vw, 128px);
+          }
+        }
+      }
+
+      &__container {
+        width: 61.614583333333336%;
+        height: 100% !important;
+        margin: auto;
+        display: flex;
+
+        &__section_one {
+          width: 50%;
+          height: 100% !important;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          justify-content: center;
+
+          &__link {
+            font-family: Noto Sans;
+            font-size: clamp(12px, 2.34375vw, 48px) !important;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 141.412%;
+            transition: 0.3s all;
+            @apply text-white;
+            @apply ml-8;
+            &:hover {
+              @apply text-custom-blue;
+            }
+          }
+        }
+
+        &__section_two {
+          width: 50%;
+          height: 100% !important;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+
+          &__text {
+            font-family: Noto Sans;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .menu {
     &__content {

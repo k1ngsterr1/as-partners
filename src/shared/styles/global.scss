@@ -92,119 +92,121 @@
   background-repeat: no-repeat;
 }
 
-h1 {
-  font-family: Montserrat;
-  font-size: clamp(25px, 11.681999999999999vw, 100px) !important;
-  color: white !important;
-  text-align: center !important;
-}
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-family: Montserrat;
+    font-size: clamp(25px, 11.681999999999999vw, 100px) !important;
+    color: white !important;
+    text-align: center !important;
+  }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Montserrat;
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Montserrat;
+  }
 
-.scrollable_section {
-  overflow-y: scroll !important;
-  height: 100vh !important;
-}
+  .scrollable_section {
+    overflow-y: scroll !important;
+    height: 100vh !important;
+  }
 
-.unscrollable_section {
-  overflow-y: hidden !important;
-}
+  .unscrollable_section {
+    overflow-y: hidden !important;
+  }
 
-.scrollable_section::-webkit-scrollbar {
-  display: none;
-}
+  .scrollable_section::-webkit-scrollbar {
+    display: none;
+  }
 
-.page {
-  width: 100%;
-  min-height: 100vh;
-}
+  .page {
+    width: 100%;
+    min-height: 100vh;
+  }
 
-.main_bg {
-  background-image: url("../../assets/main/main_background.webp");
-}
+  .main_bg {
+    background-image: url("../../assets/main/main_background.webp");
+  }
 
-.container {
-  width: 90%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-}
+  .container {
+    width: 90%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
 
-.container-no-height {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-}
+  .container-no-height {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
 
-.circle {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../../assets/main/elipse.svg");
-}
+  .circle {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../assets/main/elipse.svg");
+  }
 
-.montserrat {
-  font-family: "Montserrat", sans-serif;
-}
+  .montserrat {
+    font-family: "Montserrat", sans-serif;
+  }
 
-.source_sans_pro {
-  font-family: "Source Sans Pro", sans-serif;
-}
+  .source_sans_pro {
+    font-family: "Source Sans Pro", sans-serif;
+  }
 
-.black {
-  @apply text-custom-black #{!important};
-}
+  .black {
+    @apply text-custom-black #{!important};
+  }
 
-.black_bg {
-  @apply bg-custom-black #{!important};
-}
+  .black_bg {
+    @apply bg-custom-black #{!important};
+  }
 
-.white_bg {
-  @apply bg-white #{!important};
-}
+  .white_bg {
+    @apply bg-white #{!important};
+  }
 
-.paragraph {
-  width: 85%;
-  font-family: "Noto Sans", sans-serif;
-  font-size: clamp(9px, 4.20552vw, 36px);
-  font-style: normal;
-  font-weight: 200;
-  line-height: 145.412%;
-  text-align: center;
-  @apply text-white;
-}
+  .paragraph {
+    width: 85%;
+    font-family: "Noto Sans", sans-serif;
+    font-size: clamp(9px, 4.20552vw, 36px) !important;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 145.412%;
+    text-align: center;
+    @apply text-white;
+  }
 
-.paragraph_black {
-  width: 85%;
-  font-family: "Noto Sans", sans-serif;
-  font-size: clamp(9px, 4.20552vw, 36px);
-  font-style: normal;
-  font-weight: 200;
-  line-height: 145.412%;
-  text-align: center;
-  @apply text-custom-black;
-}
+  .paragraph_black {
+    width: 85%;
+    font-family: "Noto Sans", sans-serif;
+    font-size: clamp(9px, 4.20552vw, 36px);
+    font-style: normal;
+    font-weight: 200;
+    line-height: 145.412%;
+    text-align: center;
+    @apply text-custom-black;
+  }
 
-.container-pc {
-  display: none;
-}
+  .container-pc {
+    display: none;
+  }
 
-.container-pc-no-height {
-  display: none;
-}
+  .container-pc-no-height {
+    display: none;
+  }
 
-.noto {
-  font-family: Noto Sans;
+  .noto {
+    font-family: Noto Sans;
+  }
 }
 
 @media screen and (max-width: 1024px) {
