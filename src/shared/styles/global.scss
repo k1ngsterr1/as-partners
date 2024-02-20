@@ -241,6 +241,16 @@ h6 {
     @apply text-custom-black #{!important};
   }
 
+  .paragraph_black {
+    width: 85%;
+    font-family: "Noto Sans", sans-serif;
+    font-size: clamp(12px, 1.24992vw, 48px);
+    font-style: normal;
+    font-weight: 200;
+    line-height: 145.412%;
+    @apply text-custom-black;
+  }
+
   .container-pc,
   .container-pc-no-height {
     width: 90% !important;
@@ -286,7 +296,7 @@ h6 {
   }
 
   .container-pc {
-    width: 61.614583333333336% !important;
+    width: 61.614583333333336%;
     min-height: 100vh !important;
     height: auto;
     display: flex;
@@ -294,7 +304,7 @@ h6 {
   }
 
   .container-pc-no-height {
-    width: 61.614583333333336% !important;
+    width: 61.614583333333336%;
     height: auto !important;
     display: flex;
     margin: auto;
@@ -314,7 +324,7 @@ h6 {
   .paragraph_black {
     width: 85%;
     font-family: "Noto Sans", sans-serif !important;
-    font-size: clamp(9px, 0.93744vw, 36px) !important;
+    font-size: clamp(9px, 0.93744vw, 36px);
     font-style: normal;
     font-weight: 200;
     line-height: 145.412%;

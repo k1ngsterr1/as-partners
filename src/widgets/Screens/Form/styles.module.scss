@@ -41,15 +41,15 @@
 @media screen and (max-width: 1024px) {
   .section_one {
     width: 100%;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .section_two {
-    width: fit-content !important;
-    display: inline-flex !important;
+    width: fit-content;
+    display: inline-flex;
     justify-content: center;
   }
 }

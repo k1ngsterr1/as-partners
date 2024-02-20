@@ -1,16 +1,16 @@
 @media screen and (min-width: 300px) {
   .button {
-    width: 79% !important;
-    height: clamp(31px, 14.485679999999999vw, 124px) !important;
+    width: 79%;
+    height: clamp(31px, 14.485679999999999vw, 124px);
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: Montserrat;
-    font-size: clamp(9px, 4.20552vw, 36px) !important;
+    font-size: clamp(9px, 4.20552vw, 36px);
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    background-image: url("../../../assets/main/button.svg") !important;
+    background-image: url("../../../assets/main/button.svg");
     background-size: cover;
     transition: 0.3s all;
     @apply text-custom-black;
@@ -22,13 +22,13 @@
   }
 
   .white {
-    width: clamp(145px, 67.7556vw, 580px) !important;
-    height: clamp(30px, 14.0184vw, 120px) !important;
+    width: clamp(145px, 67.7556vw, 580px);
+    height: clamp(30px, 14.0184vw, 120px);
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: Montserrat;
-    font-size: clamp(9px, 4.20552vw, 36px) !important;
+    font-size: clamp(9px, 4.20552vw, 36px);
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -47,28 +47,28 @@
 
 @media screen and (max-width: 1024px) {
   .button {
-    width: clamp(100px, 19.53125vw, 400px);
-    height: clamp(20px, 3.90625vw, 80px);
-    font-size: clamp(7px, 1.3671875vw, 28px) t;
+    width: clamp(100px, 19.53125vw, 400px) !important;
+    height: clamp(20px, 3.90625vw, 80px) !important;
+    font-size: clamp(7px, 1.3671875vw, 28px) !important;
     background-image: url("../../../assets/main/button.svg") !important;
   }
 
   .white {
-    width: clamp(100px, 19.53125vw, 400px);
-    height: clamp(20px, 3.90625vw, 80px);
-    font-size: clamp(7px, 1.3671875vw, 28px);
+    width: clamp(100px, 19.53125vw, 400px) !important;
+    height: clamp(20px, 3.90625vw, 80px) !important;
+    font-size: clamp(7px, 1.3671875vw, 28px) !important;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .button {
-    width: clamp(133.5px, 13.90536vw, 534px) !important;
-    height: clamp(27.5px, 2.8644000000000003vw, 110px) !important;
+    width: clamp(133.5px, 13.90536vw, 534px);
+    height: clamp(27.5px, 2.8644000000000003vw, 110px);
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: Montserrat;
-    font-size: clamp(9px, 0.93744vw, 36px) !important;
+    font-size: clamp(9px, 0.93744vw, 36px);
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -84,13 +84,13 @@
   }
 
   .white {
-    width: clamp(133.5px, 13.90536vw, 534px) !important;
-    height: clamp(27.5px, 2.8644000000000003vw, 110px) !important;
+    width: clamp(133.5px, 13.90536vw, 534px);
+    height: clamp(27.5px, 2.8644000000000003vw, 110px);
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: Montserrat;
-    font-size: clamp(9px, 0.93744vw, 36px) !important;
+    font-size: clamp(9px, 0.93744vw, 36px);
     font-style: normal;
     font-weight: 300;
     line-height: normal;

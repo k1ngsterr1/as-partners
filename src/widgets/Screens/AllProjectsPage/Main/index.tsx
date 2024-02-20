@@ -5,10 +5,10 @@ import { Breadcrumbs } from "@shared/ui/Breadcrumbs";
 import { Button } from "@shared/ui/Button";
 import { SmallAutoSlider } from "@features/SmallAutoSlider/ui";
 import { smallGalleryContent } from "@shared/lib/data/smallGalleryContent";
-
-import styles from "./styles.module.scss";
 import { Lines } from "@shared/ui/Lines";
 import { Fade } from "react-awesome-reveal";
+
+import styles from "./styles.module.scss";
 
 export const AllProjectsMain = () => {
   const breadcrumbData = [
@@ -70,7 +70,7 @@ export const AllProjectsMain = () => {
             </span>
           </Fade>
           <Fade delay={400}>
-            <p className="paragraph black !text-left mt-8">
+            <p className="paragraph_black black !text-left mt-8">
               Одним из направлений работы нашей студии является проектирование
               коттеджных поселков разного масштаба и типологии. В работе мы
               применяем наш авторский подход, сформированный многолетним опытом
