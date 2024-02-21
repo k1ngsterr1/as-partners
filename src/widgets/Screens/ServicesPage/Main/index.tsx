@@ -32,7 +32,7 @@ export const ServicesMain = () => {
           <Breadcrumbs crumbs={breadcrumbData} marginTop="mt-4" />
         </Fade>
         <Fade delay={350} className="flex items-center justify-center">
-          <p className="paragraph black mt-4">
+          <p className="paragraph_black black mt-4">
             Одним из направлений работы нашей студии является проектирование
             коттеджных поселков разного масштаба и типологии.
           </p>

@@ -61,13 +61,13 @@
 
 @media screen and (min-width: 1200px) {
   .button {
-    width: clamp(133.5px, 13.90536vw, 534px);
-    height: clamp(27.5px, 2.8644000000000003vw, 110px);
+    width: clamp(133.5px, 13.90536vw, 534px) !important;
+    height: clamp(27.5px, 2.8644000000000003vw, 110px) !important;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: Montserrat;
-    font-size: clamp(9px, 0.93744vw, 36px);
+    font-size: clamp(9px, 0.93744vw, 36px) !important;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -83,13 +83,13 @@
   }
 
   .white {
-    width: clamp(133.5px, 13.90536vw, 534px);
-    height: clamp(27.5px, 2.8644000000000003vw, 110px);
+    width: clamp(133.5px, 13.90536vw, 534px) !important;
+    height: clamp(27.5px, 2.8644000000000003vw, 110px) !important;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: Montserrat;
-    font-size: clamp(9px, 0.93744vw, 36px);
+    font-size: clamp(9px, 0.93744vw, 36px) !important;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
