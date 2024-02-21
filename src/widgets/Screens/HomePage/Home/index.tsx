@@ -70,7 +70,7 @@ export const HomeScreen = () => {
               AS & Partners Architect
             </h1>
             <Separator marginTop="mt-5 ml-8" />
-            <p className="paragraph_black black mt-7 ml-8 !w-[70%]">
+            <p className="paragraph_black black mt-7 ml-8 !w-[70%] !text-left">
               Добро пожаловать на сайт AS Partners Architect, вашего надежного
               партнера в мире современной архитектуры и дизайна. Мы
               специализируемся на создании инновационных, функциональных и

@@ -39,18 +39,8 @@ export const AboutScreen = () => {
             партнера в мире современной архитектуры и дизайна. <br /> <br />
           </p>
         </Slide>
-        <Counter
-          end={150}
-          duration={4}
-          text="Проектов всего"
-          marginTop="mt-0"
-        />
-        <Counter
-          end={400}
-          duration={4}
-          text="Проектов всего"
-          marginTop="mt-8 mb-8"
-        />
+        <Counter end={10} duration={4} text="Лет Опыта" marginTop="mt-0" />
+        <Counter end={50} duration={4} text="Проектов" marginTop="mt-8 mb-8" />
         <img src={siemens} className={styles.about_image} alt="about_image" />
       </section>
       <section className="container-pc">

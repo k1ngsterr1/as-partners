@@ -1,10 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Separator } from "@shared/ui/Separator";
-import {
-  faInstagram,
-  faVk,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { SmallAutoSlider } from "@features/SmallAutoSlider/ui";
 import { smallGalleryContent } from "@shared/lib/data/smallGalleryContent";
 import { ButtonWhite } from "@shared/ui/Button";
@@ -29,15 +25,7 @@ export const Footer = () => {
         <div className={styles.footer__container_icon}>
           <FontAwesomeIcon
             className={`${styles.footer__container_icon__icon}`}
-            icon={faYoutube}
-          />
-          <FontAwesomeIcon
-            className={`${styles.footer__container_icon__icon}`}
             icon={faInstagram}
-          />
-          <FontAwesomeIcon
-            className={`${styles.footer__container_icon__icon}`}
-            icon={faVk}
           />
         </div>
         <span className={styles.footer__info}>
@@ -76,6 +64,7 @@ export const Footer = () => {
             <span className="text-white font-[Montserrat] text-lg font-light mt-5 mb-10  max-[1024px]:!inline-flex w-fit ">
               © 2024 | ТОО "AS & Partners Architects"
             </span>
+            <img className={styles.spark_logo} src={spark_logo} />
           </div>
           <div className={styles.footer_pc__container__section_two}>
             <SmallAutoSlider photos={smallGalleryContent.first.photos} />

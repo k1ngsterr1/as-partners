@@ -19,7 +19,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1112px) {
   .swiper {
     width: clamp(150px, 29.296875vw, 600px) !important;
     &__image {
