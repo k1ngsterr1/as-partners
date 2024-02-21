@@ -29,7 +29,7 @@
   background-color: #676767;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1112px) {
   .line__left {
     width: 1px;
     height: 105%;

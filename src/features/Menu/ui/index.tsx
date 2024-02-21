@@ -88,14 +88,14 @@ export const Menu = () => {
           >
             Наше Портфолио
           </Link>
-          <Link
+          {/* <Link
             className={`${styles.menu__content__links__link} mt-5`}
             ref={addToLinkRefs}
             to="/contacts"
             onClick={() => handleClose()}
           >
             Контакты
-          </Link>
+          </Link> */}
         </nav>
       </div>
       <div className={styles.menu__content_pc}>
@@ -153,7 +153,7 @@ export const Menu = () => {
                 Наше Портфолио
               </Link>
             </Fade>
-            <Fade delay={400} className="mt-5">
+            {/* <Fade delay={400} className="mt-5">
               <Link
                 className={`${styles.menu__content_pc__container__section_one__link} mt-5`}
                 to="/contacts"
@@ -161,7 +161,7 @@ export const Menu = () => {
               >
                 Контакты
               </Link>
-            </Fade>
+            </Fade> */}
             <div className="flex items-center justify-between w-[24%] mt-8 ml-8">
               <Fade delay={500}>
                 <FontAwesomeIcon

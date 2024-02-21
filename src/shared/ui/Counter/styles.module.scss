@@ -21,7 +21,33 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .counter_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @apply text-white;
+
+    &__counter {
+      font-size: clamp(22.5px, 4.39453125vw, 90px);
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 141.412%;
+      @apply text-white;
+    }
+
+    &__text {
+      width: 40%;
+      font-size: clamp(13px, 2.5390625vw, 52px);
+      font-family: Noto Sans;
+      font-weight: 200;
+      @apply text-white;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .counter_container {
     display: flex;
     flex-direction: column;

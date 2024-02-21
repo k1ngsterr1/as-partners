@@ -6,6 +6,25 @@
 @tailwind components;
 @tailwind utilities;
 
+*::-webkit-scrollbar {
+  width: clamp(6px, 0.62496vw, 24px);
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #4682b4;
+  border-radius: 6px;
+  border: 3px solid #4682b4;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #4682b4 transparent;
+}
+
 .first {
   background-image: url("../../assets/services/service_01.webp");
 }

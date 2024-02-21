@@ -117,7 +117,7 @@ export const ProjectsScreen = () => {
             <Separator marginTop="mt-5 ml-8" />
           </Fade>
           <Fade delay={200}>
-            <p className="paragraph white mt-7 ml-8">
+            <p className="paragraph white mt-7 ml-8 max-[1112px]:w-[80%]">
               Добро пожаловать на сайт AS Partners Architect, вашего надежного
               партнера в мире современной архитектуры и дизайна. Мы
               специализируемся на создании инновационных, функциональных и

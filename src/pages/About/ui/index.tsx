@@ -30,7 +30,7 @@ export const AboutPage = () => {
       <AboutMainScreen />
       <LineSeparator />
       <StatsScreen />
-      <MapScreen />
+      {/* <MapScreen /> */}
       <LineSeparator />
       <ClientsScreen />
       <LineSeparator />

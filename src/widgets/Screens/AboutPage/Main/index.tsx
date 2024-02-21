@@ -76,9 +76,7 @@ export const AboutMainScreen = () => {
       <main className="container-pc" id="upper">
         <figure className={styles.line__left} />
         <figure className={styles.line__right} />
-        {!isClientVisible && !isMapVisible && (
-          <figure className={styles.line__center} />
-        )}
+        {!isClientVisible && <figure className={styles.line__center} />}
         <section className={styles.section_one}>
           <Fade delay={150}>
             <h1 className={`${styles.section_one__heading} !text-custom-black`}>
@@ -100,7 +98,7 @@ export const AboutMainScreen = () => {
         </section>
         <section className={styles.section_two}>
           <Fade delay={400}>
-            <p className="paragraph black">
+            <p className="paragraph_black black">
               Одним из направлений работы нашей студии является проектирование
               коттеджных поселков разного масштаба и типологии. В работе мы
               применяем наш авторский подход, сформированный многолетним опытом
@@ -110,7 +108,7 @@ export const AboutMainScreen = () => {
           <br />
           <br />
           <Fade delay={450}>
-            <p className="paragraph black">
+            <p className="paragraph_black black">
               Одним из направлений работы нашей студии является проектирование
               коттеджных поселков разного масштаба и типологии. В работе мы
               применяем наш авторский подход, сформированный многолетним опытом
