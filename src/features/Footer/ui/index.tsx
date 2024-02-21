@@ -64,7 +64,11 @@ export const Footer = () => {
             <span className="text-white font-[Montserrat] text-lg font-light mt-5 mb-10  max-[1024px]:!inline-flex w-fit ">
               © 2024 | ТОО "AS & Partners Architects"
             </span>
-            <img className={styles.spark_logo} src={spark_logo} />
+            <img
+              className={styles.spark_logo}
+              src={spark_logo}
+              onClick={() => window.open("https://sparkstudio.kz/home")}
+            />
           </div>
           <div className={styles.footer_pc__container__section_two}>
             <SmallAutoSlider photos={smallGalleryContent.first.photos} />

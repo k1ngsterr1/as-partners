@@ -92,11 +92,16 @@
       }
     }
   }
+
+  .footer {
+    display: none;
+  }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .footer_pc {
     width: 100%;
+
     display: flex !important;
     justify-content: center;
     @apply bg-custom-black;
