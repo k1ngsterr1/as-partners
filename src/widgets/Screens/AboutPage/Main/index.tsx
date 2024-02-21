@@ -10,7 +10,6 @@ import styles from "./styles.module.scss";
 
 export const AboutMainScreen = () => {
   const [isClientVisible, setIsClientVisible] = useState(false);
-  const [setIsMapVisible] = useState(false);
 
   const breadcrumbData = [
     { label: "Главная", path: "/" },
@@ -22,9 +21,6 @@ export const AboutMainScreen = () => {
       entries.forEach((entry: any) => {
         if (entry.target.id === "clients") {
           setIsClientVisible(entry.isIntersecting);
-        }
-        if (entry.target.id === "map") {
-          setIsMapVisible(entry.isIntersecting);
         }
       });
     };

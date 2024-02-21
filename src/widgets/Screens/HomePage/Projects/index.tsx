@@ -1,5 +1,5 @@
 import { ProjectTab } from "@entities/ProjectTab";
-import { ButtonWhite, ButtonWhiteNavigation } from "@shared/ui/Button";
+import { ButtonWhiteNavigation } from "@shared/ui/Button";
 import { Separator } from "@shared/ui/Separator";
 import { Fade } from "react-awesome-reveal";
 import { useNavigate } from "react-router-dom";
