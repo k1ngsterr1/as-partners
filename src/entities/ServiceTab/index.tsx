@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 interface ServiceTabProps {
   text: string;
   margin: string;
-  bgImage: string;
+  bgImage?: string;
   onClick: () => void;
 }
 

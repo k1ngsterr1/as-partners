@@ -18,7 +18,6 @@ import { Header } from "@entities/Header";
 import { SectionGallery } from "@features/SectionGallery/ui";
 import { LineSeparator } from "@shared/ui/LineSeparator";
 import { ListItemComponent } from "@shared/ui/ListItem";
-import { ThumbnainGallery } from "@features/ThumbnailGallery/ui";
 
 import styles from "./styles.module.scss";
 
@@ -26,7 +25,6 @@ export const PortfolioInner: React.FC<PortfolioContent> = ({
   heading,
   headingSecond,
   mainImage,
-  images_thumbnail,
   paragraph,
   paragraphSecond,
   images,

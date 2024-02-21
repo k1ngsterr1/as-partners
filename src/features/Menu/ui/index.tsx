@@ -5,14 +5,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { useMenuAnimation } from "@shared/lib/hooks/animations/useMenuAnimation";
 import { closeMenu } from "@redux/menuSlice";
 import { RootState } from "@redux/store";
-import {
-  faInstagram,
-  faVk,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { SmallAutoSlider } from "@features/SmallAutoSlider/ui";
 import { smallGalleryContent } from "@shared/lib/data/smallGalleryContent";
-import { Lines } from "@shared/ui/Lines";
 
 import plus from "@assets/main/plus.svg";
 import logo from "@assets/main/logo_white.svg";
