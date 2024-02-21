@@ -7,3 +7,9 @@
   @apply ml-8;
   @apply mt-4;
 }
+
+@media screen and (max-width: 1024px) {
+  .list_item {
+    font-size: clamp(9px, 1.7578125vw, 36px);
+  }
+}

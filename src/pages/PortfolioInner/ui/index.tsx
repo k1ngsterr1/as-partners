@@ -135,17 +135,7 @@ export const PortfolioInner: React.FC<PortfolioContent> = ({
         </section>
         <LineSeparator />
         <img className="w-[100vw] h-[100vh]" src={mainImage} />
-        <section className="container-pc">
-          <div className={styles.section_one}>
-            <ThumbnainGallery images={images_thumbnail} />
-          </div>
-          <div className={`${styles.section_two} !justify-center`}>
-            <h3 className={styles.smaller_heading}>{headingSecond}</h3>
-            <Separator marginTop="mt-5 mb-5 ml-8" />
-            <p className="paragraph_black black ml-8">{paragraphSecond}</p>
-            <p className="paragraph_black black mt-8 ml-8">{paragraphSecond}</p>
-          </div>
-        </section>
+
         <LineSeparator />
         <FormScreen />
         <Footer />

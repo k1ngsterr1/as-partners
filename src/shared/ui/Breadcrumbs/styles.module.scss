@@ -1,10 +1,12 @@
-.breadcrumb {
-  display: flex;
-  align-items: center;
-  font-size: clamp(7.5px, 3.5046vw, 30px);
-  font-family: Noto Sans;
-  font-family: 200;
-  @apply text-custom-black;
+@media screen and (min-width: 390px) and (max-width: 1000px) {
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    font-size: clamp(7.5px, 3.5046vw, 30px) !important;
+    font-family: Noto Sans;
+    font-family: 200;
+    @apply text-custom-black;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -15,5 +17,11 @@
     font-family: Noto Sans;
     font-family: 200;
     @apply text-custom-black;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .breadcrumb {
+    font-size: clamp(8px, 1.5625vw, 32px);
   }
 }

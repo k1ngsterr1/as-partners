@@ -31,10 +31,20 @@
 
 @media screen and (max-width: 1024px) {
   .service_tab {
-    height: clamp(150px, 29.296875vw, 600px);
+    position: relative;
+    height: clamp(150px, 29.296875vw, 600px) !important;
 
     &__text {
-      font-size: clamp(11px, 2.1484375vw, 44px);
+      position: absolute;
+      bottom: clamp(9px, 4.20552vw, 36px);
+      left: clamp(9px, 4.20552vw, 36px);
+      color: #fff;
+      font-family: Noto Sans;
+      font-style: normal;
+      font-weight: 700;
+      transition: 0.3s all;
+      line-height: 141.412%;
+      font-size: clamp(11px, 2.1484375vw, 44px) !important;
     }
   }
 }
@@ -50,13 +60,21 @@
 
   .service_tab {
     width: 90%;
+    position: relative;
     height: clamp(151.5px, 15.780240000000001vw, 606px);
     cursor: pointer;
     transition: 0.3s all;
 
     &__text {
-      left: clamp(12px, 1.24992vw, 48px);
-      bottom: clamp(12px, 1.24992vw, 48px);
+      position: absolute;
+      color: #fff;
+      font-family: Noto Sans;
+      font-style: normal;
+      font-weight: 700;
+      transition: 0.3s all;
+      line-height: 141.412%;
+      left: clamp(12px, 1.24992vw, 48px) !important;
+      bottom: clamp(12px, 1.24992vw, 48px) !important;
       width: 70%;
       font-size: clamp(12px, 1.24992vw, 48px);
     }

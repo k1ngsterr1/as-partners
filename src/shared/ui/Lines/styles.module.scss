@@ -31,22 +31,22 @@
 
 @media screen and (max-width: 1024px) {
   .line__left {
-    width: 1px !important;
+    width: 1px;
     height: 105%;
     position: fixed;
-    top: 0;
-    left: 19.2%;
     z-index: 105;
+    left: 5%;
+    top: 0;
+    background-color: #676767;
   }
 
   .line__right {
     width: 1px;
     height: 105%;
     position: fixed;
-    right: 19.2%;
-    top: 0;
+    right: 5%;
     z-index: 105;
-
+    top: 0;
     background-color: #676767;
   }
 
@@ -55,8 +55,8 @@
     height: 105%;
     position: fixed;
     top: 0;
-    left: 50%;
     z-index: 105;
+    left: 50%;
     background-color: #676767;
   }
 }
