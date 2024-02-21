@@ -7,11 +7,12 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { SmallAutoSlider } from "@features/SmallAutoSlider/ui";
 import { smallGalleryContent } from "@shared/lib/data/smallGalleryContent";
+import { ButtonWhite } from "@shared/ui/Button";
 
 import logo from "@assets/main/logo_white.svg";
+import spark_logo from "@assets/main/spark_logo.svg";
 
 import styles from "./styles.module.scss";
-import { ButtonWhite } from "@shared/ui/Button";
 
 export const Footer = () => {
   return (
@@ -42,6 +43,11 @@ export const Footer = () => {
         <span className={styles.footer__info}>
           © 2024 | ТОО "AS & Partners Architects"
         </span>
+        <img
+          className={styles.spark_logo}
+          src={spark_logo}
+          onClick={() => window.open("https://sparkstudio.kz/home")}
+        />
       </footer>
       <footer className={styles.footer_pc}>
         <div className={styles.footer_pc__container}>

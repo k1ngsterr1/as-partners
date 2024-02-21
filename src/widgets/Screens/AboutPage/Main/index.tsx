@@ -10,7 +10,7 @@ import styles from "./styles.module.scss";
 
 export const AboutMainScreen = () => {
   const [isClientVisible, setIsClientVisible] = useState(false);
-  const [isMapVisible, setIsMapVisible] = useState(false);
+  const [setIsMapVisible] = useState(false);
 
   const breadcrumbData = [
     { label: "Главная", path: "/" },

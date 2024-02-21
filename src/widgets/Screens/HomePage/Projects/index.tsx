@@ -12,18 +12,6 @@ export const ProjectsScreen = () => {
   return (
     <div className="w-full bg-custom-black">
       <section className="container">
-        <div className={styles.button_row}>
-          <ButtonWhiteNavigation
-            text="Архитектурные решения"
-            margin="mt-8 mb-4"
-            to={"/services/architecture"}
-          />
-          <ButtonWhite
-            text="Дизайн Интерьера"
-            margin="mt-5 mb-4"
-            to={"/services/architecture"}
-          />
-        </div>
         <Fade delay={150}>
           <h4 className={styles.heading}>Проекты</h4>
         </Fade>

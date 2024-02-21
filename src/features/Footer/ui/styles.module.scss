@@ -69,13 +69,20 @@
   }
 }
 
-.footer_pc {
-  display: none;
+.spark_logo {
+  width: 40%;
+  @apply mt-8;
+  @apply mb-8;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 1024px) {
+.footer_pc {
+  display: none !important;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
   .footer_pc {
-    display: flex;
+    display: flex !important;
 
     &__container {
       width: fit-content !important;
@@ -87,10 +94,10 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .footer_pc {
     width: 100%;
-    display: flex;
+    display: flex !important;
     justify-content: center;
     @apply bg-custom-black;
 

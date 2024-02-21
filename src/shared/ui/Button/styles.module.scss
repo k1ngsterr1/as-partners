@@ -45,7 +45,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
   .button {
     width: clamp(100px, 19.53125vw, 400pxv);
     height: clamp(20px, 3.90625vw, 80px);
@@ -60,7 +60,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .button {
     width: clamp(133.5px, 13.90536vw, 534px);
     height: clamp(27.5px, 2.8644000000000003vw, 110px);

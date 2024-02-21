@@ -6,7 +6,6 @@ import { RootState } from "@redux/store";
 import { toggleOffLoader } from "@redux/loaderSlice";
 import { Loader } from "@features/Loader/ui";
 import { Menu } from "@features/Menu/ui";
-import { MapScreen } from "@widgets/Screens/AboutPage/Map";
 import { ClientsScreen } from "@widgets/Screens/HomePage/Clients";
 import { Footer } from "@features/Footer/ui";
 import { FormScreen } from "@widgets/Screens/Form";
